@@ -46,4 +46,67 @@ import Swiper from 'swiper';
    breakpoint.addListener(breakpointChecker);
    // kickstart
    breakpointChecker();
+	
+})($);
+
+(() => {
+	if ( $(window).outerWidth() < 580 ) {
+		var keyslider = new Swiper('.keys__slider', {
+			 loop: true,
+			 slidesPerView: 1,
+			 keyboardControl: true,
+			 grabCursor: true,
+			 // pagination
+			 navigation: {
+				nextEl: '.keys__slider .arrow-nav_right',
+				prevEl: '.keys__slider .arrow-nav_left',
+			 },
+			 pagination: {
+				clickable: true,
+				// dynamicBullets: false,
+				el: '.keys__slider .pagination',
+			 },
+		});
+		var sertislider = new Swiper('.sertificate__slider', {
+			 loop: true,
+			 slidesPerView: 3,
+			 keyboardControl: true,
+			 grabCursor: true,
+			 // pagination
+			 navigation: {
+				nextEl: '.sertificate .btn-nav_right',
+				prevEl: '.sertificate .btn-nav_left',
+			 },
+			 pagination: {
+				el: '.sertificate__counter',
+				type: 'fraction',
+			 },
+		});
+	};
+})($);
+
+(() => {
+	var productslider = new Swiper('.products__slider', {
+		 loop: true,
+		 slidesPerView: 6,
+		 keyboardControl: true,
+		 grabCursor: true,
+		 // pagination
+		 navigation: {
+			nextEl: '.products .btn-nav_right',
+			prevEl: '.products .btn-nav_left',
+		 },
+		 pagination: {
+			el: '.products__counter',
+			type: 'fraction',
+		 },
+		 breakpoints: {
+			0: {
+			  slidesPerView: 1,
+			},
+			580: {
+			  slidesPerView: 6,
+			},
+		  }
+	});
 })($)

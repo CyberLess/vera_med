@@ -1,0 +1,54 @@
+.btn-nav{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 7.5rem;
+	min-width: 7.5rem;
+	height: 7.5rem;
+	border: 1px solid $blue;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: ease 0.2s;
+	opacity: 0.44;
+	stroke: $blue;
+	
+	svg {
+		width: 16px;
+		height: 30px;
+		max-width: none;
+	}
+	
+	&:hover, &:active {
+		opacity: 1;
+	}
+	
+	&_left {
+		margin-right: 1.8rem;
+		svg {
+			transform: rotate(-90deg);
+		}
+	}
+	
+	&_right {
+		svg {
+			transform: rotate(90deg);
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.btn-nav{
+		width: auto;
+		height: auto;
+		min-width: inherit;
+		border: 0;
+		opacity: 1;
+		&_left {
+			margin-right: 0;
+			margin-left: 16px;
+		}
+		&_right {
+			margin-right: 16px;
+		}
+	}
+}

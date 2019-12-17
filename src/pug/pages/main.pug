@@ -1,7 +1,12 @@
 extends ../layouts/base
 
 append vars
-	- title = 'Главная - test2';
+	- title = 'Главная';
 
 block content
 	include ../layouts/main
+	include ../layouts/keys
+	include ../layouts/products
+	include ../layouts/sertificate
+block footer
+	include ../layouts/footer

@@ -1,0 +1,37 @@
++b.SECTION.keys
+	+e.wrap.wrap
+		+e.H2.title.h2
+			| Ключевые преимущества
+		+e.slider.swiper-container
+			+e.list.swiper-wrapper
+				+e.item.swiper-slide
+					+e.icon.js-svg(data-svg-src="app/objects/loyalty.svg")
+					+e.H3.item-title Лояльность
+					+e.P.desc.p
+						| Рассрочка платежей 
+						br
+						| для постоянных клиентов (преференции предоставляются в индивидуальном порядке).
+				+e.item.swiper-slide
+					+e.icon
+						img(src="/img/delivery.png", width="73")
+					+e.H3.item-title Доставка за 0 руб.
+					+e.P.desc.p
+						| Есть собственный автопарк. Бесплатная доставка при заказе на сумму свыше 30 тыс. руб. Возможен самовывоз со склада.
+				+e.item.swiper-slide
+					+e.icon.js-svg(data-svg-src="app/objects/check.svg")
+					+e.H3.item-title Все в наличии
+					+e.P.desc.p
+						| 97% продукции всегда
+						br
+						| в наличии на складе. Особо крупные партии перевязочного материала изготавливаем под заказ в соответствии с ГОСТ.
+				+e.item.swiper-slide
+					+e.icon.js-svg(data-svg-src="app/objects/shield.svg")
+					+e.H3.item-title Гарантии
+					+e.P.desc.p
+						| Предусмотрен обмен и возврат товара ненадлежащего качества согласно действующему законодательству РФ.
+			+e.nav
+				+b.arrow-nav._left
+					+icon('arrow2', '0 0 9 17')
+				+b.pagination
+				+b.arrow-nav._right
+					+icon('arrow2', '0 0 9 17')

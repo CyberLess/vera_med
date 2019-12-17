@@ -1,12 +1,30 @@
 .category{
-	margin-left: -3px;
-	margin-right: -3px;
-
+	&:not(.category_main) {
+		margin-left: -3px;
+		margin-right: -3px;
+	}
+	
 	@include max-screen($large_mobile) {
 		margin: 0;
 	}
+	
+	&_main {
+		font-size: 1.5rem;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.7);
+		position: relative;
+		z-index: 15;
+		padding: 9rem 0 10rem 0;
+		color: #0A113C;
+		
+		@include max-screen($large_mobile) {
+			padding: 35px 0 35px 0;
+			background: #fff;
+			margin-top: -190px;
+		}
+	}
 
-	&__item{
+	&__item:not(.category__item_main) {
 		margin: 0.34%;
 		width: 32.64%;
 		background: #FFFFFF;
@@ -21,6 +39,22 @@
 		@include max-screen($small_mobile) {
 			width: 100%;
 			margin: 6px 0;
+		}
+	}
+	
+	&__item {
+		&_main {
+			font-weight: 500;
+			
+			&:not(:last-child) {
+				margin-bottom: 2.5rem;
+			}
+			
+			@include max-screen($large_mobile) {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+			}
 		}
 	}
 
@@ -66,6 +100,101 @@
 			font-size: 1.5rem;
 			line-height: 18px;
 
+		}
+	}
+	
+	&__title {
+		font-size: 2.1rem;
+		margin-bottom: 3.5rem;
+		
+		@include max-screen($large_mobile) {
+			margin-bottom: 0;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				border-style: solid;
+				border-width: 7px 4px 0;
+    			border-color: #DADCE0 transparent transparent;
+				position: absolute;
+				right: 5px;
+				top: 50%;
+				margin-top: -3px;
+				transition: ease .2s;
+				transform: rotate(-90deg);
+			}
+		}
+	}
+	
+	&__list {
+		list-style: none;
+		
+		@include max-screen($large_mobile) {
+			display: none;
+			padding-top: 22px;
+		}
+	}
+	&__row {
+		display: flex;
+		
+		@include max-screen($large_mobile) {
+			flex-wrap: wrap;
+		}
+	}
+	&__column {
+		width: 100%;
+		max-width: 36rem;
+		position: relative;
+		
+		&:not(:first-child) {
+			padding: 0 3rem 0 6rem;
+			border-left: 1px solid rgba(218,220,224,0.5);
+		}
+		
+		&:last-child {
+			padding-right: 0;
+		}
+		
+		&:nth-child(2) {
+			min-width: 36rem;
+		}
+		
+		@include max-screen($large_tablet) {
+			&:not(:first-child) {
+				padding: 0 2rem 0 4rem;
+			}
+			&:nth-child(2) {
+				min-width: inherit;
+			}
+		}
+		
+		@include max-screen($small_tablet) {
+			&:not(:first-child) {
+				padding: 0 1rem 0 2rem;
+			}
+		}
+		
+		@include max-screen($large_mobile) {
+			width: 100%;
+			margin-bottom: 22px;
+			max-width: none;
+			
+			&:not(:first-child) {
+				padding: 0;
+				border-left: 0;
+			}
+			
+			&.is-active {
+				.category__list {
+					display: block;
+				}
+				.category__title {
+					&:after {
+						transform: rotate(-180deg);
+						border-color: #0A113C transparent transparent;
+					}
+				}
+			}
 		}
 	}
 }

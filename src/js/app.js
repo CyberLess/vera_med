@@ -12,3 +12,4 @@ import './modules/_tabs';
 import './modules/_select';
 import './modules/_toswiper';
 import './modules/_moving.js';
+import './modules/_loadsvg';
