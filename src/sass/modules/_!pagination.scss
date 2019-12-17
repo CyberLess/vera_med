@@ -5,15 +5,23 @@
 
 	span{
 		display: block;
-		width: 7px;
-		height: 7px;
+		width: 12px;
+		height: 12px;
 		border-radius: 50%;
-		margin: 5px;
+		margin: 7px;
 		border: 1px solid #000000;
+		cursor: pointer;
 		
 		&.swiper-pagination-bullet-active{
 			background: #000AFF;
 			border-color: #000AFF;
+		}
+	}
+	@include max-screen($large_mobile) {
+		span{
+			width: 7px;
+			height: 7px;
+			margin: 5px;
 		}
 	}
 }

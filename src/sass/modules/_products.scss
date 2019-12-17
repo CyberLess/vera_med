@@ -117,6 +117,12 @@
 			padding: 0 10px 0 10px;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			&_left {
+				margin-left: 15px;
+			}
+			&_right {
+				margin-right: 15px;
+			}
 			&:before {
 				content: '';
 				display: block;
@@ -132,7 +138,6 @@
 			left: auto;
 		}
 		&__item {
-			padding: 0 10px 0 10px;
 			&-content {
 				min-height: 180px;
 			}
