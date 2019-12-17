@@ -16,10 +16,74 @@
 			color: $dark;
 			margin-right: 8px;
 		}
+
+		@include max-screen($large_tablet) {
+			line-height: 3.2rem;
+
+			&-link{
+				line-height: inherit;
+			}
+
+			&-mark{
+				margin-top: 6px;
+				margin-bottom: 6px;
+			}
+		}
 	}
 
 	&__top{
 		margin-bottom: 1.8rem;
+	}
+
+	&__link{
+		margin-right: 3.6rem;
+	}
+
+	&__title{
+		margin-bottom: 1.8rem;
+
+		@include max-screen($large_mobile) {
+			&_tosmall{
+				font-size: 1.9rem;
+				line-height: 4.4rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__line{
+		margin-bottom: 4.5rem;
+		margin-top: 6rem;
+
+		@include max-screen($large_mobile) {
+			margin-top: 1.2rem;
+			margin-bottom: 3.7rem;
+		}
+	}
+
+	&__dt{
+		margin-top: 4rem;
+		td{
+			&:first-child{
+				width: 31.25%;
+				padding-left: 6.58%;
+			}
+
+			&:last-child{
+				// width: 68.75%;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			margin-top: 2.4rem;
+
+			td{
+				&:first-child{
+					width: 49%;
+					padding-left: 15px;
+				}				
+			}
+		}
 	}
 
 	&__preview{
@@ -36,6 +100,16 @@
 
 	&__order{
 		margin-bottom: 3.1rem;
+
+		@include max-screen($large_mobile) {
+			height: 7.5rem;
+			font-size: 1.6rem;
+			margin-bottom: 0;
+
+			&:before{
+				display: none;
+			}
+		}
 	}
 
 	&__cell{
@@ -48,15 +122,62 @@
 			width: 30.7%;
 			padding-top: 3.1rem;
 		}
+
+		@include max-screen($large_desktop) {
+			&_left{
+				width: 59.17%;
+				margin-right: 5.13%;
+			}
+
+			&_right{
+			    width: 35.7%;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			&_left{
+				width: 54.17%;
+			}
+
+			&_right{
+			    width: 40.7%;
+			    padding-top: 0;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			width: 100%;
+			margin-right: 0;
+			&_left{
+				margin-bottom: 2.4rem;
+			}
+		}
 	}
 
 	&__row{
 		margin-bottom: 4.5rem;
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 2.6rem;
+		}
+	}
+
+	&__mobile{
+		display: none;
+
+		@include max-screen($large_mobile) {
+			display: block;
+			padding-top: 1.5rem;
+		}
 	}
 
 	&__price{
 		margin-top: 3rem;
 		margin-bottom: 2.2rem;
 
+		@include max-screen($large_tablet) {
+			margin-top: 1.9rem;
+			margin-bottom: 1.7rem;
+		}
 	}
 }

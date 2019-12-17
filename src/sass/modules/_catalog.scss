@@ -107,7 +107,11 @@
 		margin-bottom: 45px;
 
 		&_nomargin{
-			margin-bottom: 0;
+			margin-bottom: 0!important;
+		}
+
+		@include max-screen($large_tablet) {
+			width: 100%;
 		}
 
 		@include max-screen($large_mobile) {
@@ -194,21 +198,41 @@
 		}
 	}
 
-	&__category{
-		margin-bottom: 7.5rem;
-
-		@include max-screen($large_mobile) {
-			margin-bottom: 4rem!important;
-		}
-	}
 
 	&__subcats{
 		width: 92.44%;
 
 		&-item{
 			display: block;
-			width: 26.3%;
+			// width: 26.3%;
+			width: 28.5%;
 			margin: .8rem 0;
+			&_big{
+				margin: 1.15rem 0;
+			}
+		}
+
+		&-link{
+			letter-spacing: -0.02em;
+			font-weight: 500;
+		}
+		@include max-screen($large_desktop) {
+			width: 100%;
+
+			&-item{
+			    width: 31.5%;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			&-item{
+				width: 100%;
+				&:nth-child(6n){
+					&:not(:last-child){
+						margin-bottom: 3.4rem;
+					}
+				}
+			}
 		}
 
 	}
@@ -231,15 +255,49 @@
 			margin-bottom: 8.2rem;
 		}
 
+		&_small{
+			margin-bottom: 3.6rem;
+		}
+
+		&_single{
+			padding-top: 2.4rem;
+		}
+
+		&_category{
+			margin-bottom: 7.5rem;			
+		}
+
+		&_price{
+			margin-bottom: 7.9rem;
+		}
+
 		&-title{
 			letter-spacing: -0.02em;
 			margin-bottom: 5.5rem;
+
+			&_44{
+				line-height: 4.4rem;
+				margin-bottom: 1rem;
+			}
 
 			&_small{
 				margin-bottom: 1.6rem;
 			}
 		}
 
+		@include max-screen($large_tablet) {
+			&_single{
+				padding-top: 0;
+			}			
+		}
+
+		@include max-screen($small_tablet) {
+
+			&_price{
+				margin-bottom: 37px;
+			}
+		}
+		
 		@include max-screen($large_mobile) {
 			margin-bottom: 2.6rem;
 
@@ -254,10 +312,16 @@
 			&_links{
 				display: none;
 			}
+			&_category{
+				margin-bottom: 4rem;
+			}
 			&-title{
 				margin-bottom: 2rem;
 				&_tocenter{
 					text-align: center;
+				}
+				&_44{
+					margin-bottom: 1rem;
 				}
 				&_small{
 					padding-left: 14px;
@@ -275,7 +339,7 @@
 		padding-right: 8.9rem;
 		background: #FFFFFF;
 		border-radius: 7px;
-		margin-bottom: 7.9rem;
+		
 
 		&-button{
 			width: 100%;
@@ -303,7 +367,7 @@
 		}
 
 		@include max-screen($small_tablet) {
-			margin-bottom: 37px;
+			
 			&-title{
 				line-height: 3.4rem;
 			}

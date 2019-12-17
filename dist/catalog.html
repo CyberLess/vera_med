@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Каталог</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576587301366">
+    <link rel="stylesheet" href="/app/css/app.css?v=1576596099926">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -507,93 +507,97 @@
                                     <br>
                                     <br>Предусмотрена продажа с&nbsp;последующей поставкой продукции в&nbsp;разные регионы РФ. Все наименования в&nbsp;наличии, сопровождаются декларациями, имеют сертификаты на&nbsp;бинты.</p>
                             </div>
-                            <form class="catalog__price form" action="">
-                                <input type="hidden" name="form" value="ПОЛУЧИТЬ ПРАЙС-ЛИСТ" />
-                                <div class="catalog__row flex flex_vertical">
-                                    <div class="catalog__price-cell">
-                                        <div class="catalog__price-title h4">Получить прайст-лист</div>
-                                    </div>
-                                    <div class="catalog__price-cell">
-                                        <div class="catalog__price-text verysmall">Заполните форму, чтобы получить оптовый
-                                            <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
-                                    </div>
-                                    <div class="catalog__price-cell">
-                                        <div class="catalog__input input">
-                                            <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                            <div class="catalog__part catalog__part_price">
+                                <form class="catalog__price form" action="">
+                                    <input type="hidden" name="form" value="ПОЛУЧИТЬ ПРАЙС-ЛИСТ" />
+                                    <div class="catalog__row flex flex_vertical">
+                                        <div class="catalog__price-cell">
+                                            <div class="catalog__price-title h4">Получить прайст-лист</div>
+                                        </div>
+                                        <div class="catalog__price-cell">
+                                            <div class="catalog__price-text verysmall">Заполните форму, чтобы получить оптовый
+                                                <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
+                                        </div>
+                                        <div class="catalog__price-cell">
+                                            <div class="catalog__input input">
+                                                <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="catalog__price-cell">
+                                            <div class="catalog__input input">
+                                                <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="catalog__price-cell">
+                                            <div class="catalog__input input">
+                                                <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="catalog__price-cell">
+                                            <button class="catalog__price-button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+                                            </button>
+                                            <div class="form__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
                                         </div>
                                     </div>
-                                    <div class="catalog__price-cell">
-                                        <div class="catalog__input input">
-                                            <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                                </form>
+                            </div>
+                            <div class="catalog__part catalog__part_category">
+                                <div class="catalog__category category flex">
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_1.webp">
+                                                    <img src="/app/img/cat_1.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
                                         </div>
-                                    </div>
-                                    <div class="catalog__price-cell">
-                                        <div class="catalog__input input">
-                                            <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+                                        <div class="category__name p">Бинт гипсовый</div>
+                                    </a>
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_2.webp">
+                                                    <img src="/app/img/cat_2.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
                                         </div>
-                                    </div>
-                                    <div class="catalog__price-cell">
-                                        <button class="catalog__price-button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
-                                        </button>
-                                        <div class="form__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
-                                    </div>
+                                        <div class="category__name p">Бинт полимерный</div>
+                                    </a>
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_3.webp">
+                                                    <img src="/app/img/cat_3.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                        <div class="category__name p">Бинт полиуретановый</div>
+                                    </a>
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_4.webp">
+                                                    <img src="/app/img/cat_4.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                        <div class="category__name p">Бинт самофиксирующийся</div>
+                                    </a>
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_5.webp">
+                                                    <img src="/app/img/cat_5.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                        <div class="category__name p">Бинт эластичный</div>
+                                    </a>
+                                    <a class="category__item" href="#">
+                                        <div class="category__preview">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/cat_6.webp">
+                                                    <img src="/app/img/cat_6.jpg" class="category__preview-image" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                        <div class="category__name p">Бинт марлевые</div>
+                                    </a>
                                 </div>
-                            </form>
-                            <div class="catalog__category category flex">
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_1.webp">
-                                                <img src="/app/img/cat_1.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт гипсовый</div>
-                                </a>
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_2.webp">
-                                                <img src="/app/img/cat_2.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт полимерный</div>
-                                </a>
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_3.webp">
-                                                <img src="/app/img/cat_3.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт полиуретановый</div>
-                                </a>
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_4.webp">
-                                                <img src="/app/img/cat_4.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт самофиксирующийся</div>
-                                </a>
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_5.webp">
-                                                <img src="/app/img/cat_5.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт эластичный</div>
-                                </a>
-                                <a class="category__item" href="#">
-                                    <div class="category__preview">
-                                        <picture>
-                                            <source type="image/webp" srcset="/app/img/cat_6.webp">
-                                                <img src="/app/img/cat_6.jpg" class="category__preview-image" alt="" role="presentation" />
-                                        </picture>
-                                    </div>
-                                    <div class="category__name p">Бинт марлевые</div>
-                                </a>
                             </div>
                             <div class="catalog__part catalog__part_links">
                                 <div class="catalog__part-title h3">Все подкатегории медицинских товаров</div>
@@ -2056,7 +2060,7 @@
     </div>
     <div class="modals mfp-hide" id="recall"></div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576587301471"></script>
+    <script src="/app/js/app.js?v=1576596100176"></script>
     <script src="/test.js"></script>
 </body>
 

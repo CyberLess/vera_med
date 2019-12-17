@@ -31,8 +31,10 @@
 						br
 						br
 						| Предусмотрена продажа с последующей поставкой продукции в разные регионы РФ. Все наименования в наличии, сопровождаются декларациями, имеют сертификаты на бинты.
-				include pricelist
-				include category
+				+e.part._price
+					include pricelist
+				+e.part._category
+					include category
 				+e.part._links
 					+e.part-title.h3
 						| Все подкатегории медицинских товаров
