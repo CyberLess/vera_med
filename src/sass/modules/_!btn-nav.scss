@@ -38,7 +38,7 @@
 
 @include max-screen($large_mobile) {
 	.btn-nav{
-		width: auto;
+		width: 30px;
 		height: auto;
 		min-width: inherit;
 		border: 0;

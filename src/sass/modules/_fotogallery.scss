@@ -1,0 +1,157 @@
+.fotogallery {
+	font-size: 1.5rem;
+	color: #0A113C;
+	padding: 10rem 0 7.5rem 0;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		&-left {
+			@include max-screen($small_tablet) {
+				max-width: 500px;
+			}
+		}
+	}
+	&__nav {
+		display: flex;
+		margin-top: 2rem;
+	}
+	&__desc {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		color: $light;
+		margin-top: 1.4rem;
+	}
+	&__slider {
+		width: 215rem;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 4.3rem;
+	}
+	&__slide {
+		padding: 0 1rem 0 1rem;
+		&.swiper-slide-next {
+			.fotogallery__item {
+				background: #fff;
+			}
+			.fotogallery__item-name {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+	&__item {
+		border-radius: 7px;
+		overflow: hidden;
+		transition: ease 0.3s;
+		&-foto {
+			border-radius: 7px;
+			width: 100%;
+		}
+		&-name {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2.1rem;
+			color: $light;
+			min-height: 9.3rem;
+			padding: 1.7rem 2rem 1.6rem 2rem;
+			transition: ease 0.2s;
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		/*&:hover {
+			background: #fff;
+			.fotogallery__item-name {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}*/
+	}
+	&__pagination {
+		margin-top: 5rem;
+	}
+}
+
+@include max-screen($small_tablet) {
+	.fotogallery {
+		&__slider {
+			width: auto;
+			transform: translateX(0);
+			left: auto;
+		}
+		&__slide {
+			padding: 0 15px 0 15px;
+		}
+		&__item {
+			background: #fff;
+			&-name {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.fotogallery {
+		padding: 35px 0 35px 0;
+		position: relative;
+		&__item {
+			padding-bottom: 65px;
+			&-name {
+				font-size: 15px;
+				line-height: 18px;
+				color: $gray;
+				min-height: 72px;
+				strong {
+					font-weight: normal;
+				}
+			}
+		}
+		&__wrap {
+			position: static;
+		}
+		&__head {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__desc {
+			text-align: center;
+			font-size: 13px;
+			line-height: 18px;
+		}
+		&__slider {
+			margin-top: 25px;
+		}
+		&__slide {
+			padding: 0 10px 0 10px;
+		}
+		&__nav {
+			position: absolute;
+			left: 0;
+			bottom: 100px;
+			z-index: 20;
+			width: 100%;
+			padding: 0 10px 0 10px;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			&_left {
+				margin-left: 15px;
+			}
+			&_right {
+				margin-right: 15px;
+			}
+			&:before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				background: #F2F5F9;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

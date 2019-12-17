@@ -10,10 +10,6 @@
 
 }
 
-.content strong,.strong{
-	font-weight: 500;
-}
-
 .content b,.b{
 	font-weight: 700;
 }
@@ -36,7 +32,7 @@ a:not([class]),
 		left: 0;
 		width: 100%;
 		bottom: 0;
-		height: 2px;
+		height: 1px;
 		transform: scale(0,1);
 		transition: ease .2s;
 		pointer-events: none;
@@ -76,12 +72,15 @@ a:not([class]),
 }
 
 .h2, .content h2{
+	font-size: 5.2rem;
+	line-height: 6rem;
+	font-weight: 600;
 }
 
 .h3, .content h3{
 	font-size: 3.6rem;
 	line-height: 44px;
-	color: $dark;
+	color: #0A113C;
 	font-weight: 700;
 	margin-bottom: 2.2rem;
 }
@@ -163,6 +162,12 @@ a:not([class]),
 	.h1, .content h1{
 		font-size: 2.6rem;
 		line-height: 3rem;
+	}
+	
+	.h2, .content h2{
+		font-size: 26px;
+		line-height: 31px;
+		text-align: center;
 	}
 
 	.p17{
