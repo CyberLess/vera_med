@@ -1,0 +1,35 @@
+.icon-link{
+	display: inline-flex;
+	align-items: center;
+	color: $blue;
+	font-weight: 500;
+	position: relative;
+
+	&__icon{
+		margin-right: 1.2rem;
+		display: block;
+		fill: $blue;
+
+		@include max-screen($large_mobile) {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			max-width: 28px;
+
+		}
+	}
+
+	&__text{
+		display: block;
+		line-height: 4.4rem;
+
+		@include max-screen($large_mobile) {
+			font-size: 1.3rem;
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		padding-left: 38px;
+	}
+}

@@ -12,8 +12,9 @@
 			let $to = $($this.data('to'));
 			let $from = $($this.data('from'));
 
+			let point = $this.attr('data-point') ? parseInt($this.data('point')) : 1024;
 
-			if(ww <= 1024)
+			if(ww <= point)
 				$this.appendTo($to).addClass('is-moved')
 			else
 				if($this.hasClass('is-moved'))

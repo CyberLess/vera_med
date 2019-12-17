@@ -8,7 +8,9 @@
 			+e.item.LI
 				+e.link.A(href="#") Каталог
 			+e.item.LI
-				+e.link._current.A(href="#") Бинты
+				+e.link.A(href="#") Бинты
+			+e.item.LI
+				+e.link._current.A(href="#") Бинт марлевый медицинский нестерильный 5х5
 		+e.mb.flex._vertical._center.js-open-sidebar
 			+e.mb-box
 				+e.mb-square
@@ -20,9 +22,9 @@
 			+e.cell._left#sidebar
 				include sidebar
 			+e.cell._right
-				+e.part
+				+e.part._single
 					+e.content._nomargin.content
-						h3
+						+e.title.h3
 							| Бинт марлевый медицинский нестерильный 5х5 
 					+b.single
 						+e.top
@@ -42,11 +44,12 @@
 								+e.info-mark.mark__.A(href="#") Бинты плотность 32
 								+e.info-mark.mark__.A(href="#") Бинты производство Россия
 								+e.info-mark.mark__.A(href="#") Бинты ширина 10
+							+e.mobile#mobile-text
 						+e.row.flex
 							+e.cell._left
 								+e.preview
 									+e.IMG(src="/img/case_1.jpg")
-							+e.cell._right
+							+e.cell._right#single-info
 								+e.list.list__.UL
 									+e.item.p.LI Минимальный заказ — 10 тыс. руб.
 									+e.item.p.LI Преференции для клиентов
@@ -57,86 +60,156 @@
 									+e.icon._basket.SPAN
 										+icon('basket', '0 0 22 20')
 									+e.text.SPAN Заказать
-								+e.text.verysmall
+								+e.text.verysmall.js-move-item(data-from="#single-info" data-to="#mobile-text" data-point="580")
 									| Стоимость ориентировочная, зависит 
 									| от курса рубля, объема партии. 
 									| Актуальные данные можно уточнить 
 									| у менеджеров.
-
-				include pricelist
-				include category
-				+e.part._links
-					+e.part-title.h3
-						| Все подкатегории медицинских товаров
-					+e.subcats.flex._start._justify.UL
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Аптечки
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Аптечки
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Аптечки
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бахилы
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бахилы
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бахилы
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бинты
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бинты
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Бинты
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Вата
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Вата
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Вата
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Гели
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Гели
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Гели
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Клеенка
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Клеенка
-						+e.subcats-item
-							+e.subcats-link.p.blue-link.A(href="#") Клеенка
-				+e.part._big
-					+e.part-title._small.h3
-						| Виды медицинских бинтов
-					+e.select.select__
-						+e.bg
-						+e.INPUT.input(type="hidden" name="cat" value="is 7")
-						+e.inner.flex._vertical
-							+e.text.p17 Категория:
-							+e.wrapper
-								+e.label.p17.b 
-									span Бинт гипсовый
-								+e.list
-									+e.list-item.verysmall 1
-									+e.list-item.verysmall 2
-									+e.list-item.verysmall 3
-									+e.list-item.verysmall 4
-									+e.list-item.verysmall 5
-									+e.list-item.verysmall 6
-									+e.list-item.verysmall.is-selected(data-value='is 7') Бинт гипсовый
-					include catalog-tables
-				+e.part._big
+						+e.bottom
+							+e.title._tosmall.h3 Документация
+							+e.string.flex._vertical
+								+e.link.icon-link__.A(href='#')
+									+e.SPAN.icon(style="width: 2rem")
+										+icon('doc', '0 0 22 26')
+									+e.SPAN.text.middle Декларация
+								+e.link.icon-link__.A(href='#')
+									+e.SPAN.icon(style="width: 2.5rem")
+										+icon('license', '0 0 26 28')
+									+e.SPAN.text.middle Регистрационное удостоверение
+							+e.dt.dt__.TABLE
+								tr
+									td
+										+e.text.p17.b.is-dark Размеры
+									td
+										+e.text.p17.is-dark 5х5
+								tr
+									td
+										+e.text.p17.b.is-dark Стерилизация
+									td
+										+e.text.p17.is-dark Нестерильный
+								tr
+									td
+										+e.text.p17.b.is-dark Упаковка шт.
+									td
+										+e.text.p17.is-dark 1400
+								tr
+									td
+										+e.text.p17.b.is-dark Производитель
+									td
+										+e.text.p17.is-dark Россия ПКФ "ВераМед"
+								tr
+									td
+										+e.text.p17.b.is-dark Плотность
+									td
+										+e.text.p17.is-dark 28
+								tr
+									td
+										+e.text.p17.b.is-dark Вид упаковки
+									td
+										+e.text.p17.is-dark п/э пакет
+						+e.line.line
+				+e.part
+					include pricelist
+				+e.part._small
 					include tabs
+				+e.part._big
+					+e.part-title._44.middle.b.is-dark
+						| Популярные
+					+e.subcats.flex._start._justify.UL
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Марля в рулонах 1000 м пл. 36
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Марля в рулонах 1000 м пл. 36
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Марля в рулонах 1000 м пл. 36
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Cалфетки стерильные 16х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Cалфетки стерильные 16х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Cалфетки стерильные 16х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Бинт нестерильный 7х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Бинт нестерильный 7х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Бинт нестерильный 7х14
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Жавель Солид №320
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Жавель Солид №320
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Жавель Солид №320
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Зеркало носовое 30 мм
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Зеркало носовое 30 мм
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Зеркало носовое 30 мм
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Отрез марлевый 10 м
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Отрез марлевый 10 м
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
+						+e.subcats-item._big
+							+e.subcats-link.p.link__.A(href="#")
+								| Отрез марлевый 10 м
+								+e.arrow
+									+icon('arrow', '0 0 19 8')
 				+e.part._steps
 					+e.part-title._tocenter.h3
 						| Как купить медицинский бинт
 					include steps
-				+e.part
+				+e.part._big
 					include callbox
 				+e.part.mobile#mobile-sidebar

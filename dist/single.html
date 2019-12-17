@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Карточка</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576600360416">
+    <link rel="stylesheet" href="/app/css/app.css?v=1576600724927">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -283,7 +283,9 @@
                         </li>
                         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
                         </li>
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_current" href="#">Бинты</a>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Бинты</a>
+                        </li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_current" href="#">Бинт марлевый медицинский нестерильный 5х5</a>
                         </li>
                     </ul>
                     <div class="catalog__mb flex flex_vertical flex_center js-open-sidebar">
@@ -500,9 +502,9 @@
                             </div>
                         </div>
                         <div class="catalog__cell catalog__cell_right">
-                            <div class="catalog__part">
+                            <div class="catalog__part catalog__part_single">
                                 <div class="catalog__content catalog__content_nomargin content">
-                                    <h3>Бинт марлевый медицинский нестерильный 5х5 </h3>
+                                    <div class="catalog__title h3">Бинт марлевый медицинский нестерильный 5х5</div>
                                 </div>
                                 <div class="single">
                                     <div class="single__top">
@@ -515,6 +517,7 @@
                                             <a
                                             class="single__info-mark mark" href="#">Бинты ширина 10</a>
                                         </div>
+                                        <div class="single__mobile" id="mobile-text"></div>
                                     </div>
                                     <div class="single__row flex">
                                         <div class="single__cell single__cell_left">
@@ -525,7 +528,7 @@
                                                 </picture>
                                             </div>
                                         </div>
-                                        <div class="single__cell single__cell_right">
+                                        <div class="single__cell single__cell_right" id="single-info">
                                             <ul class="single__list list">
                                                 <li class="list__item p">Минимальный заказ — 10 тыс. руб.</li>
                                                 <li class="list__item p">Преференции для&nbsp;клиентов</li>
@@ -533,1235 +536,106 @@
                                             </ul>
                                             <div class="single__price h3">3,20 ₽</div><a class="single__order btn" href="#"><span class="btn__back js-circles"></span><span class="btn__icon btn__icon_basket"><svg class="icon icon-basket" viewBox="0 0 22 20"><use xlink:href="/app/icons/sprite.svg#basket"></use></svg></span><span class="btn__text">Заказать</span></a>
                                             <div
-                                            class="single__text verysmall">Стоимость ориентировочная, зависит от&nbsp;курса рубля, объема партии. Актуальные данные можно уточнить у&nbsp;менеджеров.
+                                            class="single__text verysmall js-move-item" data-from="#single-info" data-to="#mobile-text" data-point="580">Стоимость ориентировочная, зависит от&nbsp;курса рубля, объема партии. Актуальные данные можно уточнить у&nbsp;менеджеров.
                                         </div>
                                     </div>
                                 </div>
+                                <div class="single__bottom">
+                                    <div class="single__title single__title_tosmall h3">Документация</div>
+                                    <div class="single__string flex flex_vertical"><a class="single__link icon-link" href="#"><span class="icon-link__icon" style="width: 2rem"><svg class="icon icon-doc" viewBox="0 0 22 26"><use xlink:href="/app/icons/sprite.svg#doc"></use></svg></span><span class="icon-link__text middle">Декларация</span></a>
+                                        <a
+                                        class="single__link icon-link" href="#"><span class="icon-link__icon" style="width: 2.5rem"><svg class="icon icon-license" viewBox="0 0 26 28"><use xlink:href="/app/icons/sprite.svg#license"></use></svg></span><span class="icon-link__text middle">Регистрационное удостоверение</span>
+                                            </a>
+                                    </div>
+                                    <table class="single__dt dt">
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Размеры</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">5х5</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Стерилизация</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">Нестерильный</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Упаковка шт.</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">1400</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Производитель</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">Россия ПКФ "ВераМед"</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Плотность</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">28</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dt__text p17 b is-dark">Вид упаковки</div>
+                                            </td>
+                                            <td>
+                                                <div class="dt__text p17 is-dark">п/э пакет</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="single__line line"></div>
                             </div>
                         </div>
-                        <form class="catalog__price form" action="">
-                            <input type="hidden" name="form" value="ПОЛУЧИТЬ ПРАЙС-ЛИСТ" />
-                            <div class="catalog__row flex flex_vertical">
-                                <div class="catalog__price-cell">
-                                    <div class="catalog__price-title h4">Получить прайст-лист</div>
-                                </div>
-                                <div class="catalog__price-cell">
-                                    <div class="catalog__price-text verysmall">Заполните форму, чтобы получить оптовый
-                                        <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
-                                </div>
-                                <div class="catalog__price-cell">
-                                    <div class="catalog__input input">
-                                        <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                        <div class="catalog__part">
+                            <form class="catalog__price form" action="">
+                                <input type="hidden" name="form" value="ПОЛУЧИТЬ ПРАЙС-ЛИСТ" />
+                                <div class="catalog__row flex flex_vertical">
+                                    <div class="catalog__price-cell">
+                                        <div class="catalog__price-title h4">Получить прайст-лист</div>
                                     </div>
-                                </div>
-                                <div class="catalog__price-cell">
-                                    <div class="catalog__input input">
-                                        <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                                    <div class="catalog__price-cell">
+                                        <div class="catalog__price-text verysmall">Заполните форму, чтобы получить оптовый
+                                            <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
                                     </div>
-                                </div>
-                                <div class="catalog__price-cell">
-                                    <div class="catalog__input input">
-                                        <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
-                                    </div>
-                                </div>
-                                <div class="catalog__price-cell">
-                                    <button class="catalog__price-button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
-                                    </button>
-                                    <div class="form__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="catalog__category category flex">
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_1.webp">
-                                            <img src="/app/img/cat_1.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт гипсовый</div>
-                            </a>
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_2.webp">
-                                            <img src="/app/img/cat_2.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт полимерный</div>
-                            </a>
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_3.webp">
-                                            <img src="/app/img/cat_3.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт полиуретановый</div>
-                            </a>
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_4.webp">
-                                            <img src="/app/img/cat_4.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт самофиксирующийся</div>
-                            </a>
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_5.webp">
-                                            <img src="/app/img/cat_5.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт эластичный</div>
-                            </a>
-                            <a class="category__item" href="#">
-                                <div class="category__preview">
-                                    <picture>
-                                        <source type="image/webp" srcset="/app/img/cat_6.webp">
-                                            <img src="/app/img/cat_6.jpg" class="category__preview-image" alt="" role="presentation" />
-                                    </picture>
-                                </div>
-                                <div class="category__name p">Бинт марлевые</div>
-                            </a>
-                        </div>
-                        <div class="catalog__part catalog__part_links">
-                            <div class="catalog__part-title h3">Все подкатегории медицинских товаров</div>
-                            <ul class="catalog__subcats flex flex_start flex_justify">
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Аптечки</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Аптечки</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Аптечки</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бахилы</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бахилы</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бахилы</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бинты</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бинты</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Бинты</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Вата</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Вата</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Вата</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Гели</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Гели</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Гели</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Дезинфекция и&nbsp;стерилизация</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Дезинфекция и&nbsp;стерилизация</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Дезинфекция и&nbsp;стерилизация</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Клеенка</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Клеенка</a>
-                                </li>
-                                <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Клеенка</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="catalog__part catalog__part_big">
-                            <div class="catalog__part-title catalog__part-title_small h3">Виды медицинских бинтов</div>
-                            <div class="catalog__select select">
-                                <div class="select__bg"></div>
-                                <input class="select__input" type="hidden" name="cat" value="is 7" />
-                                <div class="select__inner flex flex_vertical">
-                                    <div class="select__text p17">Категория:</div>
-                                    <div class="select__wrapper">
-                                        <div class="select__label p17 b"> <span>Бинт гипсовый</span>
-                                        </div>
-                                        <div class="select__list">
-                                            <div class="select__list-item verysmall">1</div>
-                                            <div class="select__list-item verysmall">2</div>
-                                            <div class="select__list-item verysmall">3</div>
-                                            <div class="select__list-item verysmall">4</div>
-                                            <div class="select__list-item verysmall">5</div>
-                                            <div class="select__list-item verysmall">6</div>
-                                            <div class="select__list-item verysmall is-selected" data-value="is 7">Бинт гипсовый</div>
+                                    <div class="catalog__price-cell">
+                                        <div class="catalog__input input">
+                                            <input class="input__item" name="name" placeholder="Евгений" type="text" />
                                         </div>
                                     </div>
+                                    <div class="catalog__price-cell">
+                                        <div class="catalog__input input">
+                                            <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="catalog__price-cell">
+                                        <div class="catalog__input input">
+                                            <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="catalog__price-cell">
+                                        <button class="catalog__price-button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+                                        </button>
+                                        <div class="form__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="catalog__table table">
-                                <div class="table__name p17"><span><b class="table__b">Бинты 5х5 </b>пл. 28</span>
-                                </div>
-                                <table class="table__container">
-                                    <thead>
-                                        <tr>
-                                            <td class="min-tablet catalog__td catalog__td_art">
-                                                <div class="table__text verysmall">Артикул
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="all catalog__td catalog__td_name">
-                                                <div class="table__text verysmall">Наименование
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_size no-sort">
-                                                <div class="table__text verysmall">Размеры</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_density no-sort">
-                                                <div class="table__text verysmall">Плотность</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_veiw no-sort">
-                                                <div class="table__text verysmall">Вид упаковки</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_packing no-sort">
-                                                <div class="table__text verysmall">Упаковка (шт.)</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_man no-sort">
-                                                <div class="table__text verysmall">Производитель</div>
-                                            </td>
-                                            <td class="all dont-hide catalog__td catalog__td_price">
-                                                <div class="table__text verysmall">Цена
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="catalog__table table">
-                                <div class="table__name p17"><span><b class="table__b">Бинты 5х5 </b>пл. 28</span>
-                                </div>
-                                <table class="table__container">
-                                    <thead>
-                                        <tr>
-                                            <td class="min-tablet catalog__td catalog__td_art">
-                                                <div class="table__text verysmall">Артикул
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="all catalog__td catalog__td_name">
-                                                <div class="table__text verysmall">Наименование
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_size no-sort">
-                                                <div class="table__text verysmall">Размеры</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_density no-sort">
-                                                <div class="table__text verysmall">Плотность</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_veiw no-sort">
-                                                <div class="table__text verysmall">Вид упаковки</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_packing no-sort">
-                                                <div class="table__text verysmall">Упаковка (шт.)</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_man no-sort">
-                                                <div class="table__text verysmall">Производитель</div>
-                                            </td>
-                                            <td class="all dont-hide catalog__td catalog__td_price">
-                                                <div class="table__text verysmall">Цена
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="catalog__table table">
-                                <div class="table__name p17"><span><b class="table__b">Бинты 5х5 </b>пл. 28</span>
-                                </div>
-                                <table class="table__container">
-                                    <thead>
-                                        <tr>
-                                            <td class="min-tablet catalog__td catalog__td_art">
-                                                <div class="table__text verysmall">Артикул
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="all catalog__td catalog__td_name">
-                                                <div class="table__text verysmall">Наименование
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_size no-sort">
-                                                <div class="table__text verysmall">Размеры</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_density no-sort">
-                                                <div class="table__text verysmall">Плотность</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_veiw no-sort">
-                                                <div class="table__text verysmall">Вид упаковки</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_packing no-sort">
-                                                <div class="table__text verysmall">Упаковка (шт.)</div>
-                                            </td>
-                                            <td class="min-tablet catalog__td catalog__td_man no-sort">
-                                                <div class="table__text verysmall">Производитель</div>
-                                            </td>
-                                            <td class="all dont-hide catalog__td catalog__td_price">
-                                                <div class="table__text verysmall">Цена
-                                                    <div class="table__sortriangle"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">УТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">3х4</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">28</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1872,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">БТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> ВБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">5х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">27</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">1200,50 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="parent">
-                                                <div class="table__text verysmall">АТ000000336</div>
-                                            </td>
-                                            <td class="name"><a class="table__link verysmall" href="#"> АБинт марлевый медицинский нестерильный</a>
-                                                <div class="table__toggle js-mobile-list">Развернуть</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">4х5</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">26</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">п/э пакет</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">1400</div>
-                                            </td>
-                                            <td>
-                                                <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                            </td>
-                                            <td>
-                                                <nobr class="table__text b verysmall">500,00 ₽</nobr>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="table__button btn js-table-more"><span class="btn__back js-circles"></span><span class="btn__text">Показать еще</span>
-                                </button>
-                            </div>
+                            </form>
                         </div>
-                        <div class="catalog__part catalog__part_big">
+                        <div class="catalog__part catalog__part_small">
                             <div class="catalog__tabs tabs">
                                 <div class="tabs__top flex flex_vertical">
                                     <div class="tabs__list swiper-container">
@@ -1892,6 +766,47 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="catalog__part catalog__part_big">
+                            <div class="catalog__part-title catalog__part-title_44 middle b is-dark">Популярные</div>
+                            <ul class="catalog__subcats flex flex_start flex_justify">
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Марля в&nbsp;рулонах 1000 м пл. 36<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Марля в&nbsp;рулонах 1000 м пл. 36<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Марля в&nbsp;рулонах 1000 м пл. 36<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Cалфетки стерильные 16х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Cалфетки стерильные 16х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Cалфетки стерильные 16х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Бинт нестерильный 7х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Бинт нестерильный 7х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Бинт нестерильный 7х14<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Жавель Солид №320<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Жавель Солид №320<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Жавель Солид №320<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Зеркало носовое 30 мм<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Зеркало носовое 30 мм<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Зеркало носовое 30 мм<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Отрез марлевый 10 м<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Отрез марлевый 10 м<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                                <li class="catalog__subcats-item catalog__subcats-item_big"><a class="catalog__subcats-link p link" href="#">Отрез марлевый 10 м<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="catalog__part catalog__part_steps">
                             <div class="catalog__part-title catalog__part-title_tocenter h3">Как купить медицинский бинт</div>
                             <div class="steps swiper-container js-to-swiper">
@@ -1945,7 +860,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog__part">
+                        <div class="catalog__part catalog__part_big">
                             <form class="callbox form" action="">
                                 <div class="callbox__title h3">Свяжитесь с&nbsp;нами</div>
                                 <div class="callbox__row flex flex_justify">
@@ -2088,7 +1003,7 @@
     </div>
     <div class="modals mfp-hide" id="recall"></div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576600360607"></script>
+    <script src="/app/js/app.js?v=1576600724994"></script>
     <script src="/test.js"></script>
 </body>
 
