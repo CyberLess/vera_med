@@ -142,4 +142,37 @@ import Swiper from 'swiper';
 			},
 		  }
 	});
-})($)
+})($);
+
+(() => {
+	var productslider = new Swiper('.team__slider', {
+		 loop: true,
+		 slidesPerView: 3,
+		 keyboardControl: true,
+		 grabCursor: true,
+		 // pagination
+		 navigation: {
+			nextEl: '.team .btn-nav_right',
+			prevEl: '.team .btn-nav_left',
+		 },
+		 pagination: {
+			clickable: true,
+            el: '.team__pagination',
+         },
+		 breakpoints: {
+			0: {
+			  slidesPerView: 1,
+			  pagination: {
+				el: '.team__counter',
+				type: 'fraction',
+			  },
+			},
+			580: {
+			  slidesPerView: 2,
+			},
+			769: {
+			  slidesPerView: 5,
+			},
+		  }
+	});
+})($);
