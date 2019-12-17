@@ -1,0 +1,36 @@
+.mark{
+	line-height: 3rem;
+	display: inline-block;
+	padding-left: 2.5rem;
+	padding-right: 1.4rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+	font-size: 1.3rem;
+	background: rgba(188, 198, 219, 0.55);
+	border-radius: 22px;
+	color: $dark;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	position: relative;
+	user-select: none;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 9px;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: #fff;
+		top: 50%;
+		margin-top: -3px;
+	}
+
+	&_active{
+		background-color: $blue;
+		color: #fff;
+	}
+}

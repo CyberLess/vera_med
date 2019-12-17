@@ -1,0 +1,62 @@
+.single{
+	&__info{
+		line-height: 4.4rem;
+
+		&-link{
+			margin-right: 1.2rem;
+			line-height: 3rem;
+			// line-height: 1.4em;
+		}
+
+		&-mark{
+			margin-right: 1.2rem;
+		}
+
+		.b{
+			color: $dark;
+			margin-right: 8px;
+		}
+	}
+
+	&__top{
+		margin-bottom: 1.8rem;
+	}
+
+	&__preview{
+
+		img{
+			border-radius: 7px;
+		}
+	}
+
+	&__text{
+		padding-right: 2rem;
+
+	}
+
+	&__order{
+		margin-bottom: 3.1rem;
+	}
+
+	&__cell{
+		&_left{
+			width: 62.17%;
+			margin-right: 7.13%;
+		}
+
+		&_right{
+			width: 30.7%;
+			padding-top: 3.1rem;
+		}
+	}
+
+	&__row{
+		margin-bottom: 4.5rem;
+	}
+
+	&__price{
+		margin-top: 3rem;
+		margin-bottom: 2.2rem;
+
+	}
+}

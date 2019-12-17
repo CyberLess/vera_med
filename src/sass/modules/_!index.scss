@@ -1,0 +1,27 @@
+.index{
+	text-align: center;
+
+	&__text{
+		margin-bottom: 10px;
+		color: rgba(10, 17, 60, 0.55);
+	}
+
+	&__box{
+		padding: 4.5px 16px;
+		color: $blue;
+		font-weight: 500;
+		background: rgba(0, 10, 255, 0.04);
+	}
+
+	&_white{
+		.index{
+			&__text{
+				color: rgba(255, 255, 255, 0.55);
+			}
+			&__box{
+				color: #fff;
+				background: rgba(0, 10, 255, 0.12);
+			}
+		}
+	}
+}

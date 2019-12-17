@@ -1,0 +1,226 @@
++b.HEADER.header
+	+e.top
+		+e.wrap.wrap
+			+e.row.flex
+				+e.cell._logo
+					+e.logo.logo__.flex._vertical.A(href="/")
+						+e.circle
+						+e.label.small Верамед
+				+e.cell._menu
+					+e.menu.menu__.flex._vertical.UL
+						+e.item.LI
+							+e.link._arrow.js-submenu.A(href="#" data-menu="#catalog-panel" data-event="mouseenter") Каталог
+						+e.item.LI
+							+e.link._arrow.js-submenu.A(href="#" data-menu="#about-panel" data-event="mouseenter") О компании
+						+e.item.LI
+							+e.link._arrow.js-submenu.A(href="#" data-menu="#contact-panel" data-event="mouseenter") Контакты
+						+e.item.LI
+							+e.link.A(href="#") Прайс-лист
+				+e.cell._phone._center
+					+e.phone.small.phone__.A(href="tel:+74953696639")
+						+e.icon
+							+icon('phone', '0 0 18 17')
+						| +7 (495) 369-66-39
+				+e.cell._search._right
+					+e.button.border-button__.BUTTON
+						+e.back.js-circles.SPAN
+						+e.text.SPAN Заказать звонок
+					+e.search.search-button__.js-submenu(data-menu="#search-panel" data-event="click")
+						+e.state._default
+							+e.SVG.default(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+								rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+								circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+						+e.state._active
+							+icon('close','0 0 30 30')
+					+e.hamburger.hamburger.hamburger--slider.js-toggle-menu
+						.hamburger-box
+							.hamburger-inner
+	+e.mobile
+		+e.mobile-box._fluid._menu
+			+e.mobile-line
+				+e.mobile-link.A.js-mobile-submenu(href="#" data-submenu="#catalog-panel")
+					span Каталог
+					+e.DIV.mobile-submenu
+						+e.mobile-inner
+			+e.mobile-line
+				+e.mobile-link.A.js-mobile-submenu(href="#" data-submenu="#about-panel")
+					span О компании
+					+e.DIV.mobile-submenu
+						+e.mobile-inner
+			+e.mobile-line
+				+e.mobile-link.A(href="#")
+					span Контакты
+			+e.mobile-line
+				+e.mobile-link.A(href="#")
+					span Прайс-лист
+		+e.mobile-box._fluid._nav
+			+e.mobile-label
+				+e.mobile-contact.h5(href="tel:+74953696639") +7 (495) 369-66-39
+			+e.mobile-label
+				+e.mobile-contact.h5(href="tel:+74959718939") +7 (495) 971-89-39
+			+e.mobile-label
+				+e.mobile-contact.h6.is-blue(href="mailto:info@вера-мед.рф") info@вера-мед.рф
+		+e.mobile-box._static
+			+e.mobile-bottom.flex
+				+e.mobile-cell._left
+					+e.mobile-addr.p
+						| Московская область
+						| Павлово Посадский район
+						span.is-dark с. Рахманово, д. 172
+				+e.mobile-cell._right
+					+e.mobile-text.p
+						| Индекс
+					+e.mobile-index.p
+						| 142520
+	+e.panel
+		+e.panel-bg
+		+e.panel-row
+			+e.panel-item._search#search-panel
+				+e.wrap.wrap
+					+b.FORM.search
+						+e.BUTTON.button
+							svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+								rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+								circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+						+e.INPUT.input(type="text" name="s" placeholder="Поиск по сайту")
+						//- +e.close.js-search-reset
+						//- 	+icon('close','0 0 30 30')
+			+e.panel-item._catalog.catalog-nav__#catalog-panel
+				+e.wrap.wrap
+					+e.row.flex
+						+e.cell
+							.header__panel-label.small
+								| Инструменты
+							ul.header__panel-list
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Иглы
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Шприцы
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Скальпели
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Зонды
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Гели
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Шпатели
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Иглы
+								li.header__panel-string
+									+e.link.small.link__.A(href="#")
+										| Все инструменты
+										+e.arrow
+											+icon('arrow', '0 0 19 8')
+						+e.cell
+							.header__panel-label.small
+								| Расходные материалы
+							ul.header__panel-list
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Перчатки
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Бинт
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Марля
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Бахилы
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Клеенка
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Индикаторы
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Пакеты для утилизации
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Пластырь
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Пластырь
+								li.header__panel-string
+									+e.link.small.link__.A(href="#")
+										| Все расходные материалы
+										+e.arrow
+											+icon('arrow', '0 0 19 8')
+						+e.cell
+							.header__panel-label.small
+								| Другое
+							ul.header__panel-list
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Одежда
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Гели
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Дез. средства
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Системы переливания
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Гели
+								li.header__panel-string
+									+e.link.small.link__.A(href="#")
+										| Все изделия
+										+e.arrow
+											+icon('arrow', '0 0 19 8')
+						+e.cell
+							+e.poster.poster__
+								+e.IMG.back.object-fit(src="/img/poster.png")
+								+e.center
+									+e.icon
+										+icon('mark','0 0 24 25')
+									+e.button.btn__._white.BUTTON
+										| Получить прайс лист
+			+e.panel-item._about.about-nav__#about-panel
+				+e.wrap.wrap
+					+e.row.flex
+						+e.cell
+							.header__panel-label.small
+								| Категория 1
+							ul.header__panel-list
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Документы
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Реквизиты
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Вакансии
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Частые вопросы
+						+e.cell
+							.header__panel-label.small
+								| Категория 2
+							ul.header__panel-list
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Шаблон договора
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Наша команда
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Наша команда
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Фотогалерея
+								li.header__panel-string
+									a.header__panel-link.small(href="#") Новости
+						+e.cell
+							+e.il.IMG(src="/img/il1.png")
+			+e.panel-item._contact.contact-nav__#contact-panel
+				+e.wrap.wrap
+					+e.row.flex
+						+e.cell._left
+							+e.text.small Связаться с нами
+							+e.row.flex
+								+e.part
+									+e.label
+										+e.link.h5(href="tel:+74953696639") +7 (495) 369-66-39
+									+e.label
+										+e.link.h5(href="tel:+74959718939") +7 (495) 971-89-39
+									+e.label
+										+e.link.h5(href="mailto:info@вера-мед.рф") info@вера-мед.рф
+								+e.part
+									+e.ind.flex._vertical
+										+e.blue.small Индекс
+										+e.index 142520
+									+e.addr.h5
+										| Московская область
+										| Павлово Посадский район
+										span.is-dark с. Рахманово, д. 172
+						+e.cell._right
+							+b.map-preview
+								+e.addr
+									+e.mark
+										+icon('map-mark', '0 0 14 18')
+									| с. Рахманово, 
+									b.b д. 172

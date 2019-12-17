@@ -1,0 +1,29 @@
+.b-circle{
+	display: inline-block;
+	border: 4px solid $dark;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20.16%;
+	padding-top: 20.16%;
+	will-change: transform, opacity;
+	overflow: hidden;
+	border-radius: 50%;
+	-khtml-border-radius: 50%;
+	transition: opacity .25s linear 0s, transform .25s linear .25s;
+	background-color: $dark;
+	transform: scale(0);
+	
+    // -webkit-transform: translateZ(0) scale(0);
+    // -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+
+	&_pause{
+		animation-play-state: paused;
+		opacity: 0;
+	}	
+
+	&.js-start{
+		animation: buttonLine .7s 1 ease-out;
+		animation-fill-mode: forwards;
+	}	
+}

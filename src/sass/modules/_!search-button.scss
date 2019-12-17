@@ -1,0 +1,92 @@
+.search-button{
+	width: 3.2rem;
+	height: 3.2rem;
+	// stroke: $dark;
+	fill: transparent;
+	cursor: pointer;
+	position: relative;
+
+	&.is-hover{
+		.search-button{
+			&__state{
+				&_default{
+					transform: scale(.4);
+					opacity: 0;				
+				}
+				&_active{
+					transform: scale(1);
+					opacity: 1;					
+				}
+			}
+		}
+	}
+
+	&__state{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		transition: ease .15s;
+
+		&_default{
+			rect{
+				fill: $dark;
+				transition: ease .2s;
+			}
+
+			circle{
+				stroke: $dark;
+				transition: ease .2s;
+				stroke-width: 2;
+			}			
+		}
+
+		&_active{
+			transform: scale(.4);
+			opacity: 0;
+			
+
+			svg{
+				fill: $dark;
+				transition: ease .2s;
+			}
+
+			&:hover{
+				
+				svg{
+					fill: $blue;
+				}
+			}
+		}
+		
+	}
+
+	svg{
+		width: 100%;
+		max-height: 100%;
+	}
+
+
+
+	&:hover{
+		rect{
+			fill: $blue;
+		}
+		circle{
+			stroke: $blue;
+		}		
+	}
+
+	@include max-screen($large_tablet) {
+		rect{
+			fill: $dark;
+		}
+		circle{
+			stroke: $dark;
+		}
+	}
+}

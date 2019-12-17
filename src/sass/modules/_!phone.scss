@@ -1,0 +1,28 @@
+.phone{
+	padding-left: 3rem;
+	display: inline-block;
+	position: relative;
+	color: $dark;
+	font-weight: 500;
+
+	&__icon{
+		position: absolute;
+		left: 0;
+		top: 0;
+		fill: $blue;
+		width: 1.7rem;
+
+		svg{
+			width: 100%;
+		}
+	}
+
+	&_white{
+		color: #fff;
+		.phone{
+			&__icon{
+				fill: #fff;
+			}
+		}
+	}
+}

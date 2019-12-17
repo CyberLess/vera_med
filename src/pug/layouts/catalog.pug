@@ -1,0 +1,110 @@
++b.SECTION.catalog
+	+e.wrap.wrap
+		+b.breadcrumbs.flex._vertical.UL
+			+e.item.LI
+				+e.link.A(href="#")
+					+e.home
+						+icon('home', '0 0 18 18')
+			+e.item.LI
+				+e.link.A(href="#") Каталог
+			+e.item.LI
+				+e.link._current.A(href="#") Бинты
+		+e.mb.flex._vertical._center.js-open-sidebar
+			+e.mb-box
+				+e.mb-square
+				+e.mb-square
+				+e.mb-square
+				+e.mb-square
+			+e.mb-label.verysmall Показать каталог
+		+e.container
+			+e.cell._left#sidebar
+				include sidebar
+			+e.cell._right
+				+e.content.content
+					h3
+						| Бинт медицинский 
+						br
+						span.is-blue от производителя оптом
+					p
+						| На сайте компании ТД «ВераМед» Вы можете купить бинт медицинский оптом в Москве 
+						| по цене за штуку (стоимость снижается, если сумма заказа превышает 50 тыс. рублей). Предлагаем доставку по городу и Московской области за 0 руб.!
+						br
+						br
+						| Предусмотрена продажа с последующей поставкой продукции в разные регионы РФ. Все наименования в наличии, сопровождаются декларациями, имеют сертификаты на бинты.
+				include pricelist
+				include category
+				+e.part._links
+					+e.part-title.h3
+						| Все подкатегории медицинских товаров
+					+e.subcats.flex._start._justify.UL
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+				+e.part._big
+					+e.part-title._small.h3
+						| Виды медицинских бинтов
+					+e.select.select__
+						+e.bg
+						+e.INPUT.input(type="hidden" name="cat" value="is 7")
+						+e.inner.flex._vertical
+							+e.text.p17 Категория:
+							+e.wrapper
+								+e.label.p17.b 
+									span Бинт гипсовый
+								+e.list
+									+e.list-item.verysmall 1
+									+e.list-item.verysmall 2
+									+e.list-item.verysmall 3
+									+e.list-item.verysmall 4
+									+e.list-item.verysmall 5
+									+e.list-item.verysmall 6
+									+e.list-item.verysmall.is-selected(data-value='is 7') Бинт гипсовый
+					include catalog-tables
+				+e.part._big
+					include tabs
+				+e.part._steps
+					+e.part-title._tocenter.h3
+						| Как купить медицинский бинт
+					include steps
+				+e.part
+					include callbox
+				+e.part.mobile#mobile-sidebar

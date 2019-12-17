@@ -1,0 +1,47 @@
+.contacts{
+	&_dark{
+		color: $dark;
+	}
+	&__phone{
+		// color: $dark;
+		font-size: 1.9rem;
+		line-height: 3.3rem;
+	}
+
+	&__link{
+		line-height: 3.3rem;
+
+		@include max-screen($large_mobile) {
+			font-size: 1.5rem;
+		}
+	}
+
+	&__row{
+		text-align: left;
+	}
+
+	&__string{
+		&:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+	&__line{
+		margin: 2.4rem 0;
+		height: 1px;
+		background: #DADCE0;
+	}
+
+	&__cell{
+		&_left{
+			color: #787C94;
+		}
+
+		&_right{
+			
+		}
+
+		&_white{
+			color: #fff;
+		}
+	}
+}

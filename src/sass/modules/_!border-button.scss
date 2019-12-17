@@ -1,0 +1,78 @@
+.border-button{
+	border: 1px solid $blue;
+	font-size: 1.5rem;
+	line-height: 1em;
+	color: $blue;
+	font-family: inherit;
+	border-radius: 7px;
+	background: transparent;
+	font-weight: 500;
+	height: 5.2rem;
+	cursor: pointer;
+	padding: 0 3.2rem;
+	transition: ease-out .25s;
+	position: relative;
+
+	&__back{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 7px;
+		overflow: hidden;
+		z-index: 1;
+		display: block;
+
+		&~*{
+			z-index: 15;
+			position: relative;
+		}
+
+		.b-circle{
+			background: $blue;
+			border-color: $blue;
+		}
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 7px;
+		right: 7px;
+		height: 6px;
+		z-index: -1;
+		bottom: 4px;
+		background: #000AFF;
+		transition: inherit;
+
+		// filter: blur(35px);
+		filter: blur(25px);
+		border-radius: 7px;
+		opacity: 0;
+	}
+
+	&:hover{
+		
+		color: #fff;
+
+		&:before{
+			opacity: 1;
+		}
+	}
+
+	&_white{
+		border-color: #fff;
+		color: #fff;
+		.b-circle{
+			background: #fff;
+			border-color: #fff;			
+		}
+
+		&:hover{
+			
+			color: $dark;
+		}
+	}
+}

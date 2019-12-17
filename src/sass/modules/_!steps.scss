@@ -1,0 +1,102 @@
+.steps{
+
+	@include max-screen($large_mobile) {
+		border: 1px solid #BCC6DB;
+		border-radius: 7px;		
+
+	}
+
+	&__item{
+		width: 29.24%;
+		margin-right: 6.14%;
+		text-align: center;
+		margin-bottom: 2.8rem;
+		position: relative;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 100%;
+			background: url('/img/arrows.png') center no-repeat;
+			width: 22px;
+			height: 28px;
+			top: 8.4rem;
+			margin-top: -14px;
+			margin-left: 5.62%;
+
+		}
+
+		&:nth-child(3n){
+			margin-right: 0;
+
+			&:after{
+				display: none;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			margin-right: 0 !important;
+			padding: 15px;
+			padding-top: 33px;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	&__name{
+		line-height: 4.4rem;
+		margin-bottom: 1rem;
+		@include max-screen($large_mobile) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__nav{
+		padding-top: 35px;
+		padding-bottom: 22px;
+		display: none;
+		position: relative;
+
+		@include max-screen($large_mobile) {
+			display: block;
+		}
+	}
+
+	&__icon{
+		width: 16.8rem;
+		max-width: 100%;
+		border: 1px solid #000AFF;
+		border-radius: 50%;
+		margin: auto;
+		margin-bottom: 3.3rem;
+
+		&-inner{
+			padding-top: 100%;
+			position: relative;
+		}
+
+		&-center{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-object{
+			max-width: 85%;
+			display: block;
+		}
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 13px;
+		}
+	}
+}

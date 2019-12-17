@@ -1,0 +1,35 @@
+.horizontal-news{
+
+	@include max-screen($large_tablet) {
+		align-items: flex-start;
+	}
+	
+	&__cell{
+		&_left{
+			width: 32.14%;
+			margin-right: 12.68%;
+		}
+
+		&_right{
+			width: 55.18%;
+		}
+	}
+
+	&__preview{
+		padding-top: 100%;
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+
+	}
+
+	&__date{
+		color: rgba(255, 255, 255, 0.55);
+		margin-bottom: 1.6rem;
+		line-height: 2rem;
+	}
+
+	&__text{
+		line-height: 2.3rem;
+	}
+}

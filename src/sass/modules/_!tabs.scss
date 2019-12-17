@@ -1,0 +1,146 @@
+.tabs{
+	font-size: 1.6rem;
+	border-radius: 7px;
+	overflow: hidden;
+	border: 1px solid #BCC6DB;
+
+	&__top{
+		border-bottom: 1px solid #BCC6DB;
+		
+	}
+
+	&__title{
+		@include max-screen($large_mobile) {
+			line-height: 4.4rem;
+		}
+	}
+
+	&__content{
+		background-color: #fff;
+		
+		&-item{
+			padding: 10.9rem 3.5rem;
+			padding-left: 5.7rem;
+			
+		}
+
+		&-cell{
+			&_left{
+				width: 42.02%;
+			}
+			&_right{
+				width: 51.52%;
+			}
+		}
+
+		@include max-screen($large_desktop) {
+			&-item{
+				padding: 6.9rem 1.5rem 7.9rem 1.7rem;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			&-item{
+				padding: 3rem 1.5rem 7.9rem 1.5rem;
+			}
+			&-cell{
+				width: 100%;
+			}
+		}
+	}
+
+	&__nav{
+		margin-left: 5.81%;
+		width: 7.23%;
+
+		&-button{
+			stroke: $dark;
+			width: 9px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			svg{
+				width: 100%;
+			}
+
+			&_prev{
+				svg{
+					transform: rotate(-90deg)
+				}				
+			}
+			&_next{
+				svg{
+					transform: rotate(90deg)
+				}				
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			display: none;
+		}
+	}
+
+	&__inner{
+		@include max-screen($large_mobile) {
+			padding-left: 15px;
+		}
+	}
+
+	&__list{
+		margin: 0 !important;
+		width: 83.13%;
+		&-item{
+			height: 8.3rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			font-weight: 500;
+			color: $dark;
+			cursor: pointer;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 3px;
+				background-color: $blue;
+				transform: scale(0, 1);
+				transition: ease .25s;
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+			}
+
+		}
+
+		@include max-screen($large_mobile) {
+			width: 100%;
+
+			&-item{
+				padding-left: 5px;
+				font-size: 1.5rem;
+				padding-right: 5px;
+			}
+
+			.swiper-slide{
+				width: auto;
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.swiper-slide-thumb-active{
+		.tabs{
+			&__list{
+				&-item{
+					&:before{
+						transform: scale(1, 1);
+					}					
+				}
+			}
+		}
+	}
+}

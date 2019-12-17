@@ -1,0 +1,65 @@
+.logo{
+	&__circle{
+		width: 5.5rem;
+		height: 5.5rem;
+		background-color: $blue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 1.6rem;
+		border-radius: 50%;
+		
+
+		&:before{
+			content: '+';
+			font-size: 2.2rem;
+			line-height: 2.4rem;
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+
+	&__label{
+		text-transform: uppercase;
+		font-weight: 900;
+		color: $dark;
+		// font-size: 5rem;
+	}
+
+	&_white{
+		.logo{
+			&__circle{
+				background-color: #fff;
+
+				&:before{
+					color: $blue;
+				}
+			}
+			&__label{
+				color: #fff;
+			}
+		}
+	}
+
+	@include max-screen($small_desktop) {
+		&__circle{
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+	@include max-screen($large_tablet) {
+		&__circle{
+			width: 4.5rem;
+			height: 4.5rem;
+			margin-right: 1.2rem;
+
+			&:before{
+				font-size: 1.9rem;
+			}
+		}
+
+		&__label{
+			font-size: 1.3rem;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.about-nav{
+	&__cell{
+		position: relative;
+
+		&:nth-child(3n+1){
+			// margin-left: 24.7%;
+			margin-left: 25.5%;
+			width: 12.72%;
+			padding-right: 3.74%;
+		}
+
+		&:nth-child(3n+2){
+			width: 13.25%;
+			padding-left: 3.52%;
+			// margin-right: 9.06%;
+			margin-right: 8.26%;
+		}
+
+		&:nth-child(3n){
+			width: 40.27%;
+			padding-left: 0.3%;
+			padding-right: 4.94%;
+		}
+
+	}	
+
+
+	@include max-screen($large_tablet) {
+		
+		&__cell{
+			width: 100%!important;
+			margin-left: 0 !important;
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+
+			&:not(:nth-child(3n+2)){
+				margin-bottom: 43px;
+			}
+
+			&:nth-child(3n){
+				display: none;
+			}
+		}
+
+		&__link{
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+}

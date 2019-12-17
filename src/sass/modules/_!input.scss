@@ -1,0 +1,29 @@
+.input{
+	display: block;
+	&__item{
+		background: #FFFFFF;
+		border-radius: 7px;	
+		border: 1px solid #BCC6DB;
+		font-size: 1.5rem;
+		line-height: 2.4rem;
+		height: 6.9rem;
+		padding: 0 2rem;
+		font-family: 'MuseoSansCyrl';
+		color: $dark;
+		font-weight: 500;
+		display: block;
+		width: 100%;
+
+
+		@include placeholder {
+			color: rgba(10, 17, 59, 0.55);
+		}	
+
+		&:focus{
+			border-color: $blue;
+			@include placeholder {
+				color: $dark;
+			}				
+		}
+	}
+}

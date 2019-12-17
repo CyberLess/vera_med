@@ -1,0 +1,150 @@
+.main{
+	position: relative;
+	&__title{
+		margin-bottom: 2.4rem;
+
+		span{
+			display: block;
+		}
+	}
+
+	&__box{
+		width: 44.46%;
+	}
+
+	&__text{
+		margin-bottom: 4.7rem;
+	}
+
+	&__button{
+		margin-right: 3rem;
+	}
+
+	&__back{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-right: -5.46%;
+		width: 63.1%;
+		transform: translateY(-48%);
+
+		svg{
+			stroke-dasharray: 2200;
+			stroke-dashoffset: 2200;			
+
+			animation: mainBackground 2s ease-in 1; 
+			animation-fill-mode: forwards;
+		}
+
+		object, svg{
+			width: 100%;
+		}
+	}
+
+	&__bottom{
+		margin-top: 8.8rem;
+
+		&-part{
+			color: $gray;
+			margin-right: 2rem;
+			font-weight: 500;
+		}
+	}	
+
+	&__mobile{
+		display: none;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+
+		object{
+			display: block;
+			width: 81.38%;
+
+			// position: absolute;
+			// left: 50%;
+			// top: 0;
+			// width: 81.38%;
+			// height: 100%;
+			// margin-left: -40.69%;
+		}
+	}
+
+	@include max-screen($large_desktop) {
+		&__back{
+			margin-right: 0;
+			width: 55%;
+		}
+	}
+
+	@include max-screen($large_tablet) {
+		&__row{
+			display: block;
+		}		
+
+		&__bottom{
+			margin-top: 5.8rem;
+		}
+
+		&__button{
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
+
+	}
+
+	@include max-screen($large_mobile) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+
+
+		&__wrap{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__box{
+			padding-top: 3.2rem;
+			padding-bottom: 3.6rem;
+			width: 100%;
+		    flex: 0 0 auto;
+		}
+
+		&__back{
+			display: none;
+		}
+
+		&__title{
+			margin-bottom: 2.2rem;
+		}
+
+		&__text{
+			margin-bottom: 2.6rem;
+		}
+
+		&__bottom{
+			display: none;
+		}
+
+		&__button{
+			width: 260px;
+			max-width: 100%;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			margin: auto;
+			margin-bottom: 1.8rem;
+		}
+
+		&__mobile{
+			display: flex;
+		    flex: 1 0 auto;
+		}
+	}
+
+}

@@ -1,0 +1,40 @@
+@keyframes mainBackground {
+	100% {
+	    stroke-dashoffset: 0;
+	} 
+}
+@keyframes buttonLine {
+    from {
+    	transform: scale(0);
+    }
+
+    to {
+    	transform: scale(20);
+	}
+}
+
+@keyframes toBottom {
+	100% {
+	    transform: translateY(0);
+	} 
+}
+
+@keyframes fadeOut {
+    from {
+    	opacity: 0;
+    }
+
+    to {
+    	opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+    from {
+    	opacity: 1;
+    }
+
+    to {
+    	opacity: 0;
+	}
+}

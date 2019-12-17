@@ -1,0 +1,32 @@
+.fullpage{
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;	
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    
+    // background: linear-gradient(124.29deg, #FFFFFF -1.6%, #F5F7FA -1.59%, #EFF3F8 82.66%);
+    background: #f5f7fa;
+    
+    &__part{
+        position: relative;
+
+    	&_static{
+		    flex: 0 0 auto;
+    	}
+
+    	&_fluid{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+		    flex: 1 0 auto;
+    	}
+
+        &_footer{
+            background-color: #fff;
+        }
+    }
+
+}

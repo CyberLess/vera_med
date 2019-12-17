@@ -1,0 +1,42 @@
+.news-item{
+	text-align: center;
+
+	@include max-screen($large_tablet) {
+		padding-bottom: 8px;
+	}
+
+	&__preview{
+		width: 15.2rem;
+		height: 15.2rem;
+		max-width: 100%;
+		margin: auto;
+		margin-bottom: 2rem;
+
+		&-inner{
+			padding-top: 100%;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
+
+	&__date{
+		font-size: 1.3rem;
+		color: rgba(0, 0, 0, 0.55);
+		line-height: 2rem;
+		margin-bottom: 1.4rem;
+	}
+
+	&__text{
+		color: $dark;
+		margin-bottom: 6rem;
+		line-height: 2.1rem;
+
+		@include max-screen($large_tablet) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__link{
+	}
+}

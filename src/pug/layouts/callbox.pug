@@ -1,0 +1,25 @@
++b.callbox.form.FORM(action="")
+	+e.title.h3 Свяжитесь с нами
+	+e.row.flex._justify
+		+e.cell._default
+			+e.input.input__
+				+e.item.INPUT(name="name" placeholder="Евгений")
+			+e.input.input__
+				+e.item.INPUT(name="phone" placeholder="+7 (___) ___ - __ - __")
+			+e.input.input__
+				+e.item.INPUT(name="email" placeholder="Ваш e-mail")
+		+e.cell._default
+			+e.textarea.textarea__
+				+e.placeholder
+					+icon('message', '0 0 28 28')
+					| Введите текст
+				+e.item.TEXTAREA(name="message")
+		+e.cell._info.flex._vertical
+			+e.polit.verysmall
+				| Нажимая кнопку "Отправить", Вы принимаете условия 
+				a(href="#") политики конфиденциальности 
+				|  сайта.
+		+e.cell._button
+			+e.button.btn__.BUTTON
+				+e.back.js-circles.SPAN
+				+e.text.SPAN Отправить

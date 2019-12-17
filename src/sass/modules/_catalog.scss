@@ -1,0 +1,431 @@
+.catalog{
+	@include max-screen($large_tablet) {
+		padding-top: 13px;
+	}
+
+	&__mb{
+		display: none;
+		height: 6rem;
+		border-radius: 7px;
+		margin-bottom: 3.3rem;
+		background-color: #fff;
+
+		&.is-hidden{
+			display: none;
+		}
+
+		&-box{
+			margin-right: 2.3rem;
+			// width: 1.5rem;
+			// height: 1.5rem;
+			width: 22px;
+			height: 22px;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		&-square{
+			width: 4px;
+			height: 4px;
+			margin: 3.5px;
+			background-color: $blue;
+		}
+
+		&-label{
+			color: #000000;
+			font-weight: 700;
+		}
+
+
+		@include max-screen($large_tablet) {
+			display: flex;
+
+		}
+	}
+
+	&__cell{
+		max-width: 100%;
+
+		&_left{
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 331px;
+			margin-right: 6.89%;
+		}
+
+		&_right{
+		    min-width: 0;
+			flex-grow: 1;
+			flex-shrink: 1;
+
+			padding-bottom: 26px;
+		}
+
+		@include max-screen($small_desktop) {
+			&_left{
+				width: 260px;
+				margin-right: 2.89%;				
+			}
+		}
+
+		@include max-screen($large_tablet) {
+			width: 100%;
+			display: block;
+
+			&_left{
+				display: none;
+				margin-bottom: 3rem;
+
+				&.is-visible{
+					display: block;
+				}
+			}
+
+			&_right{
+				
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	&__container{
+		display: flex;
+
+		@include max-screen($large_tablet) {
+			display: block;
+		}
+	}
+
+
+	
+
+
+	&__content{
+		width: 684px;
+		max-width: 100%;
+		margin-bottom: 45px;
+
+		&_nomargin{
+			margin-bottom: 0;
+		}
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 3.3rem;
+		}
+	// 	height: 400px;
+	// 	background-color: red;
+	}
+
+	&__td{
+		&_art{
+			width: 13.58%!important;
+		}
+
+		&_name{
+			width: 15.99%!important;
+		}
+
+		&_size{
+			width: 8.43%!important;
+		}
+
+		&_density{
+			width: 10.3%!important;
+		}
+		&_veiw{
+			width: 12.05%!important;
+		}
+
+		&_packing{
+			width: 12.92%!important;
+		}
+		&_man{
+			width: 13.36%!important;
+		}
+
+		@include max-screen($small_tablet) {
+			&_name{
+				width: 56.26% !important;
+			}
+		}
+	}
+
+	&__table{
+		margin-bottom: 37px;
+		table{
+			// table-layout: fixed;
+		}
+		td{
+			padding: 0 1.64%;
+			// padding: 0;
+			// padding-left: 1.42%;
+
+			@include max-screen($large_desktop) {
+				padding: 0 0.64%;
+			}
+			@include max-screen($large_tablet) {
+				padding: 0 1.54%;
+			}	
+
+		}
+
+
+		.table__name{
+			@include max-screen($large_desktop) {
+				padding: 0 0.64%;
+			}	
+			@include max-screen($large_tablet) {
+				padding: 0 1.54%;
+			}
+
+			@include max-screen($small_tablet) {
+				padding: 0 15px;
+			}
+	
+		}
+	}
+
+	&__input{
+		margin: 10px 0;
+
+		@include max-screen($large_mobile) {
+			margin: 0;
+		}
+	}
+
+	&__category{
+		margin-bottom: 7.5rem;
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 4rem!important;
+		}
+	}
+
+	&__subcats{
+		width: 92.44%;
+
+		&-item{
+			display: block;
+			width: 26.3%;
+			margin: .8rem 0;
+		}
+
+	}
+
+	&__select{
+		// margin-bottom: 2.8rem;
+		margin-bottom: 1.2rem;
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 0rem;
+		}
+	}
+
+	&__part{
+		// &:not(:last-child){
+			margin-bottom: 5.5rem;
+		// }
+
+		&_big{
+			margin-bottom: 8.2rem;
+		}
+
+		&-title{
+			letter-spacing: -0.02em;
+			margin-bottom: 5.5rem;
+
+			&_small{
+				margin-bottom: 1.6rem;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 2.6rem;
+
+			&_big{
+				margin-bottom: 3.3rem;
+			}
+
+			&_steps{
+				margin-bottom: 21px;
+			}
+
+			&_links{
+				display: none;
+			}
+			&-title{
+				margin-bottom: 2rem;
+				&_tocenter{
+					text-align: center;
+				}
+				&_small{
+					padding-left: 14px;
+					// margin-bottom: .8rem;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__price{
+		padding-left: 6.1rem;
+		padding-top: 4.8rem;
+		padding-bottom: 92px;
+		padding-right: 8.9rem;
+		background: #FFFFFF;
+		border-radius: 7px;
+		margin-bottom: 7.9rem;
+
+		&-button{
+			width: 100%;
+			margin: 10px 0;
+			height: 6.9rem;
+		}
+
+		&-cell{
+			width: 46.2%;
+			position: relative;
+
+			// margin: 10px 0;
+			
+			&:nth-child(-n+2){
+				margin-bottom: 2.8rem;
+			}
+
+			&:nth-child(odd){
+				margin-right: 7.6%;
+			}
+		}
+
+		@include max-screen($large_tablet) {
+		    padding: 2.8rem 4.9rem 92px 5.1rem;
+		}
+
+		@include max-screen($small_tablet) {
+			margin-bottom: 37px;
+			&-title{
+				line-height: 3.4rem;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			padding: 2.2rem 1.5rem 1rem;
+
+			&-button{
+				margin: 0;
+			}
+
+			&-text{
+				// margin-bottom: 1rem;
+			}
+
+			&-cell{
+				width: 100%;
+				margin-right: 0 !important;
+				margin-bottom: 1.5rem !important;
+			}
+		}
+	}
+
+	&__box{
+		padding-top: 3.7rem;
+		padding-left: 2.2rem;
+		padding-right: 2.8rem;
+		padding-bottom: 4.7rem;
+		background: #FFFFFF;
+		border-radius: 7px;
+
+		margin-bottom: 26px;
+
+		&_news{
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+
+		&_manager{
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+			padding-top: 2.8rem;
+			padding-bottom: 4.9rem;
+			text-align: center;
+		}
+
+		&-title{
+			color: $dark;
+			font-weight: 700;
+			margin-bottom: 23px;
+			position: relative;
+
+			svg{
+				width: 14px;
+				position: absolute;
+				right: 0;
+				margin-top: -7px;
+				top: 50%;
+				fill: $blue;
+
+				&.icon-delete{
+					display: none;
+				}
+			}
+		}
+
+		@include max-screen($large_tablet) {
+			padding-top: 3rem;
+			padding-bottom: 2.4rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;	
+
+			&-title{
+				margin-bottom: 10px;
+
+				svg{
+					&.icon-delete{
+						display: block;
+					}
+				}
+			}		
+
+			&_contact{
+				padding-bottom: 4.8rem;
+				padding-top: 3.7rem;
+			}
+
+			&_manager{
+				padding-bottom: 4.9rem;
+			}
+
+			&_mobile{
+				width: 32%;
+				// padding-left: 1.5rem;
+				// padding-right: 1.5rem;
+			
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			&_mobile{
+				width: 100%;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			&_contact{
+				text-align: center;
+			}
+		}
+	}
+
+	&__info{
+		@include max-screen($large_tablet) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+}

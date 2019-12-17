@@ -1,0 +1,196 @@
+.footer{
+	color: #fff;
+
+	&__top{
+		background-color: $dark;
+		color: #fff;
+		padding: 3rem 0;
+
+		.header__top{
+			background: transparent;
+		}	
+
+		.header__cell{
+			&:not(:last-child){
+				border-right: 1px solid #202859!important;
+			}
+		}
+
+		@include max-screen($large_tablet) {
+			padding: 0;
+
+			.header__cell_logo{
+				width: 100%;
+				
+				&:not(:last-child){
+					border-right: none!important;
+				}
+			}
+
+			.header__logo{
+				margin: auto;
+			}
+
+			.header__cell_search{
+				display: none;
+			}
+		}
+
+
+	}
+
+
+	&__bottom{
+		padding-top: 5.6rem;
+		padding-bottom: 6.1rem;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #0A113B;
+	
+		@include max-screen($large_mobile) {
+			padding: 0 5px;
+		}
+	}
+
+	&__contacts{
+		@include max-screen($large_mobile) {
+			padding: 0 15px;
+		}
+	}
+
+	&__cell{
+		&_left{
+			width: 46.48%;
+			margin-right: 16.09%;
+		}
+
+		&_right{
+			width: 35.4%;
+		}
+
+		@include max-screen($large_tablet) {
+			&_left{
+				width: 56.48%;
+				margin-right: 8.09%;
+			}
+
+			&_right{
+			    width: 35.4%;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			width: 100%;
+			margin-right: 0;
+
+			&_right{
+				display: none;
+			}
+		}
+	
+		@include max-screen($large_mobile) {
+			&_left{
+				margin-left: -15px;
+				margin-right: -15px;
+				width: auto;
+			}
+		}
+
+	}
+
+	&__title{
+		font-weight: 700;
+		margin-bottom: 3.4rem;
+
+		@include max-screen($large_mobile) {
+			display: none;
+		}
+	}
+
+	&__menu{
+		display: none;
+		padding-bottom: 2.5rem;
+		width: 100%;
+
+		&-item{
+			display: block;
+			font-weight: 600;
+			margin-top: 2.4rem;
+		}
+
+		&-link{
+			line-height: 2.3rem;
+			position: relative;
+			display: block;
+
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				right: 0;
+				width: 0;
+				height: 0;
+				top: 50%;
+				border-style: solid;
+				border-width: 5px 0 5px 10px;
+				margin-top: -5px;
+				border-color: transparent transparent transparent rgba(255, 255, 255, 0.55);
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			display: block;
+
+		}
+	}
+
+	&__part{
+		&_left{
+			width: 34.14%;
+		}
+		&_right{
+			width: 46.7%;
+		}
+
+		@include max-screen($large_tablet) {
+			&_left{
+			    width: 38.14%;
+			}
+
+			&_right{
+				width: 54.7%;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			&_right{
+				width: 39.7%;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			width: 100%;
+			padding: 2.8rem 0;
+
+			&_right{
+				padding-bottom: 0;
+			}
+
+			border-top: 1px solid #202859;
+		}
+	}
+
+	&__creator{
+		line-height: 2.6rem;
+		margin-top: 3.1rem;
+		color: #fff;
+		display: inline-block;
+
+		@include max-screen($large_mobile) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 61px;
+			margin-top: 23px;
+			border-top: 1px solid #202859;
+		}
+	}
+}

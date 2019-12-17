@@ -1,0 +1,142 @@
++b.SECTION.catalog
+	+e.wrap.wrap
+		+b.breadcrumbs.flex._vertical.UL
+			+e.item.LI
+				+e.link.A(href="#")
+					+e.home
+						+icon('home', '0 0 18 18')
+			+e.item.LI
+				+e.link.A(href="#") Каталог
+			+e.item.LI
+				+e.link._current.A(href="#") Бинты
+		+e.mb.flex._vertical._center.js-open-sidebar
+			+e.mb-box
+				+e.mb-square
+				+e.mb-square
+				+e.mb-square
+				+e.mb-square
+			+e.mb-label.verysmall Показать каталог
+		+e.container
+			+e.cell._left#sidebar
+				include sidebar
+			+e.cell._right
+				+e.part
+					+e.content._nomargin.content
+						h3
+							| Бинт марлевый медицинский нестерильный 5х5 
+					+b.single
+						+e.top
+							+e.info.p
+								b.b Артикул:
+								| УТ000000336
+							+e.info.p.flex._vertical
+								b.b Категории:
+								+e.info-link.blue-link.A(href="#") Бинты
+								+e.info-link.blue-link.A(href="#") Бинты марлевые
+								+e.info-link.blue-link.A(href="#") Бинты 5х5
+								+e.info-link.blue-link.A(href="#") Бинты 5х5 пл. 28
+								+e.info-link.blue-link.A(href="#") Перевязочные материалы
+							+e.info.p.flex._vertical
+								b.b Метки:
+								+e.info-mark.mark__._active.A(href="#") Бинт хирургический
+								+e.info-mark.mark__.A(href="#") Бинты плотность 32
+								+e.info-mark.mark__.A(href="#") Бинты производство Россия
+								+e.info-mark.mark__.A(href="#") Бинты ширина 10
+						+e.row.flex
+							+e.cell._left
+								+e.preview
+									+e.IMG(src="/img/case_1.jpg")
+							+e.cell._right
+								+e.list.list__.UL
+									+e.item.p.LI Минимальный заказ — 10 тыс. руб.
+									+e.item.p.LI Преференции для клиентов
+									+e.item.p.LI Продукция в наличии
+								+e.price.h3 3,20 ₽
+								+e.order.btn__.A(href='#')
+									+e.back.js-circles.SPAN
+									+e.icon._basket.SPAN
+										+icon('basket', '0 0 22 20')
+									+e.text.SPAN Заказать
+								+e.text.verysmall
+									| Стоимость ориентировочная, зависит 
+									| от курса рубля, объема партии. 
+									| Актуальные данные можно уточнить 
+									| у менеджеров.
+
+				include pricelist
+				include category
+				+e.part._links
+					+e.part-title.h3
+						| Все подкатегории медицинских товаров
+					+e.subcats.flex._start._justify.UL
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Аптечки
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бахилы
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Бинты
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Вата
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Гели
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Дезинфекция и стерилизация
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+						+e.subcats-item
+							+e.subcats-link.p.blue-link.A(href="#") Клеенка
+				+e.part._big
+					+e.part-title._small.h3
+						| Виды медицинских бинтов
+					+e.select.select__
+						+e.bg
+						+e.INPUT.input(type="hidden" name="cat" value="is 7")
+						+e.inner.flex._vertical
+							+e.text.p17 Категория:
+							+e.wrapper
+								+e.label.p17.b 
+									span Бинт гипсовый
+								+e.list
+									+e.list-item.verysmall 1
+									+e.list-item.verysmall 2
+									+e.list-item.verysmall 3
+									+e.list-item.verysmall 4
+									+e.list-item.verysmall 5
+									+e.list-item.verysmall 6
+									+e.list-item.verysmall.is-selected(data-value='is 7') Бинт гипсовый
+					include catalog-tables
+				+e.part._big
+					include tabs
+				+e.part._steps
+					+e.part-title._tocenter.h3
+						| Как купить медицинский бинт
+					include steps
+				+e.part
+					include callbox
+				+e.part.mobile#mobile-sidebar

@@ -1,0 +1,68 @@
+.contact-nav{
+	&__text{
+		color: #787C94;
+		margin-bottom: 2.8rem;
+	}
+	&__cell{
+		position: relative;
+		&_left{
+			width: 51.12%;
+			margin-right: 6.88%;
+		}
+		&_right{
+			width: 36.83%;
+		}
+	}
+
+	&__part{
+		width: 41.73%;
+		padding-bottom: 2.8rem;
+
+		&:nth-child(2n){
+			padding-left: 10.85%;
+			width: 58.27%;
+		}
+	}
+
+	&__label{
+		&:not(:last-child){
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	&__ind{
+		margin-bottom: 1rem;
+	}
+
+	&__blue{
+		color: $blue;
+		margin-right: 1.6rem;
+		font-weight: 500;
+	}
+
+	&__addr{
+		line-height: 4rem;
+		color: #787C94;
+		font-weight: 500;
+
+		span{
+			display: block;
+		}
+	}
+
+	&__index{
+		padding-top: .7rem;
+		padding-bottom: .6rem;
+		padding-left: 1.7rem;
+		padding-right: 1.7rem;
+		color: $blue;
+		font-weight: 500;
+		font-size: 1.3rem;
+		line-height: 1.5rem;
+		background: rgba(0, 10, 255, 0.04);
+	}
+
+	&__link{
+		color: #000000;
+	}
+}

@@ -1,0 +1,46 @@
+.radio{
+	display: block;
+	cursor: pointer;
+	user-select: none;
+
+	&__input{
+		display: none;
+
+		&:checked{
+			&+.radio__text{
+				color: $blue;
+				&:before{
+					background-color: $blue;
+				}
+			}
+		}
+	}
+
+	&__text{
+		padding-left: 17px;
+		display: block;
+		position: relative;
+		color: $dark;
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			margin-top: -3px;
+			background-color: #DADCE0;
+			border-radius: 50%;
+		}
+
+		@include max-screen($large_tablet) {
+			font-size: 15px;
+			line-height: 18px;
+		}		
+	}
+
+
+}

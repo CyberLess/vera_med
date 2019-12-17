@@ -1,0 +1,24 @@
+.arrow-nav{
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	width: 16px;
+	stroke: $blue;
+
+
+	&_left{
+		left: 20px;
+
+		svg{
+			transform: rotate(-90deg);
+		}
+	}
+
+	&_right{
+		right: 20px;
+
+		svg{
+			transform: rotate(90deg);
+		}
+	}
+}

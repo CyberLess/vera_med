@@ -1,0 +1,8 @@
+$dark: #0A113C;
+$blue: #000AFF;
+$light: rgba(10, 17, 60, 0.75);
+$gray: rgba(10, 17, 60, 0.55);
+
+@import "mixins/**/*.scss";
+@import "defaults/**/*.scss";
+@import "modules/**/*.scss";
