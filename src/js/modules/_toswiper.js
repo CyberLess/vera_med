@@ -150,7 +150,6 @@ import Swiper from 'swiper';
 		 slidesPerView: 3,
 		 keyboardControl: true,
 		 grabCursor: true,
-		 // pagination
 		 navigation: {
 			nextEl: '.team .btn-nav_right',
 			prevEl: '.team .btn-nav_left',
@@ -174,5 +173,66 @@ import Swiper from 'swiper';
 			  slidesPerView: 5,
 			},
 		  }
+	});
+})($);
+
+(()=>{
+	var company_bg = new Swiper('.company__bg', {
+		  slidesPerView: 1,
+		  loopedSlides: 1,
+		  loop: true,
+		  effect: 'fade',
+	});
+	var company_top = new Swiper('.company__top-content', {
+		loop: true,
+		 slidesPerView: 1,
+		 loopedSlides: 1,
+		 navigation: {
+			nextEl: '.company .btn-nav_right',
+			prevEl: '.company .btn-nav_left',
+		 },
+		 breakpoints: {
+			0: {
+			  pagination: {
+				clickable: true,
+				el: '.company__pagination',
+			 },
+			},
+			769: {
+			  pagination: {
+				dynamicBullets: false,
+			 },
+			},
+		 },
+		 thumbs: {
+			swiper: company_bg
+		  }
+	});
+})($);
+
+(()=>{
+	var company_list = new Swiper('.company__list', {
+		  allowTouchMove: false,
+		  slidesPerView: 8,
+		  loop: true,
+		  breakpoints: {
+			0: {
+			  allowTouchMove: true,
+			  slidesPerView: 3,
+			  autoplay: {
+				delay: 3000,
+			  },
+			},
+			400: {
+			  allowTouchMove: true,
+			  slidesPerView: 4,
+			  autoplay: true,
+			},
+			580: {
+			  pagination: {
+				allowTouchMove: false,
+			 },
+			},
+		 },
 	});
 })($);

@@ -7,9 +7,6 @@
 		text-align: center;
 	}
 	&__desc {
-		font-size: 1.7rem;
-		line-height: 2.4rem;
-		color: $light;
 		margin-top: 1.4rem;
 	}
 	&__inside-wrap {
@@ -18,5 +15,24 @@
 	}
 	.steps {
 		max-width: 105.5rem;
+		margin-bottom: 4rem;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.scheme {
+		padding: 20px 0 56px 0;
+		&__desc {
+			display: none;
+		}
+		&__inside-wrap {
+			margin-top: 18px;
+		}
+		&__callbox {
+			margin-top: 0;
+		}
+		.steps {
+			margin-bottom: 21px;
+		}
 	}
 }

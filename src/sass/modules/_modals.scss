@@ -1,0 +1,76 @@
+.mfp-figure {
+	padding: 3.5rem;
+	background: #fff;
+	border-radius: 7px;
+	position: relative;
+	cursor: default;
+	img.mfp-img {
+		padding: 0;
+		max-height: 80vh !important;
+		border-radius: 7px;
+	}
+	.mfp-close {
+		position: absolute;
+		right: -10px;
+		top: -40px;
+		font-size: 4rem;
+	}
+}
+
+.mfp-gallery .mfp-image-holder .mfp-figure {
+	cursor: default;
+}
+
+.mfp-bottom-bar {
+	position: static;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: $light;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	.mfp-counter {
+		position: static;
+		display: block;
+		width: auto;
+		text-align: left;
+		color: $gray;
+		font-size: 1.5rem;
+		font-weight: bold;
+		span {
+			color: #0A113C;
+		}
+	}
+	.mfp-title {
+		color: $light;
+	}
+}
+
+.mfp-container {
+	.btn-nav {
+		position: absolute;
+		top: 50%;
+		margin-top: -3.7rem;
+		border-color: #fff;
+		stroke: #fff;
+		&_left {
+			left: 32px;
+		}
+		&_right {
+			right: 32px;
+		}
+	}
+}
+
+@include max-screen($large_tablet) {
+	.mfp-container {
+		.btn-nav {
+			&_left {
+				left: 10px;
+			}
+			&_right {
+				right: 10px;
+			}
+		}
+	}
+}
