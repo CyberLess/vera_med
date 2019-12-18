@@ -24,13 +24,13 @@
 							| +7 (495) 369-66-39
 					+e.cell._search._right
 						+e.button.border-button__._white.BUTTON
-							+e.back.js-circles
-							+e.text Заказать звонок
+							+e.back.js-circles.SPAN
+							+e.text.SPAN Заказать звонок
 						+e.scroll.scroll-top__.A(href='#')
 							+icon('arrow2', '0 0 9 17')
 	+e.bottom
 		+e.wrap.wrap
-			+e.row.flex._vertical
+			+e.row.flex
 				+e.menu.UL
 					+e.menu-item.LI
 						+e.menu-link._arrow.middle.A(href="#") Каталог
@@ -43,13 +43,19 @@
 				+e.cell._left.flex._justify
 					+e.part._left
 						+e.title.h5 Свяжитесь с нами
-						+e.contacts.contacts__
-							+e.string
-								+e.phone.A(href="tel:+74953696639") +7 (495) 369-66-39
-							+e.string
-								+e.phone.A(href="tel:+74959718939") +7 (495) 971-89-39
-							+e.string
-								+e.link.small.A(href="mailto:info@вера-мед.рф") info@вера-мед.рф
+						+e.contacts.contacts__.flex._justify
+							+e.column._left
+								+e.string._always
+									+e.phone.A(href="tel:+74953696639") +7 (495) 369-66-39
+								+e.string._always
+									+e.phone.A(href="tel:+74959718939") +7 (495) 971-89-39			
+							+e.column._right
+								+e.string._always
+									+e.link.small.A(href="mailto:info@вера-мед.рф") info@вера-мед.рф
+								+e.help.verysmall
+									| Пн.-пт.: 9:00 – 18:00
+									br
+									| Сб-Вс: выходные
 					+e.part._right
 						+e.title.h5 Мы находимся
 						+e.contacts.contacts__
@@ -71,7 +77,7 @@
 					+b.horizontal-news.flex._vertical.A(href="#")
 						+e.cell._left.DIV
 							+e.preview.DIV
-								+e.IMG.preview-img.object-fit(src="/img/news-item.jpg")
+								+e.IMG.preview-img.object-fit(src="/img/news-item.png")
 						+e.cell._right.DIV
 							+e.date.verysmall.DIV
 								| 29.08.2017

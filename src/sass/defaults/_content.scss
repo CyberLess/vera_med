@@ -18,6 +18,10 @@
 
 }
 
+.nobr{
+	white-space: nowrap;
+}
+
 a:not([class]),
 .blue-link{
 	color: $blue;
@@ -32,7 +36,7 @@ a:not([class]),
 		left: 0;
 		width: 100%;
 		bottom: 0;
-		height: 1px;
+		height: 2px;
 		transform: scale(0,1);
 		transition: ease .2s;
 		pointer-events: none;

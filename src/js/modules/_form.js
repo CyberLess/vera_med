@@ -41,11 +41,11 @@ $(()=>{
 			},
 			submitHandler: (form) => {
 
-				var data = $(form).serialize();
+				let data = $(form).serialize();
 
 				$.ajax({
 					type: 'POST',
-					url: '/app/mail/',
+					url: $form.attr('action'),
 					data: data,
 					success: function(data) {
 						$(form)[0].reset()

@@ -58,12 +58,14 @@
 
 	&__cell{
 		&_left{
-			width: 46.48%;
-			margin-right: 16.09%;
+			width: 56.36%;
+			margin-right: 6.21%;
 		}
 
 		&_right{
-			width: 35.4%;
+			// width: 35.4%;
+			width: 34%;
+			margin-top: 15px;
 		}
 
 		@include max-screen($large_tablet) {
@@ -98,7 +100,8 @@
 
 	&__title{
 		font-weight: 700;
-		margin-bottom: 3.4rem;
+		// margin-bottom: 3.4rem;
+		margin-bottom: 2.6rem;
 
 		@include max-screen($large_mobile) {
 			display: none;
@@ -144,10 +147,18 @@
 
 	&__part{
 		&_left{
-			width: 34.14%;
+			// width: 34.14%;
+			width: 47.81%;
 		}
 		&_right{
-			width: 46.7%;
+			// width: 46.7%;
+			width: 38.51%;
+		}
+
+		@include max-screen($small_desktop) {
+			&_right{
+				width: 43.51%;
+			}
 		}
 
 		@include max-screen($large_tablet) {
@@ -161,6 +172,9 @@
 		}
 
 		@include max-screen($small_tablet) {
+			&_left{
+				width: 52.14%;
+			}
 			&_right{
 				width: 39.7%;
 			}
@@ -169,6 +183,10 @@
 		@include max-screen($large_mobile) {
 			width: 100%;
 			padding: 2.8rem 0;
+
+			&_left{
+				padding-bottom: 2.5rem;
+			}
 
 			&_right{
 				padding-bottom: 0;
@@ -180,9 +198,11 @@
 
 	&__creator{
 		line-height: 2.6rem;
-		margin-top: 3.1rem;
+		// margin-top: 3.1rem;
+		margin-top: 5.2rem;
 		color: #fff;
 		display: inline-block;
+		font-weight: 500;
 
 		@include max-screen($large_mobile) {
 			display: flex;

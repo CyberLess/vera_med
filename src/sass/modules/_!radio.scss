@@ -18,9 +18,11 @@
 
 	&__text{
 		padding-left: 17px;
-		display: block;
+		// display: block;
 		position: relative;
+		transition: ease .25s;
 		color: $dark;
+		display: inline-block;
 
 		&:before{
 			content: '';
@@ -31,15 +33,25 @@
 			width: 7px;
 			height: 7px;
 			border-radius: 50%;
-			margin-top: -3px;
+			margin-top: -5px;
 			background-color: #DADCE0;
 			border-radius: 50%;
+			transition: ease .1s;
 		}
 
 		@include max-screen($large_tablet) {
 			font-size: 15px;
 			line-height: 18px;
 		}		
+	}
+
+	&:hover{
+		.radio{
+			&__text{
+				margin-left: 8px;
+				// color: $blue;
+			}
+		}
 	}
 
 
