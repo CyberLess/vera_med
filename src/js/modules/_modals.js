@@ -45,47 +45,8 @@ $(() => {
 			}
 		}, 0);
 	});
-	if ( $(window).outerWidth() > 580 ) {
-		$('.js-gallery1').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1],
-				arrowMarkup: `<div class="btn-nav btn-nav_%dir%">
-								<svg class="icon icon-arrow2" viewBox="0 0 9 17">
-									<use xlink:href="/app/icons/sprite.svg#arrow2"></use>
-								</svg>
-							  </div>`,
-				tCounter: '<span>%curr%' + '/</span>%total%'
-			},
-			image: {
-				markup: '<div class="mfp-figure">'+
-							'<div class="mfp-close"></div>'+
-							'<div class="mfp-img"></div>'+
-							'<div class="mfp-bottom-bar">'+
-							  '<div class="mfp-title p17"></div>'+
-							  '<div class="mfp-counter"></div>'+
-							'</div>'+
-						  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
-
-				  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
-
-				  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
-				  // Or the function that should return the title. For example:
-				  // titleSrc: function(item) {
-				  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-				  // }
-
-				  verticalFit: true, // Fits image in area vertically
-
-				  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
-			}
-		});
+	if ( $(window).outerWidth() > 769 ) {
 		$('.js-gallery2').magnificPopup({
-			removalDelay: 500,
 			delegate: 'a',
 			type: 'image',
 			tLoading: 'Loading image #%curr%...',
@@ -124,9 +85,54 @@ $(() => {
 			}
 		});
 	} else {
-		$('.js-gallery1 a, .js-gallery2 a').click(function(){
+		$('.js-gallery2 a').click(function(){
 			$(this).attr("href", "#");
 			return false;
 		});
   	}
+	if ( $(window).outerWidth() > 580 ) {
+		$('.js-gallery1').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1],
+				arrowMarkup: `<div class="mfp-arrow btn-nav btn-nav_%dir%">
+								<svg class="icon icon-arrow2" viewBox="0 0 9 17">
+									<use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+								</svg>
+							  </div>`,
+				tCounter: '<span>%curr%' + '/</span>%total%'
+			},
+			image: {
+				markup: '<div class="mfp-figure">'+
+							'<div class="mfp-close"></div>'+
+							'<div class="mfp-img"></div>'+
+							'<div class="mfp-bottom-bar">'+
+							  '<div class="mfp-title p17"></div>'+
+							  '<div class="mfp-counter"></div>'+
+							'</div>'+
+						  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+				  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+				  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
+				  // Or the function that should return the title. For example:
+				  // titleSrc: function(item) {
+				  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+				  // }
+
+				  verticalFit: true, // Fits image in area vertically
+
+				  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+			}
+		});
+	} else {
+		$('.js-gallery1 a').click(function(){
+			$(this).attr("href", "#");
+			return false;
+		});
+	}
 })
