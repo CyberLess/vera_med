@@ -132,6 +132,12 @@
 			&-img {
 				height: 250px;
 			}
+			&:after {
+				display: none;
+			}
+		}
+		&__zoom {
+			display: none;
 		}
 	}
 }

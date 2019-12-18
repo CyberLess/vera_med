@@ -45,12 +45,11 @@ $(() => {
 			}
 		}, 0);
 	});
-	if ( $(window).outerWidth() > 769 ) {
+	if ( $(window).outerWidth() > 580 ) {
 		$('.js-gallery1').magnificPopup({
 			delegate: 'a',
 			type: 'image',
 			tLoading: 'Loading image #%curr%...',
-			mainClass: 'css-modal-animate',
 			gallery: {
 				enabled: true,
 				navigateByImgClick: true,
@@ -86,10 +85,10 @@ $(() => {
 			}
 		});
 		$('.js-gallery2').magnificPopup({
+			removalDelay: 500,
 			delegate: 'a',
 			type: 'image',
 			tLoading: 'Loading image #%curr%...',
-			mainClass: 'css-modal-animate',
 			gallery: {
 				enabled: true,
 				navigateByImgClick: true,
@@ -125,7 +124,8 @@ $(() => {
 			}
 		});
 	} else {
-		$('.js-gallery a').click(function(){
+		$('.js-gallery1 a, .js-gallery2 a').click(function(){
+			$(this).attr("href", "#");
 			return false;
 		});
   	}

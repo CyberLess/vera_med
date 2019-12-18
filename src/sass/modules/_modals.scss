@@ -53,6 +53,7 @@
 		margin-top: -3.7rem;
 		border-color: #fff;
 		stroke: #fff;
+		z-index: 40;
 		&_left {
 			left: 32px;
 		}
@@ -60,6 +61,21 @@
 			right: 32px;
 		}
 	}
+}
+
+.css-modal-animate.mfp-bg {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+  
+.css-modal-animate.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+ 
+.css-modal-animate .mfp-with-anim {
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transform: scale(0.8);
 }
 
 @include max-screen($large_tablet) {
@@ -71,6 +87,13 @@
 			&_right {
 				right: 10px;
 			}
+		}
+	}
+}
+@include max-screen($small_tablet) {
+	.mfp-figure {
+		img.mfp-img {
+			max-height: 70vh !important;
 		}
 	}
 }
