@@ -1,6 +1,7 @@
 import './vendors';
 
 import './modules/_default';
+import './modules/_pageLoadMore';
 import './modules/_form';
 import './modules/_modals';
 import './modules/_submenu';

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576697316862">
+    <link rel="stylesheet" href="/app/css/app.css?v=1576699598053">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -177,8 +177,8 @@
                                     <div class="catalog-nav__cell">
                                         <div class="catalog-nav__poster poster">
                                             <picture>
-                                                <source type="image/webp" srcset="/app/img/poster.webp">
-                                                    <img src="/app/img/poster.png" class="poster__back object-fit" alt="" role="presentation" />
+                                                <source type="image/webp" srcset="/app/img/poster2.webp">
+                                                    <img src="/app/img/poster2.png" class="poster__back object-fit" alt="" role="presentation" />
                                             </picture>
                                             <div class="poster__center">
                                                 <div class="poster__icon">
@@ -859,7 +859,7 @@
                         </svg>
                     </div>
                     <div class="main__mobile">
-                        <object type="image/svg+xml" data="/mobile_back2.svg"></object>
+                        <object type="image/svg+xml" data="/app/objects/mobile_back2.svg"></object>
                     </div>
                 </div>
             </section>
@@ -1647,7 +1647,7 @@
                 </div>
                 <div class="footer__bottom">
                     <div class="footer__wrap wrap">
-                        <div class="footer__row flex flex_vertical">
+                        <div class="footer__row flex">
                             <ul class="footer__menu">
                                 <li class="footer__menu-item"><a class="footer__menu-link footer__menu-link_arrow middle" href="#">Каталог</a>
                                 </li>
@@ -1661,12 +1661,18 @@
                             <div class="footer__cell footer__cell_left flex flex_justify">
                                 <div class="footer__part footer__part_left">
                                     <div class="footer__title h5">Свяжитесь с&nbsp;нами</div>
-                                    <div class="footer__contacts contacts">
-                                        <div class="contacts__string"><a class="contacts__phone" href="tel:+74953696639">+7 (495) 369-66-39</a>
+                                    <div class="footer__contacts contacts flex flex_justify">
+                                        <div class="contacts__column contacts__column_left">
+                                            <div class="contacts__string contacts__string_always"><a class="contacts__phone" href="tel:+74953696639">+7 (495) 369-66-39</a>
+                                            </div>
+                                            <div class="contacts__string contacts__string_always"><a class="contacts__phone" href="tel:+74959718939">+7 (495) 971-89-39			</a>
+                                            </div>
                                         </div>
-                                        <div class="contacts__string"><a class="contacts__phone" href="tel:+74959718939">+7 (495) 971-89-39</a>
-                                        </div>
-                                        <div class="contacts__string"><a class="contacts__link small" href="mailto:info@вера-мед.рф">info@вера-мед.рф</a>
+                                        <div class="contacts__column contacts__column_right">
+                                            <div class="contacts__string contacts__string_always"><a class="contacts__link small" href="mailto:info@вера-мед.рф">info@вера-мед.рф</a>
+                                            </div>
+                                            <div class="contacts__help verysmall">Пн.-пт.: 9:00 – 18:00
+                                                <br>Сб-Вс: выходные</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1693,7 +1699,7 @@
                                         <div class="horizontal-news__preview">
                                             <picture>
                                                 <source type="image/webp" srcset="/app/img/news-item.webp">
-                                                    <img src="/app/img/news-item.jpg" class="horizontal-news__preview-img object-fit" alt="" role="presentation" />
+                                                    <img src="/app/img/news-item.png" class="horizontal-news__preview-img object-fit" alt="" role="presentation" />
                                             </picture>
                                         </div>
                                     </div>
@@ -1711,8 +1717,7 @@
     </div>
     <div class="modals mfp-hide" id="recall"></div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576697316951"></script>
-    <script src="/test.js"></script>
+    <script src="/app/js/app.js?v=1576699598138"></script>
 </body>
 
 </html>

@@ -60,6 +60,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: ease .15s;
 
 			svg{
 				width: 100%;
@@ -74,6 +75,10 @@
 				svg{
 					transform: rotate(90deg)
 				}				
+			}
+
+			&:hover{
+				stroke: $blue;
 			}
 		}
 
@@ -99,6 +104,7 @@
 			position: relative;
 			font-weight: 500;
 			color: $dark;
+			transition: ease .15s;
 			cursor: pointer;
 
 			&:before{
@@ -112,6 +118,10 @@
 				position: absolute;
 				left: 0;
 				bottom: -1px;
+			}
+
+			&:hover{
+				color: $blue;
 			}
 
 		}

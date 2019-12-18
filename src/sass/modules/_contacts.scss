@@ -24,11 +24,59 @@
 		&:not(:last-child){
 			margin-bottom: 10px;
 		}
+
+		&_always{
+			margin-bottom: 10px;
+		}
 	}
 	&__line{
 		margin: 2.4rem 0;
 		height: 1px;
 		background: #DADCE0;
+	}
+
+	&__help{
+		color: rgba(#fff, .55);
+		
+		@include max-screen($small_mobile) {
+			line-height: 2.6rem;
+		}
+		
+	}
+
+	&__column{
+		&_left{
+			max-width: 58.61%;
+		}
+		&_right{
+			max-width: 35.83%;
+		}
+
+		@include max-screen($small_desktop) {
+			&_right{
+				max-width: 41.83%;
+			}
+		}
+
+		@include max-screen($large_tablet) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		@include max-screen($small_tablet) {
+			width: auto;
+			&_left{
+				width: 58.61%;
+			}
+			&_right{
+				width: 40.83%;
+			}
+		}
+
+		@include max-screen($small_mobile) {
+			width: 100%;
+
+		}
 	}
 
 	&__cell{

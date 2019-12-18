@@ -9,6 +9,7 @@
 		position: relative;
 		border-bottom: 1px solid #DADCE0;
 		cursor: pointer;
+		transition: ease .1s;
 		user-select: none;
 
 
@@ -23,7 +24,11 @@
 			right: 0;
 			top: 50%;
 			margin-top: -3px;
-			transition: ease .2s;
+			transition: ease .1s;
+		}
+
+		&:hover{
+			border-bottom-color: $blue;
 		}
 
 		@include max-screen($large_tablet) {
@@ -33,7 +38,7 @@
 	}
 
 	&__content{
-		padding-top: 22px;
+		// margin-top: 22px;
 		padding-left: 5px;
 		padding-right: 5px;	
 		padding-bottom: 36px;
@@ -45,6 +50,9 @@
 	}
 
 	&__radio{
+		&:first-child{
+			margin-top: 22px;
+		}
 		&:not(:last-child){
 			margin-bottom: 2.2rem;
 		}
@@ -62,7 +70,7 @@
 				}
 			}
 			&__content{
-				display: block;
+				// display: block;
 			}			
 		}
 	}

@@ -10,9 +10,11 @@ $(()=>{
 
 		$submenu
 			.addClass('is-hide')
+			.removeClass(' css-another')
 			.on(animationEnd, () => {
-				$submenu.off(animationEnd).removeClass('header__panel_visible is-hide')
-				$('.header__panel-item').removeClass('header__panel-item_active')
+				// $submenu.off(animationEnd).removeClass('header__panel_visible is-hide css-another')
+				$submenu.off(animationEnd).removeClass('is-hide header__panel_visible')
+				$('.header__panel-item').removeClass('header__panel-item_active css-another')
 
 
 			})
@@ -69,7 +71,12 @@ $(()=>{
 
 			currentOut = false;
 
-			
+			let panelItemClass = '';
+
+			if($submenu.hasClass('header__panel_visible')){
+				panelItemClass = 'css-another';
+			}
+
 			$submenu.off(animationEnd).removeClass('is-hide')
 
 			$('.js-toggle-menu').removeClass('is-active')
@@ -78,9 +85,9 @@ $(()=>{
 			$('html, body').addClass('js-lock')
 
 			if(eventIn != 'click'){
-				$submenu.addClass('header__panel_visible')
-				$('.header__panel-item').removeClass('header__panel-item_active')
-				$item.addClass('header__panel-item_active')
+				$submenu.addClass(`header__panel_visible ${panelItemClass}`)
+				$('.header__panel-item').removeClass(`header__panel-item_active ${panelItemClass}`)
+				$item.addClass(`header__panel-item_active ${panelItemClass}`)
 				$this.addClass('is-hover')
 			}else{
 				// $submenu.toggleClass('header__panel_visible')
@@ -91,9 +98,9 @@ $(()=>{
 				if(!$this.hasClass('is-hover')){
 					submenu_close()				
 				}else{
-					$submenu.toggleClass('header__panel_visible')
-					$('.header__panel-item').removeClass('header__panel-item_active')
-					$item.toggleClass('header__panel-item_active')
+					$submenu.toggleClass(`header__panel_visible ${panelItemClass}`)
+					$('.header__panel-item').removeClass(`header__panel-item_active ${panelItemClass}`)
+					$item.toggleClass(`header__panel-item_active ${panelItemClass}`)
 				}
 			}
 			
@@ -104,8 +111,11 @@ $(()=>{
 			$this.on(eventOut, e => {
 				currentOut = eventOut;
 
-				if($(e.relatedTarget).hasClass('header__panel-item'))
+				if($(e.relatedTarget).attr('class').includes('header__panel'))
+					//  && !$(e.relatedTarget).hasClass('header__panel-bg')
 					return false;
+
+				console.log('event out', e)
 
 				submenu_close()
 			})			

@@ -187,19 +187,33 @@
 		display: none;
 		opacity: 0;
 		animation-fill-mode: forwards;
-		animation-duration: .5s;
+		animation-duration: 0.1s;
+		// animation-delay: .2s;
 		animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 		animation-iteration-count: 1;
 
 		&.is-hide{
+			animation-duration: 0.1s;
 			animation-name: fadeIn;
 			// animation-delay: .2s;
 		}
 
+		&-row{
+			position: relative;
+			
+			z-index: 5;			
+		}
 
 		&_visible{
 			display: block;
 			animation-name: fadeOut;
+			animation-duration: .5s;
+
+			&.css-another{
+				.header__panel-row{
+					background: #F5F7FA;
+				}
+			}
 		}
 
 		&-bg{
@@ -227,7 +241,14 @@
 		&-link{
 			line-height: 1.8rem;
 			color: $dark;
+			transition: ease .1s;
+			font-weight: 500;
 			letter-spacing: -0.0015em;
+
+			&:hover{
+				color: $blue;
+
+			}
 		}
 
 		&-item{
@@ -246,7 +267,18 @@
 
 			&_active{
 				display: block;
-				animation-name: toBottom;				
+
+				&:not(.css-another){
+					animation-name: toBottom;	
+				}
+				
+				&.css-another{
+					z-index: 500;
+					transform: none;
+					animation-duration: .6s;
+					// animation-delay: 1s;
+					animation-name: fadeOut;
+				}			
 			}
 
 			&_about{

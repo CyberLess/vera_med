@@ -3,10 +3,13 @@
 	if(!$('.select').length)
 		return false;
 
+    let $fullpage = $('.fullpage__part_fluid');
+
 	$('.select__label').on('click', e => {
 		let $select = $(e.currentTarget).closest('.select');
 
 		$select.toggleClass('is-active')
+        $fullpage.toggleClass('is-front')
 	})
 
     $('.select__list-item').on('click', e => {
@@ -19,6 +22,7 @@
         $(e.currentTarget).addClass('is-selected')
 
         select.removeClass('is-active')
+        $fullpage.removeClass('is-front')
         select.find('.select__label span').text(label)
         input.val(val)
     })
@@ -29,8 +33,6 @@
     	if(ww <= 580){
     		$('.select').each((i, el) => {
     			let help_width = $(el).find('.select__text').width() + 30
-
-    			console.log('width', help_width)
 
     			$(el).find('.select__label').css('padding-left', `${help_width}px`)
     		})
@@ -45,6 +47,7 @@
 
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             container.closest('.select').removeClass('is-active');
+            $fullpage.removeClass('is-front')
         }
     });  
 
