@@ -1,0 +1,106 @@
+.faq {
+	font-size: 1.5rem;
+	padding: 10rem 0 10rem 0;
+	color: #0A113C;
+	&__title, &__desc {
+		text-align: center;
+	}
+	&__desc {
+		margin-top: 1.4rem;
+	}
+	&__inside-wrap {
+		background: #fff;
+		max-width: 119.5rem;
+		margin: 4.3rem auto 0 auto;
+		padding: 4.5rem 12rem 7.5rem 12rem;
+	}
+	&__item {
+		border-bottom: 1px solid #DADCE0;
+		&.active {
+			border-color: $blue;
+			.faq__icon {
+				color: #0A113C;
+				&:before {
+					content: '-';
+				}
+			}
+		}
+	}
+	&__head {
+		min-height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2rem 0 2rem 0;
+		cursor: pointer;
+	}
+	&__item-title {
+		font-weight: bold;
+		line-height: 2.5rem;
+	}
+	&__icon {
+		font-size: 3.6rem;
+		line-height: 1;
+		font-weight: bold;
+		color: $blue;
+		&:before {
+			content: '+';
+			display: block;
+		}
+	}
+	&__content {
+		padding-bottom: 4rem;
+		display: none;
+		p {
+			font-size: 1.7rem;
+			line-height: 2.1rem;
+			color: $light;
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.faq {
+		&__inside-wrap {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.faq {
+		background: #FAFBFC;
+		padding: 47px 0 47px 0;
+		margin-top: 35px;
+		&__inside-wrap {
+			margin-top: 21px;
+			background: none;
+			padding: 0;
+		}
+		&__head {
+			min-height: inherit;
+			padding: 15px 0 15px 0;
+		}
+		&__item {
+			&-title {
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+		&__icon {
+			font-size: 19px;
+		}
+		&__content {
+			padding-bottom: 20px;
+			margin-top: 0;
+			p {
+				font-size: 13px;
+				line-height: 18px;
+			}
+		}
+	}
+}
