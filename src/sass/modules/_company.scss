@@ -68,6 +68,13 @@
 		.btn-nav{
 			border-color: #fff;
 			stroke: #fff;
+			&:hover {
+				stroke: $blue;
+			}
+		}
+		.b-circle {
+			border-color: #fff;
+			background-color: #fff;
 		}
 	}
 	&__bottom {
@@ -140,6 +147,9 @@
 			}
 			&_right {
 				margin-right: 0;
+			}
+			&:hover, &:active {
+				stroke: #fff;
 			}
 		}
 		&__top {

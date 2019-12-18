@@ -224,4 +224,12 @@
 			}
 		}
 	}
+	&__link {
+		display: block;
+		transition: ease 0.2s;
+		&:hover, &:active {
+			transform: translateX(5px);
+			color: $blue;
+		}
+	}
 }

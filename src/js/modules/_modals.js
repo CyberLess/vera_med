@@ -54,7 +54,7 @@ $(() => {
 				enabled: true,
 				navigateByImgClick: true,
 				preload: [0,1],
-				arrowMarkup: `<div class="btn-nav btn-nav_%dir%">
+				arrowMarkup: `<div class="mfp-arrow btn-nav btn-nav_%dir%">
 								<svg class="icon icon-arrow2" viewBox="0 0 9 17">
 									<use xlink:href="/app/icons/sprite.svg#arrow2"></use>
 								</svg>

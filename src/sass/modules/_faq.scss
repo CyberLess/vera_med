@@ -15,14 +15,46 @@
 		padding: 4.5rem 12rem 7.5rem 12rem;
 	}
 	&__item {
-		border-bottom: 1px solid #DADCE0;
+		position: relative;
+		padding-bottom: 1px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			width: 100%;
+			background: #DADCE0;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			width: 0;
+			background: $blue;
+			transition: ease 0.3s;
+		}
 		&.active {
-			border-color: $blue;
+			&:after {
+				width: 100%;
+			}
 			.faq__icon {
 				color: #0A113C;
 				&:before {
 					content: '-';
 				}
+			}
+		}
+		&:hover {
+			.faq__item-title {
+				color: $blue;
+			}
+			&:after {
+				width: 100%;
 			}
 		}
 	}
@@ -37,6 +69,7 @@
 	&__item-title {
 		font-weight: bold;
 		line-height: 2.5rem;
+		transition: ease 0.2s;
 	}
 	&__icon {
 		font-size: 3.6rem;

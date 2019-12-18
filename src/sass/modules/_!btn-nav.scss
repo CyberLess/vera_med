@@ -2,6 +2,8 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	overflow: hidden;
 	width: 7.5rem;
 	min-width: 7.5rem;
 	height: 7.5rem;
@@ -9,8 +11,12 @@
 	border-radius: 7px;
 	cursor: pointer;
 	transition: ease 0.2s;
-	opacity: 0.44;
 	stroke: $blue;
+	
+	.b-circle {
+		border-color: $blue;
+		background-color: $blue;
+	}
 	
 	svg {
 		width: 16px;
@@ -19,7 +25,7 @@
 	}
 	
 	&:hover, &:active {
-		opacity: 1;
+		stroke: #fff;
 	}
 	
 	&_left {
@@ -49,6 +55,12 @@
 		}
 		&_right {
 			margin-right: 16px;
+		}
+		&:hover, &:active {
+			stroke: $blue;
+		}
+		.btn__back {
+			display: none;
 		}
 	}
 }

@@ -2,7 +2,7 @@ import {getRandomInt, transitionEnd} from '../functions';
 
 $(() => {
 
-	$('.btn, .border-button').each((i, el) => {
+	$('.btn, .border-button, .btn-nav').each((i, el) => {
 		for(i = 0; i < getRandomInt(2, 5); i++){
 			
 			let left = getRandomInt(0, $(el).outerWidth()),
@@ -12,7 +12,7 @@ $(() => {
 		}
 	})
 
-	$('.btn, .border-button').hover(
+	$('.btn, .border-button, .btn-nav').hover(
 		e => {
 			let $this = $(e.currentTarget);
 

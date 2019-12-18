@@ -102,7 +102,7 @@
 
 	@include max-screen($large_mobile) {
 		text-align: center;
-
+		min-height: inherit;
 
 		&__wrap{
 			height: 100%;

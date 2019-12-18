@@ -32,15 +32,6 @@
 	&__slide {
 		padding: 0 1rem 0 1rem;
 		display: block;
-		&.swiper-slide-next {
-			.fotogallery__item {
-				background: #fff;
-			}
-			.fotogallery__item-name {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
 	}
 	&__item {
 		border-radius: 7px;
@@ -65,13 +56,13 @@
 			opacity: 0;
 			transform: translateY(-10px);
 		}
-		/*&:hover {
+		&:hover {
 			background: #fff;
 			.fotogallery__item-name {
 				opacity: 1;
 				transform: translateY(0);
 			}
-		}*/
+		}
 	}
 	&__pagination {
 		margin-top: 5rem;

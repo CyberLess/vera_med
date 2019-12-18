@@ -215,18 +215,26 @@ import Swiper from 'swiper';
 		  allowTouchMove: false,
 		  slidesPerView: 8,
 		  loop: true,
+		  autoplay: {
+			delay: 1000000,
+			disableOnInteraction: false,
+		  },
 		  breakpoints: {
 			0: {
 			  allowTouchMove: true,
 			  slidesPerView: 3,
 			  autoplay: {
-				delay: 3000,
+				delay: 1500,
+				disableOnInteraction: false,
 			  },
 			},
 			400: {
 			  allowTouchMove: true,
 			  slidesPerView: 4,
-			  autoplay: true,
+			  autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			  },
 			},
 			580: {
 			  pagination: {

@@ -23,6 +23,12 @@
 			.sertificate__foto:after, .sertificate__zoom, .sertificate__text {
 				opacity: 1;
 			}
+			.sertificate__foto:after {
+				transform: scale(1);
+			}
+			.sertificate__zoom {
+				transform: translateX(-50%) translateY(-50%) scale(1);
+			}
 		}
 	}
 	&__foto {
@@ -48,6 +54,7 @@
 			background: rgba(244, 246, 250, 0.75);
 			opacity: 0;
 			transition: ease 0.2s;
+			transform: scale(0.5);
 		}
 	}
 	&__zoom {
@@ -63,7 +70,7 @@
 		left: 50%;
 		top: 50%;
 		opacity: 0;
-		transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%) scale(0);
 		transition: ease 0.2s;
 		fill: none;
 		rect {
