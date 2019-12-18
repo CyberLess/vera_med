@@ -1,0 +1,46 @@
++b.SECTION.scheme
+	+e.wrap.wrap
+		+e.H2.title.h2
+			| Как заказать мед. изделия?
+		+e.desc
+			| Порядок оформления заказов онлайн через наш сайт. Свяжитесь с нами по 
+			br
+			| телефону, электронной почте или воспользуйтесь формой ниже.
+		+e.inside-wrap
+			+b.steps.swiper-container.js-to-swiper
+				.swiper-wrapper
+					+e.item.swiper-slide
+						+e.icon
+							+e.icon-inner
+								+e.icon-center
+									+e.OBJECT.icon-object(type='image/svg+xml', data='/app/objects/mail.svg')
+						+e.name.h4 Заявка
+						+e.text.p
+							| Отправьте онлайн-заявку через сайт, 
+							br
+							| c вами свяжется менеджер.
+					+e.item.swiper-slide
+						+e.icon
+							+e.icon-inner
+								+e.icon-center
+									+e.OBJECT.icon-object(type='image/svg+xml', data='/app/objects/credit-cards.svg')
+						+e.name.h4 Счет
+						+e.text.p
+							| Оплатите стоимость заказа 
+							br
+							| безналичным расчетом по счету.
+					+e.item.swiper-slide
+						+e.icon
+							+e.icon-inner
+								+e.icon-center
+									+e.OBJECT.icon-object(type='image/svg+xml', data='/app/objects/box.svg')
+						+e.name.h4 Отгрузка
+						+e.text.p
+							| Самовывоз, до вашей компании, 
+							| до транспортной компании.
+				+e.nav
+					+b.arrow-nav._left
+						+icon('arrow2', '0 0 9 17')
+					+b.pagination
+					+b.arrow-nav._right
+						+icon('arrow2', '0 0 9 17')

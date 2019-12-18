@@ -3,6 +3,7 @@
 		width: 12.6rem;
 		margin: auto;
 		margin-bottom: 16px;
+		position: relative;
 
 		&-inner{
 			position: relative;
@@ -31,5 +32,18 @@
 		margin-top: 1.3rem;
 		padding-left: 3.7rem;
 		padding-right: 3.7rem;
+	}
+	
+	&__online {
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: #03F07E;
+		border: 4px solid #FFFFFF;
+		border-radius: 100%;
+		position: absolute;
+		right: 13px;
+		bottom: 4px;
 	}
 }

@@ -1,0 +1,22 @@
+.scheme {
+	padding: 10rem 0 10rem 0;
+	font-size: 1.5rem;
+	background: #FAFBFC;
+	color: #0A113C;
+	&__title, &__desc {
+		text-align: center;
+	}
+	&__desc {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		color: $light;
+		margin-top: 1.4rem;
+	}
+	&__inside-wrap {
+		max-width: 119.5rem;
+		margin: 5.9rem auto 0 auto;
+	}
+	.steps {
+		max-width: 105.5rem;
+	}
+}
