@@ -11,7 +11,7 @@
 				br
 				| низкие цены на медицинские товары!
 			+e.row.flex._vertical
-				+e.button.btn__.BUTTON
+				+e.button.btn__.BUTTON.js-modal(data-modal="#recall")
 					+e.back.js-circles.SPAN
 					+e.icon.SPAN
 						+icon('mark', '0 0 24 25')
@@ -520,6 +520,83 @@
 						+e.A.link(href="#") Частые вопросы
 			+e.column
 				+e.H3.title Категория 
+				+e.UL.list
+					+e.LI.item._main
+						+e.A.link(href="#") Шаблон договора
+					+e.LI.item._main
+						+e.A.link(href="#") Наша команда
+					+e.LI.item._main
+						+e.A.link(href="#") Фотогалерея
+					+e.LI.item._main
+						+e.A.link(href="#") Новости
++b.cat._mobile
+	+e.top.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				+e.top-item Инструменты
+			.swiper-slide
+				+e.top-item Расходные материалы
+			.swiper-slide
+				+e.top-item Другое
+			.swiper-slide
+				+e.top-item Категория
+			.swiper-slide
+				+e.top-item Категория
+	+e.content.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				+e.UL.list
+					+e.LI.item._main
+						+e.A.link(href="#") Иглы
+					+e.LI.item._main
+						+e.A.link(href="#") Шприцы
+					+e.LI.item._main
+						+e.A.link(href="#") Скальпели
+					+e.LI.item._main
+						+e.A.link(href="#") Зонды
+					+e.LI.item._main
+						+e.A.link(href="#") Гели
+					+e.LI.item._main
+						+e.A.link(href="#") Шпатели
+			.swiper-slide
+				+e.UL.list
+					+e.LI.item._main
+						+e.A.link(href="#") Перчатки
+					+e.LI.item._main
+						+e.A.link(href="#") Бинт
+					+e.LI.item._main
+						+e.A.link(href="#") Марля
+					+e.LI.item._main
+						+e.A.link(href="#") Бахилы
+					+e.LI.item._main
+						+e.A.link(href="#") Клеенка
+					+e.LI.item._main
+						+e.A.link(href="#") Индикаторы
+					+e.LI.item._main
+						+e.A.link(href="#") Пакеты для утилизации
+					+e.LI.item._main
+						+e.A.link(href="#") Пластырь
+			.swiper-slide
+				+e.UL.list
+					+e.LI.item._main
+						+e.A.link(href="#") Одежда
+					+e.LI.item._main
+						+e.A.link(href="#") Гели
+					+e.LI.item._main
+						+e.A.link(href="#") Дез. средства
+					+e.LI.item._main
+						+e.A.link(href="#") Системы переливания
+			.swiper-slide
+				+e.UL.list
+					+e.LI.item._main
+						+e.A.link(href="#") Документы
+					+e.LI.item._main
+						+e.A.link(href="#") Реквизиты
+					+e.LI.item._main
+						+e.A.link(href="#") Вакансии
+					+e.LI.item._main
+						+e.A.link(href="#") Частые вопросы
+			.swiper-slide
 				+e.UL.list
 					+e.LI.item._main
 						+e.A.link(href="#") Шаблон договора

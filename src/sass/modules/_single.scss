@@ -73,6 +73,31 @@
 				// width: 68.75%;
 			}
 		}
+		
+		&_info {
+			margin-top: 2.5rem;
+			font-size: 1.5rem;
+			line-height: 2.1rem;
+			td {
+				padding-top: 2.4rem;
+				padding-bottom: 2.4rem;
+				&:first-child{
+					width: 50%;
+					.dt__text {
+						max-width: 31.5rem;
+					}
+				}
+				&:last-child{
+					.dt__text {
+						max-width: 40rem;
+					}
+				}
+			}
+			@include max-screen($large_mobile) {
+				font-size: 13px;
+				line-height: 18px;
+			}
+		}
 
 		@include max-screen($small_tablet) {
 			margin-top: 2.4rem;
@@ -178,6 +203,198 @@
 		@include max-screen($large_tablet) {
 			margin-top: 1.9rem;
 			margin-bottom: 1.7rem;
+		}
+	}
+	&__team {
+		&-title {
+			margin-bottom: 1.2rem;
+		}
+		&-slider {
+			margin-left: -0.8rem;
+			margin-right: -0.8rem;
+			padding-top: 2.5rem;
+		}
+	}
+	.team {
+		padding: 8rem 0 8rem;
+		background: none;
+		&__nav {
+			display: none;
+		}
+		&__slide {
+			width: 33.33%;
+			padding: 0 0.8rem 0 0.8rem;
+			margin-top: 1.6rem;
+		}
+		&__list {
+			flex-wrap: wrap;
+		}
+	}
+	&__faq {
+		&-title {
+			margin-bottom: 1.2rem;
+		}
+	}
+	.faq {
+		padding: 8rem 0 8rem 0;
+		&__inside-wrap {
+			padding: 3rem 8.5rem 7rem 6rem;
+		}
+	}
+	.sertificate {
+		background: none;
+		padding: 0 0 8rem 0;
+		&__title {
+			letter-spacing: -0.02em;
+		}
+		&__foto {
+			background: rgba(221, 227, 239, 0.44);
+		}
+		&__list {
+			margin-left: -24/913*100%;
+		}
+		&__item {
+			width: 280/913*100%;
+			margin-left: 24/913*100%;
+		}
+	}
+	&__gallery {
+		font-size: 1.5rem;
+		&-title {
+			margin-bottom: 0;
+		}
+		&-slider {
+			margin: 0 -0.8rem 0 -0.8rem;
+		}
+		&-list {
+			padding-top: 1.8rem;
+			flex-wrap: wrap;
+		}
+		&-slide {
+			padding: 0 0.8rem 0 0.8rem;
+			width: 33.33%;
+			margin-top: 1.6rem;
+		}
+		&-foto {
+			border-radius: 7px;
+			width: 100%;
+		}
+		&-nav {
+			display: none;
+		}
+	}
+	&__vacancy {
+		padding-top: 8rem;
+		&-title {
+			margin-bottom: 1.2rem;
+		}
+		.tabs {
+			margin-top: 3rem;
+			&__content {
+				&-item {
+					padding-top: 7rem;
+					padding-bottom: 7rem;
+					h4 {
+						line-height: 4.4rem;
+						&:not(:first-child) {
+							margin-top: 3.4rem;
+						}
+					}
+					p, ol, ul {
+						&:not(:first-child) {
+							margin-top: 1.2rem;
+						}
+					}
+					ol {
+						list-style: decimal inside;
+					}
+					h5 {
+						font-size: 1.5rem;
+						line-height: 2.1rem;
+						font-weight: bold;
+						margin-top: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.single {
+		&__team {
+			&-title, &-desc {
+				text-align: center;
+			}
+		}
+		.team {
+			padding: 30px 0 50px 0;
+			&__slide {
+				margin-top: 0;
+				width: 100%;
+			}
+			&__list {
+				flex-wrap: nowrap;
+			}
+			&__nav {
+				display: flex;
+				padding: 0;
+			}
+		}
+		&__faq {
+			&-title, &-desc {
+				text-align: center;
+			}
+		}
+		.faq {
+			background: none;
+			padding: 5.5rem 0 4.8rem 0;
+			margin-top: 0;
+			&__inside-wrap {
+				padding: 0;
+			}
+		}
+		.sertificate {
+			padding-bottom: 55px;
+			&__list {
+				margin-left: 0;
+				width: 100%;
+			}
+			&__item {
+				margin-left: 0;
+			}
+		}
+		&__gallery {
+			padding-top: 35px;
+			&-title {
+				text-align: center;
+			}
+			&-list {
+				flex-wrap: nowrap;
+			}
+			&-slide {
+				width: 100%;
+			}
+			&-nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 15px;
+			}
+		}
+		&__vacancy {
+			padding-top: 50px;
+			.tabs {
+				&__content {
+					&-item {
+						padding-top: 30px;
+						padding-bottom: 30px;
+						h4 {
+							line-height: 3.2rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }

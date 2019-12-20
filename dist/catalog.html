@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Каталог</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576704990911">
+    <link rel="stylesheet" href="/app/css/app.css?v=1576875955053">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -36,7 +36,7 @@
                             <div class="header__cell header__cell_phone header__cell_center"><a class="header__phone small phone" href="tel:+74953696639"><span class="phone__icon"><svg class="icon icon-phone" viewBox="0 0 18 17"><use xlink:href="/app/icons/sprite.svg#phone"></use></svg></span>+7 (495) 369-66-39</a>
                             </div>
                             <div class="header__cell header__cell_search header__cell_right">
-                                <button class="header__button border-button"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
+                                <button class="header__button border-button js-modal" data-modal="#recall"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
                                 </button>
                                 <div class="header__search search-button js-submenu" data-menu="#search-panel" data-event="click">
                                     <div class="search-button__state search-button__state_default">
@@ -186,7 +186,7 @@
                                                         <use xlink:href="/app/icons/sprite.svg#mark"></use>
                                                     </svg>
                                                 </div>
-                                                <button class="poster__button btn btn_white">Получить прайс лист</button>
+                                                <button class="poster__button btn btn_white js-modal" data-modal="#recall">Получить прайс лист</button>
                                             </div>
                                         </div>
                                     </div>
@@ -2060,9 +2060,64 @@
             </footer>
         </div>
     </div>
-    <div class="modals mfp-hide" id="recall"></div>
+    <form class="callbox modals form mfp-hide" id="resend" action="/app/mail/">
+        <div class="callbox__inside-wrap">
+            <div class="callbox__title h3">Свяжитесь с&nbsp;нами</div>
+            <div class="callbox__row flex flex_justify">
+                <div class="callbox__cell callbox__cell_default">
+                    <div class="callbox__input input">
+                        <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                    </div>
+                    <div class="callbox__input input">
+                        <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+                    </div>
+                    <div class="callbox__input input">
+                        <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                    </div>
+                </div>
+                <div class="callbox__cell callbox__cell_default">
+                    <div class="callbox__textarea textarea">
+                        <div class="textarea__placeholder">
+                            <svg class="icon icon-message" viewBox="0 0 28 28">
+                                <use xlink:href="/app/icons/sprite.svg#message"></use>
+                            </svg>Введите текст</div>
+                        <textarea class="textarea__item" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="callbox__cell callbox__cell_info flex flex_vertical">
+                    <div class="callbox__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
+                </div>
+                <div class="callbox__cell callbox__cell_button">
+                    <button class="callbox__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="callbox modals modals modals_small form mfp-hide" id="recall" action="/app/mail/">
+        <div class="callbox__inside-wrap">
+            <div class="callbox__head">
+                <div class="callbox__title h4">Получить прайс-лист</div>
+                <div class="callbox__desc verysmall">Заполните форму, чтобы получить оптовый
+                    <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="name" placeholder="Евгений" type="text" />
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+            </div>
+            <button class="callbox__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+            </button>
+            <div class="callbox__polit callbox__polit_center verysmall">Нажимая кнопку "Отправить", Вы принимаете
+                <br>условия <a href="#">политики конфиденциальности </a> сайта.</div>
+        </div>
+    </form>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576704991019"></script>
+    <script src="/app/js/app.js?v=1576875955177"></script>
 </body>
 
 </html>

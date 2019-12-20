@@ -46,4 +46,16 @@
 		right: 13px;
 		bottom: 4px;
 	}
+	&__offline {
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: #CDCFDB;
+		border: 4px solid #FFFFFF;
+		border-radius: 100%;
+		position: absolute;
+		right: 13px;
+		bottom: 4px;
+	}
 }

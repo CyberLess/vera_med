@@ -65,17 +65,6 @@
 		width: 100%;
 		top: 50%;
 		transform: translateY(-80%);
-		.btn-nav{
-			border-color: #fff;
-			stroke: #fff;
-			&:hover {
-				stroke: $blue;
-			}
-		}
-		.b-circle {
-			border-color: #fff;
-			background-color: #fff;
-		}
 	}
 	&__bottom {
 		margin-top: 5.5rem;
@@ -147,9 +136,6 @@
 			}
 			&_right {
 				margin-right: 0;
-			}
-			&:hover, &:active {
-				stroke: #fff;
 			}
 		}
 		&__top {

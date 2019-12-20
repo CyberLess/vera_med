@@ -96,6 +96,10 @@
 	&__list{
 		margin: 0 !important;
 		width: 83.13%;
+		
+		.swiper-slide {
+			width: auto;
+		}
 		&-item{
 			height: 8.3rem;
 			display: flex;
@@ -106,6 +110,7 @@
 			color: $dark;
 			transition: ease .15s;
 			cursor: pointer;
+			padding: 0 3rem 0 3rem;
 
 			&:before{
 				content: '';

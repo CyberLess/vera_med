@@ -1,3 +1,20 @@
+.map {
+	height: 52.5rem;
+	width: 100%;
+	&__adress {
+		font-size: 11px;
+		line-height: 15px;
+		color: #0A113C;
+		font-weight: 400;
+	}
+	.gm-style-mtc, .gm-svpc {
+		display: none;
+	}
+	@include max-screen($large_tablet) {
+		height: 60vh;
+	}
+}
+
 .footer{
 	color: #fff;
 

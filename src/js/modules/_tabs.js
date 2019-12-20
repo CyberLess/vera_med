@@ -11,29 +11,27 @@ import Swiper from 'swiper';
 		let navNext = $(el).find('.swiper-button-next')[0];
 
 		let navSwiper = new Swiper(nav, {
+			slidesPerView: 'auto',
+			loop: false,
+			spaceBetween: 0,
 			navigation: {
 				nextEl: navNext,
 				prevEl: navPrev,
 			},
 			breakpoints: {
 				300: {
-					slidesPerView: 'auto',
-					spaceBetween: 30,
-					// centeredSlides: true,
-					loop: true,
+					loop: false,
+					spaceBetween: 30
 				},
 				580: {
-					slidesPerView: 3,
 					loop: false,
 				},
 				768: {
-					slidesPerView: 5,
-					// centeredSlides: false,
 					loop: false,
 					spaceBetween: 0
 				},
 				1024: {
-					slidesPerView: 6,
+					slidesPerView: 'auto',
 				},
 			},
 			// slidesPerView: 6,
@@ -62,4 +60,36 @@ import Swiper from 'swiper';
 	})
 
 
-})($)
+})($);
+
+(()=>{
+
+	$('.cat').each((i,el) => {
+
+		let nav = $(el).find('.cat__top')[0];
+		let content = $(el).find('.cat__content')[0];
+
+		let navSwiper = new Swiper(nav, {
+			slidesPerView: 'auto',
+			spaceBetween: 25,
+			loop: false,
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+		});
+
+		let contentSwiper = new Swiper(content, {
+			noSwiping: true,
+			allowTouchMove: false,
+			onlyExternal: true,
+			autoHeight: true,
+			thumbs: {
+				swiper: navSwiper
+			}
+
+		});	
+
+	});
+
+
+})($);

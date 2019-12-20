@@ -40,6 +40,18 @@
 			transform: rotate(90deg);
 		}
 	}
+	
+	&_white {
+		border-color: #fff;
+		stroke: #fff;
+		&:hover {
+			stroke: $blue;
+		}
+		.b-circle {
+			border-color: #fff;
+			background-color: #fff;
+		}
+	}
 }
 
 @include max-screen($large_mobile) {
@@ -61,6 +73,11 @@
 		}
 		.btn__back {
 			display: none;
+		}
+		&_white {
+			&:hover, &:active {
+				stroke: #fff;
+			}
 		}
 	}
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576704992458">
+    <link rel="stylesheet" href="/app/css/app.css?v=1576875957702">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -36,7 +36,7 @@
                             <div class="header__cell header__cell_phone header__cell_center"><a class="header__phone small phone" href="tel:+74953696639"><span class="phone__icon"><svg class="icon icon-phone" viewBox="0 0 18 17"><use xlink:href="/app/icons/sprite.svg#phone"></use></svg></span>+7 (495) 369-66-39</a>
                             </div>
                             <div class="header__cell header__cell_search header__cell_right">
-                                <button class="header__button border-button"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
+                                <button class="header__button border-button js-modal" data-modal="#recall"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
                                 </button>
                                 <div class="header__search search-button js-submenu" data-menu="#search-panel" data-event="click">
                                     <div class="search-button__state search-button__state_default">
@@ -186,7 +186,7 @@
                                                         <use xlink:href="/app/icons/sprite.svg#mark"></use>
                                                     </svg>
                                                 </div>
-                                                <button class="poster__button btn btn_white">Получить прайс лист</button>
+                                                <button class="poster__button btn btn_white js-modal" data-modal="#recall">Получить прайс лист</button>
                                             </div>
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@
                         <div class="main__text p17">Скачайте оптовый прайс-лист, у&nbsp;нас
                             <br>низкие цены на&nbsp;медицинские товары!</div>
                         <div class="main__row flex flex_vertical">
-                            <button class="main__button btn"><span class="btn__back js-circles"></span><span class="btn__icon"><svg class="icon icon-mark" viewBox="0 0 24 25"><use xlink:href="/app/icons/sprite.svg#mark"></use></svg></span><span class="btn__text">Получить прайс лист</span>
+                            <button class="main__button btn js-modal" data-modal="#recall"><span class="btn__back js-circles"></span><span class="btn__icon"><svg class="icon icon-mark" viewBox="0 0 24 25"><use xlink:href="/app/icons/sprite.svg#mark"></use></svg></span><span class="btn__text">Получить прайс лист</span>
                             </button><a class="main__link small link" href="#">Больше информации<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                         </div>
                         <div class="main__bottom flex">
@@ -952,6 +952,103 @@
                     </div>
                 </div>
             </div>
+            <div class="cat cat_mobile">
+                <div class="cat__top swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cat__top-item">Инструменты</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cat__top-item">Расходные материалы</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cat__top-item">Другое</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cat__top-item">Категория</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cat__top-item">Категория</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat__content swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="cat__list">
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Иглы</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Шприцы</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Скальпели</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Зонды</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Гели</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Шпатели</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="cat__list">
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Перчатки</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Бинт</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Марля</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Бахилы</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Клеенка</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Индикаторы</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Пакеты для&nbsp;утилизации</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Пластырь</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="cat__list">
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Одежда</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Гели</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Дез. средства</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Системы переливания</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="cat__list">
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Документы</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Реквизиты</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Вакансии</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Частые вопросы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="cat__list">
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Шаблон договора</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Наша команда</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Фотогалерея</a>
+                                </li>
+                                <li class="cat__item cat__item_main"><a class="cat__link" href="#">Новости</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section class="keys">
                 <div class="keys__wrap wrap">
                     <h2 class="keys__title h2">Ключевые преимущества</h2>
@@ -1035,7 +1132,7 @@
                             </div>
                         </div>
                         <div class="company__nav">
-                            <div class="btn-nav btn-nav_left"><span class="btn__back js-circles"></span>
+                            <div class="btn-nav btn-nav_left btn-nav_white"><span class="btn__back js-circles"></span>
                                 <div class="btn-nav__icon">
                                     <svg class="icon icon-arrow2" viewBox="0 0 9 17">
                                         <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
@@ -1043,7 +1140,7 @@
                                 </div>
                             </div>
                             <div class="company__pagination pagination"></div>
-                            <div class="btn-nav btn-nav_right"><span class="btn__back js-circles"></span>
+                            <div class="btn-nav btn-nav_right btn-nav_white"><span class="btn__back js-circles"></span>
                                 <div class="btn-nav__icon">
                                     <svg class="icon icon-arrow2" viewBox="0 0 9 17">
                                         <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
@@ -1266,27 +1363,27 @@
                 <div class="fotogallery__slider swiper-container">
                     <div class="fotogallery__list swiper-wrapper js-gallery2"><a class="fotogallery__slide swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery1.webp">
-                            <img src="/app/img/fotogallery1.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery1.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span></a>
                         <a class="fotogallery__slide swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery2.webp">
-                            <img src="/app/img/fotogallery2.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery2.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span>
                         </a><a class="fotogallery__slide swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery3.webp">
-                            <img src="/app/img/fotogallery3.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery3.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span></a>
                         <a class="fotogallery__slide swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery1.webp">
-                            <img src="/app/img/fotogallery1.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery1.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span>
                         </a><a class="fotogallery__slide swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery2.webp">
-                            <img src="/app/img/fotogallery2.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery2.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span></a>
                         <a class="fotogallery__slide swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов"><span class="fotogallery__item"><picture>
                             <source type="image/webp" srcset="/app/img/fotogallery3.webp">
-                            <img src="/app/img/fotogallery3.jpg" class="fotogallery__item-foto" alt="" role="presentation" />
+                            <img src="/app/img/fotogallery3.jpg" class="fotogallery__item-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
                         </picture><span class="fotogallery__item-name"><strong>Работа менеджера по&nbsp;обслуживанию клиентов</strong></span></span>
                         </a>
                     </div>
@@ -1318,7 +1415,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__slider swiper-container">
+                <div class="team__slider swiper-container js-team-main">
                     <div class="team__list swiper-wrapper">
                         <div class="team__slide swiper-slide">
                             <div class="manager team__item">
@@ -1625,6 +1722,8 @@
                     </div>
                 </div>
             </section>
+            <div class="map" id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
         </div>
         <div class="fullpage__part fullpage__part_static fullpage__part_footer">
             <footer class="footer">
@@ -1731,9 +1830,64 @@
             </footer>
         </div>
     </div>
-    <div class="modals mfp-hide" id="recall"></div>
+    <form class="callbox modals form mfp-hide" id="resend" action="/app/mail/">
+        <div class="callbox__inside-wrap">
+            <div class="callbox__title h3">Свяжитесь с&nbsp;нами</div>
+            <div class="callbox__row flex flex_justify">
+                <div class="callbox__cell callbox__cell_default">
+                    <div class="callbox__input input">
+                        <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                    </div>
+                    <div class="callbox__input input">
+                        <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+                    </div>
+                    <div class="callbox__input input">
+                        <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                    </div>
+                </div>
+                <div class="callbox__cell callbox__cell_default">
+                    <div class="callbox__textarea textarea">
+                        <div class="textarea__placeholder">
+                            <svg class="icon icon-message" viewBox="0 0 28 28">
+                                <use xlink:href="/app/icons/sprite.svg#message"></use>
+                            </svg>Введите текст</div>
+                        <textarea class="textarea__item" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="callbox__cell callbox__cell_info flex flex_vertical">
+                    <div class="callbox__polit verysmall">Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">политики конфиденциальности </a> сайта.</div>
+                </div>
+                <div class="callbox__cell callbox__cell_button">
+                    <button class="callbox__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="callbox modals modals modals_small form mfp-hide" id="recall" action="/app/mail/">
+        <div class="callbox__inside-wrap">
+            <div class="callbox__head">
+                <div class="callbox__title h4">Получить прайс-лист</div>
+                <div class="callbox__desc verysmall">Заполните форму, чтобы получить оптовый
+                    <br>прайс-лист на&nbsp;3500+ позиций за&nbsp;5 минут.</div>
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="name" placeholder="Евгений" type="text" />
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="phone" placeholder="+7 (___) ___ - __ - __" type="text" />
+            </div>
+            <div class="callbox__input input">
+                <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+            </div>
+            <button class="callbox__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+            </button>
+            <div class="callbox__polit callbox__polit_center verysmall">Нажимая кнопку "Отправить", Вы принимаете
+                <br>условия <a href="#">политики конфиденциальности </a> сайта.</div>
+        </div>
+    </form>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576704992528"></script>
+    <script src="/app/js/app.js?v=1576875957841"></script>
 </body>
 
 </html>

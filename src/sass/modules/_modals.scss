@@ -15,6 +15,23 @@
 		top: -40px;
 		font-size: 4rem;
 	}
+	/*.btn-nav {
+		position: absolute;
+		top: 50%;
+		margin-top: -3.7rem;
+		border-color: #fff;
+		stroke: #fff;
+		z-index: 40;
+		&_left {
+			left: auto;
+			right: 100%;
+			margin-right: 4rem;
+		}
+		&_right {
+			left: 100%;
+			margin-left: 4rem;
+		}
+	}*/
 }
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
@@ -47,6 +64,7 @@
 }
 
 .mfp-container {
+	padding: 10px 10px 0 10px;
 	.btn-nav {
 		position: absolute;
 		top: 50%;
@@ -54,6 +72,7 @@
 		border-color: #fff;
 		stroke: #fff;
 		z-index: 40;
+		background: none;
 		&_left {
 			left: 32px;
 		}
@@ -63,19 +82,94 @@
 	}
 }
 
-.css-modal-animate.mfp-bg {
-  transition: all 0.3s ease-out;
-  opacity: 0;
+.mfp-content {
+	padding-bottom: 10px;
 }
-  
-.css-modal-animate.mfp-ready.mfp-bg {
-  opacity: 0.8;
+
+.mfp-bg{
+	background-color: #444662;
+	opacity: 0.55;	
 }
- 
-.css-modal-animate .mfp-with-anim {
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  transform: scale(0.8);
+
+.mfp-wrap {
+	overflow-x: hidden;
+	overflow-y: auto !important;
+}
+
+.modals{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 96rem;
+	background-color: #fff;
+	cursor: auto!important;	
+	font-size: 1.5rem;
+	border-radius: 7px;
+	
+	&_small {
+		max-width: 50rem;
+		padding-bottom: 8rem;
+		.callbox__inside-wrap {
+			max-width: 35.3rem;
+			margin: 0 auto;
+		}
+	}
+	
+	&__close {
+		width: 4.2rem;
+		height: 4.2rem;
+		cursor: pointer;
+		position: absolute;
+		right: -6.2rem;
+		top: -1rem;
+		fill: #fff;
+	}
+}
+.mfp-content, .mfp-bg, .mfp-container{
+	cursor: url('/app/img/close.png') 16 16, auto!important;
+    font-size: 16px;
+}
+.mfp-bg{
+	opacity: 0;
+	transition: all .5s ease; 
+	
+
+
+	&.mfp-ready{
+		opacity: 0.502;	
+	}
+
+	&.mfp-removing{
+		opacity: 0;
+	}
+}
+
+.css-modal-animate{
+	// start state
+	
+	overflow: hidden;
+
+	.modals, .mfp-figure{
+		transition: all .5s ease; 
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	// animate in
+	&.mfp-ready{
+		.modals, .mfp-figure{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	// animate out
+	&.mfp-removing{	
+		.modals, .mfp-figure{
+			opacity: 0;
+		}
+	}
+
 }
 
 @include max-screen($large_tablet) {
@@ -94,6 +188,24 @@
 	.mfp-figure {
 		img.mfp-img {
 			max-height: 70vh !important;
+		}
+	}
+	.modals {
+		&__close {
+			top: -5.2rem;
+			right: -1rem;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.modals {
+		&__close {
+			right: 5px;
+			top: 5px;
+			fill: #0A113C;
+			width: 30px;
+			height: 30px;
 		}
 	}
 }

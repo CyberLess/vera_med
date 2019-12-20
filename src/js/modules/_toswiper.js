@@ -145,7 +145,7 @@ import Swiper from 'swiper';
 })($);
 
 (() => {
-	var productslider = new Swiper('.team__slider', {
+	var teamslider = new Swiper('.js-team-main', {
 		 loop: true,
 		 slidesPerView: 3,
 		 keyboardControl: true,
@@ -174,6 +174,44 @@ import Swiper from 'swiper';
 			},
 		  }
 	});
+})($);
+
+(() => {
+	if ( $(window).outerWidth() < 580 ) {
+		var teamslider = new Swiper('.js-team-page', {
+			 loop: true,
+			 slidesPerView: 1,
+			 keyboardControl: true,
+			 grabCursor: true,
+			 navigation: {
+				nextEl: '.team .btn-nav_right',
+				prevEl: '.team .btn-nav_left',
+			 },
+			 pagination: {
+				el: '.team__counter',
+				type: 'fraction',
+			 },
+		});
+	};
+})($);
+
+(() => {
+	if ( $(window).outerWidth() < 580 ) {
+		var teamslider = new Swiper('.single__gallery-slider', {
+			 loop: true,
+			 slidesPerView: 1,
+			 keyboardControl: true,
+			 grabCursor: true,
+			 navigation: {
+				nextEl: '.single__gallery .btn-nav_right',
+				prevEl: '.single__gallery .btn-nav_left',
+			 },
+			 pagination: {
+				el: '.single__gallery-counter',
+				type: 'fraction',
+			 },
+		});
+	};
 })($);
 
 (()=>{
