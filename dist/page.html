@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>О компании</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576875959921">
+    <link rel="stylesheet" href="/app/css/app.css?v=1577122756867">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -628,6 +628,173 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <div class="single__delivery">
+                                        <div class="single__delivery-title single__delivery-title_tosmall h3">Доставка и&nbsp;оплата</div>
+                                        <div class="single__delivery-desc small">Выбирайте удобный способ доставки и&nbsp;оплаты, а&nbsp;мы доставим Ваш заказ в&nbsp;целости и&nbsp;сохранности</div>
+                                        <div class="single__tabs tabs">
+                                            <div class="tabs__top flex flex_vertical">
+                                                <div class="tabs__list swiper-container">
+                                                    <div class="tabs__inner swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="tabs__list-item p">Доставка</div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tabs__list-item p">Самовывоз</div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tabs__list-item p">Оплата</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__nav flex flex_vertical flex_justify">
+                                                    <div class="tabs__nav-button tabs__nav-button_prev swiper-button-prev">
+                                                        <svg class="icon icon-arrow2" viewBox="0 0 9 17">
+                                                            <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="tabs__nav-button tabs__nav-button_next swiper-button-next">
+                                                        <svg class="icon icon-arrow2" viewBox="0 0 9 17">
+                                                            <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tabs__content swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="tabs__content-item">
+                                                            <div class="delivery flex flex_justify">
+                                                                <div class="delivery__content content">
+                                                                    <h3 class="delivery__title h3">Способы доставки</h3>
+                                                                    <ul>
+                                                                        <li>Для покупателей из&nbsp;Москвы и&nbsp;Московской области осуществляем бесплатную доставку собственным транспортом в&nbsp;течение 1 дня (при&nbsp;заказе на&nbsp;сумму свыше 30 т.р.).
+                                                                            Стоимость доставки заказов до&nbsp;30 тыс. р. — 1000 руб.</li>
+                                                                        <li>Для всех покупателей, отправляющих продукцию через&nbsp;ТК Деловые Линии, бесплатно доставляем товар до&nbsp;терминала не зависимо от&nbsp;суммы счета. Доставка груза по&nbsp;России
+                                                                            через&nbsp;транспортную компанию «Деловые Линии» осуществляется со&nbsp;скидкой 10%, если в&nbsp;накладной стоит отправитель ТД «ВераМед», то на&nbsp;межтерминальную перевозку
+                                                                            автоматически проставляется скидка 10 % вне зависимости от&nbsp;наименования получателя или&nbsp;плательщика.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <form class="delivery__form" action="app/mail">
+                                                                    <object class="delivery__logo" type="image/svg+xml" data="/app/objects/logo_delivery.svg"></object>
+                                                                    <div class="delivery__field delivery__field_point">
+                                                                        <input class="delivery__input" placeholder="Город отправки" maxlength="50" name="derival_point_cod" id="derival_point_cod" type="text" />
+                                                                        <label class="delivery__checkbox checkbox">
+                                                                            <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text verysmall">От адреса</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="delivery__field delivery__field_point">
+                                                                        <input class="delivery__input" placeholder="Город доставки" maxlength="50" name="arrival_point_cod" id="arrival_point_cod" type="text" />
+                                                                        <label class="delivery__checkbox checkbox">
+                                                                            <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text verysmall">От адреса</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="delivery__field delivery__field_box">
+                                                                        <div class="delivery__sizes-inputs">
+                                                                            <div class="delivery__field delivery__field_weight">
+                                                                                <input class="delivery__input delivery__input_pad-right" type="number" placeholder="Вес" maxlength="5" name="sized_weight" id="sized_weight" />
+                                                                                <div class="delivery__value verysmall">кг</div>
+                                                                            </div>
+                                                                            <div class="delivery__field delivery__field_volume">
+                                                                                <input class="delivery__input delivery__input_pad-right" type="number" placeholder="Объем" maxlength="5" name="sized_weight" id="sized_weight" />
+                                                                                <div class="delivery__value verysmall">м<sup>3</sup>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="delivery__sizes-info verysmall">
+                                                                            <div class="delivery__sizes-off"><a class="js-oversized" href="#">Есть негабаритные места</a>
+                                                                                <br>место считается негабаритным, если вес места более 100кг или&nbsp;одно из&nbsp;измерений равно или&nbsp;более 3м</div>
+                                                                            <div class="delivery__sizes-on"><strong>Негабаритные грузоместа</strong>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="delivery__sizes-close">
+                                                                            <svg class="icon icon-close" viewBox="0 0 30 30">
+                                                                                <use xlink:href="/app/icons/sprite.svg#close"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="delivery__field">
+                                                                        <div class="delivery__insurance-info verysmall"><strong>Страхование</strong>
+                                                                            <br><span>Объявленная стоимость</span>
+                                                                        </div>
+                                                                        <div class="delivery__field delivery__field_insurance">
+                                                                            <input class="delivery__input delivery__input_pad-right js-thousand" type="text" placeholder="4324 423 42" maxlength="50" name="strah2" id="strah2" />
+                                                                            <div class="delivery__value verysmall">₽</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="delivery__field">
+                                                                        <div class="delivery__pack-content verysmall"><strong class="verysmall">Упаковка</strong>
+                                                                            <div class="delivery__pack-icon">
+                                                                                <stong class="verysmall">i</stong>
+                                                                                <div class="delivery__pack-info verysmall">Упаковка Деловых Линий или&nbsp;стандартная упаковка от&nbsp;производителей</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="delivery__field delivery__field_pack">
+                                                                            <div class="delivery__select select">
+                                                                                <div class="select__bg"></div>
+                                                                                <input class="select__input" type="hidden" name="upakovka1" value="От производителя" />
+                                                                                <div class="select__inner">
+                                                                                    <div class="select__wrapper">
+                                                                                        <div class="select__label verysmall"> <span>От производителя</span>
+                                                                                            <div class="delivery__value"></div>
+                                                                                        </div>
+                                                                                        <div class="select__list">
+                                                                                            <div class="select__list-item verysmall is-selected" data-value="От производителя">От производителя</div>
+                                                                                            <div class="select__list-item verysmall">Паллетный борд</div>
+                                                                                            <div class="select__list-item verysmall">Жесткая упаковка</div>
+                                                                                            <div class="select__list-item verysmall">Мешки</div>
+                                                                                            <div class="select__list-item verysmall">Дополнительная упаковка</div>
+                                                                                            <div class="select__list-item verysmall">Воздушно-пузырьковая пленка</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="delivery__button btn btn_orange" type="submit"><span class="btn__back js-circles"></span><span class="btn__text">Стоимость и&nbsp;срок доставки</span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="tabs__content-item content">
+                                                            <div class="tabs__pickup flex flex_justify flex_vertical">
+                                                                <div class="tabs__pickup-left content">
+                                                                    <h3>Самовывоз со&nbsp;склада</h3>
+                                                                    <p>Самостоятельный вывоз приобретенной продукции производится со&nbsp;склада компании, расположенного по&nbsp;адресу:</p>
+                                                                    <p>Московская область, Павлово-Посадский район, село Рахманово, дом 172 (территория Рахмановского Шелкового Комбината).</p>
+                                                                </div>
+                                                                <div class="tabs__pickup-right">
+                                                                    <a class="img-preview js-img-modal" href="app/img/pickup_big.jpg" title="Самовывоз со&nbsp;склада">
+                                                                        <picture>
+                                                                            <source type="image/webp" srcset="/app/img/pickup_min.webp">
+                                                                                <img src="/app/img/pickup_min.jpg" alt="Самовывоз со&nbsp;склада" />
+                                                                        </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="tabs__content-item content">
+                                                            <h3>Способы оплаты</h3>
+                                                            <p>Самостоятельный вывоз приобретенной продукции производится со&nbsp;склада компании, расположенного по&nbsp;адресу:</p>
+                                                            <p>Московская область, Павлово-Посадский район, село Рахманово, дом 172 (территория Рахмановского Шелкового Комбината).</p>
+                                                            <p><strong>Работаем по&nbsp;безналичному расчету.</strong>
+                                                            </p>
+                                                            <p>После отправки запроса онлайн через&nbsp;наш сайт, менеджер свяжется с&nbsp;Вами для&nbsp;уточнения деталей, заключения договора, выставления счета.</p>
+                                                            <h4>Скидки и&nbsp;рассрочка</h4>
+                                                            <p>В индивидуальном порядке предоставляется скидка на&nbsp;объем заказанной продукции (заказы на&nbsp;сумму свыше 50 тыс. рублей).</p>
+                                                            <p>Возможна оплата частями (отсрочка платежа) для&nbsp;наших постоянных клиентов.</p>
+                                                            <h4>Внимание</h4>
+                                                            <p>В связи с&nbsp;падением курса рубля, счет на&nbsp;оплату действителен только в&nbsp;течение 2 (двух) банковских дней.
+                                                                <br>В случае оплаты счета с&nbsp;истекшим сроком действия без&nbsp;предварительного согласования с&nbsp;менеджером, товар будет отгружен по&nbsp;ценам, действующим на&nbsp;момент оплаты.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="single__vacancy">
                                         <div class="single__vacancy-title single__vacancy-title_tosmall h3">Вакансии</div>
                                         <div class="single__vacancy-desc small">Вакантные места в&nbsp;компании Торговый Дом «ВераМед»</div>
@@ -943,73 +1110,73 @@
                                         <div class="single__gallery-title single__gallery-title_tosmall h3">Фотогалерея</div>
                                         <div class="single__gallery-slider swiper-container">
                                             <div class="single__gallery-list swiper-wrapper js-gallery2">
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery1_min.webp">
                                                             <img src="/app/img/fotogallery1_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery2_min.webp">
                                                             <img src="/app/img/fotogallery2_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery3_min.webp">
                                                             <img src="/app/img/fotogallery3_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery1_min.webp">
                                                             <img src="/app/img/fotogallery1_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery2_min.webp">
                                                             <img src="/app/img/fotogallery2_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery3_min.webp">
                                                             <img src="/app/img/fotogallery3_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery1.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery1_min.webp">
                                                             <img src="/app/img/fotogallery1_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery2.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery2_min.webp">
                                                             <img src="/app/img/fotogallery2_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
-                                                <a class="single__gallery-slide swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
+                                                <a class="single__gallery-slide img-preview swiper-slide" href="app/img/fotogallery3.jpg" title="Работа менеджера по&nbsp;обслуживанию клиентов">
                                                     <picture>
                                                         <source type="image/webp" srcset="/app/img/fotogallery3_min.webp">
                                                             <img src="/app/img/fotogallery3_min.jpg" class="single__gallery-foto" alt="Работа менеджера по&nbsp;обслуживанию клиентов" title="" />
-                                                    </picture>
+                                                    </picture><span class="img-preview__zoom"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect><circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle></svg></span>
                                                 </a>
                                             </div>
-                                        </div>
-                                        <div class="single__gallery-nav">
-                                            <div class="btn-nav btn-nav_left">
-                                                <svg class="icon icon-arrow2" viewBox="0 0 9 17">
-                                                    <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="single__gallery-counter counter"></div>
-                                            <div class="btn-nav btn-nav_right">
-                                                <svg class="icon icon-arrow2" viewBox="0 0 9 17">
-                                                    <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
-                                                </svg>
+                                            <div class="single__gallery-nav">
+                                                <div class="btn-nav btn-nav_left">
+                                                    <svg class="icon icon-arrow2" viewBox="0 0 9 17">
+                                                        <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="single__gallery-counter counter"></div>
+                                                <div class="btn-nav btn-nav_right">
+                                                    <svg class="icon icon-arrow2" viewBox="0 0 9 17">
+                                                        <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1240,7 +1407,7 @@
                                 <div class="header__cell header__cell_phone header__cell_center"><a class="header__phone small phone phone_white" href="tel:+74953696639"><span class="phone__icon"><svg class="icon icon-phone" viewBox="0 0 18 17"><use xlink:href="/app/icons/sprite.svg#phone"></use></svg></span>+7 (495) 369-66-39</a>
                                 </div>
                                 <div class="header__cell header__cell_search header__cell_right">
-                                    <button class="header__button border-button border-button_white"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
+                                    <button class="header__button border-button border-button_white js-modal" data-modal="#recall"><span class="border-button__back js-circles"></span><span class="border-button__text">Заказать звонок</span>
                                     </button>
                                     <a class="header__scroll scroll-top" href="#">
                                         <svg class="icon icon-arrow2" viewBox="0 0 9 17">
@@ -1379,7 +1546,7 @@
         </div>
     </form>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576875960003"></script>
+    <script src="/app/js/app.js?v=1577122756967"></script>
 </body>
 
 </html>

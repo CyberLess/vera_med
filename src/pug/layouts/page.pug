@@ -104,6 +104,140 @@
 										+e.text.b.is-dark Генеральный директор
 									td
 										+e.text.is-dark Чупеева Елена Викторовна
+						+e.delivery
+							+e.delivery-title._tosmall.h3 Доставка и оплата
+							+e.delivery-desc.small
+								| Выбирайте удобный способ доставки и оплаты, а мы доставим Ваш заказ в целости и сохранности
+							+e.tabs.tabs__
+								+e.top.flex._vertical
+									+e.list.swiper-container
+										+e.inner.swiper-wrapper
+											.swiper-slide
+												+e.list-item.p Доставка
+											.swiper-slide
+												+e.list-item.p Самовывоз
+											.swiper-slide
+												+e.list-item.p Оплата
+									+e.nav.flex._vertical._justify
+										+e.nav-button._prev.swiper-button-prev
+											+icon('arrow2', '0 0 9 17')
+										+e.nav-button._next.swiper-button-next
+											+icon('arrow2', '0 0 9 17')
+								+e.content.swiper-container
+									.swiper-wrapper
+										.swiper-slide
+											+e.content-item
+												+b.delivery.flex_justify
+													+e.content.content
+														+e.title.h3.H3 Способы доставки
+														ul
+															li Для покупателей из Москвы и Московской области осуществляем бесплатную доставку собственным транспортом в течение 1 дня (при заказе на сумму свыше 30 т.р.). Стоимость доставки заказов до 30 тыс. р. — 1000 руб.
+															li Для всех покупателей, отправляющих продукцию через ТК Деловые Линии, бесплатно доставляем товар до терминала не зависимо от суммы счета. Доставка груза по России через транспортную компанию «Деловые Линии» осуществляется со скидкой 10%, если в накладной стоит отправитель ТД «ВераМед», то на межтерминальную перевозку автоматически проставляется скидка 10 % вне зависимости от наименования получателя или плательщика.
+													+e.form.FORM(action="app/mail")
+														+e.OBJECT.logo(type='image/svg+xml', data='/app/objects/logo_delivery.svg')
+														+e.field._point
+															+e.input.INPUT(placeholder="Город отправки",maxlength="50",name="derival_point_cod",id="derival_point_cod")
+															+e.LABEL.checkbox.checkbox__
+																+e.input.INPUT(type="checkbox",checked="checked")
+																+e.icon.SPAN
+																	+icon('check','0 0 15 11')
+																+e.SPAN.text.verysmall От адреса
+														+e.field._point
+															+e.input.INPUT(placeholder="Город доставки",maxlength="50",name="arrival_point_cod",id="arrival_point_cod")
+															+e.LABEL.checkbox.checkbox__
+																+e.input.INPUT(type="checkbox")
+																+e.icon.SPAN
+																	+icon('check','0 0 15 11')
+																+e.SPAN.text.verysmall От адреса
+														+e.field._box
+															+e.sizes-inputs
+																+e.field._weight
+																	+e.input._pad-right.INPUT(type="number",placeholder="Вес",maxlength="5",name="sized_weight",id="sized_weight")
+																	+e.value.verysmall кг
+																+e.field._volume
+																	+e.input._pad-right.INPUT(type="number",placeholder="Объем",maxlength="5",name="sized_weight",id="sized_weight")
+																	+e.value.verysmall м
+																		sup 3
+															+e.sizes-info.verysmall
+																+e.sizes-off
+																	a.js-oversized(href="#") Есть негабаритные места
+																	br
+																	| место считается негабаритным, если вес места более 100кг или одно из измерений равно или более 3м
+																+e.sizes-on
+																	strong Негабаритные грузоместа
+															+e.sizes-close
+																+icon('close','0 0 30 30')
+														+e.field
+															+e.insurance-info.verysmall
+																strong Страхование
+																br
+																span Объявленная стоимость
+															+e.field._insurance
+																+e.input._pad-right.js-thousand.INPUT(type="text",placeholder="4324 423 42",maxlength="50",name="strah2",id="strah2")
+																+e.value.verysmall ₽
+														+e.field
+															+e.pack-content.verysmall
+																strong.verysmall Упаковка
+																+e.pack-icon
+																	stong.verysmall i
+																	+e.pack-info.verysmall
+																		| Упаковка Деловых Линий или стандартная упаковка от производителей
+															+e.field._pack
+																+e.select.select__
+																	+e.bg
+																	+e.INPUT.input(type="hidden" name="upakovka1" value="От производителя")
+																	+e.inner
+																		+e.wrapper
+																			+e.label.verysmall 
+																				span От производителя
+																				.delivery__value
+																			+e.list
+																				+e.list-item.verysmall.is-selected(data-value='От производителя') От производителя
+																				+e.list-item.verysmall Паллетный борд
+																				+e.list-item.verysmall Жесткая упаковка
+																				+e.list-item.verysmall Мешки
+																				+e.list-item.verysmall Дополнительная упаковка
+																				+e.list-item.verysmall Воздушно-пузырьковая пленка
+														+e.button.btn__._orange.BUTTON(type="submit")
+															+e.back.js-circles.SPAN
+															+e.text.SPAN Стоимость и срок доставки
+										.swiper-slide
+											+e.content-item.content
+												+e.pickup.flex._justify._vertical
+													+e.pickup-left.content
+														h3 Самовывоз со склада
+														p
+															| Самостоятельный вывоз приобретенной продукции производится со склада компании, расположенного по адресу:
+														p
+															| Московская область, Павлово-Посадский район, село Рахманово, дом 172 (территория Рахмановского Шелкового Комбината).
+													+e.pickup-right
+														a.img-preview.js-img-modal(href="app/img/pickup_big.jpg",title="Самовывоз со склада")
+															img(src="/img/pickup_min.jpg",alt="Самовывоз со склада")
+															span.img-preview__zoom
+																svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+																	rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+																	circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+										.swiper-slide
+											+e.content-item.content
+												h3 Способы оплаты
+												p
+													| Самостоятельный вывоз приобретенной продукции производится со склада компании, расположенного по адресу:
+												p
+													| Московская область, Павлово-Посадский район, село Рахманово, дом 172 (территория Рахмановского Шелкового Комбината).
+												p
+													strong Работаем по безналичному расчету.
+												p
+													| После отправки запроса онлайн через наш сайт, менеджер свяжется с Вами для уточнения деталей, заключения договора, выставления счета.
+												h4 Скидки и рассрочка
+												p
+													| В индивидуальном порядке предоставляется скидка на объем заказанной продукции (заказы на сумму свыше 50 тыс. рублей).
+												p
+													| Возможна оплата частями (отсрочка платежа) для наших постоянных клиентов.
+												h4 Внимание
+												p
+													| В связи с падением курса рубля, счет на оплату действителен только в течение 2 (двух) банковских дней. 
+													br
+													| В случае оплаты счета с истекшим сроком действия без предварительного согласования с менеджером, товар будет отгружен по ценам, действующим на момент оплаты.     
 						+e.vacancy
 							+e.vacancy-title._tosmall.h3 Вакансии
 							+e.vacancy-desc.small
@@ -392,30 +526,66 @@
 							+e.gallery-title._tosmall.h3 Фотогалерея
 							+e.gallery-slider.swiper-container
 								+e.gallery-list.swiper-wrapper.js-gallery2
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery1_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery2_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery3_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery1_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery2_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery3_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery1_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery2.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery2_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-									+e.A.gallery-slide.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery3.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery3_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
-							+e.gallery-nav
-								+b.btn-nav._left
-									+icon('arrow2', '0 0 9 17')
-								+e.gallery-counter.counter
-								+b.btn-nav._right
-									+icon('arrow2', '0 0 9 17')
+										span.img-preview__zoom
+											svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
+												rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
+												circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
+								+e.gallery-nav
+									+b.btn-nav._left
+										+icon('arrow2', '0 0 9 17')
+									+e.gallery-counter.counter
+									+b.btn-nav._right
+										+icon('arrow2', '0 0 9 17')
 						+b.faq
 							.single__faq-title._tosmall.h3 Как заказать мед. изделия?
 							.single__faq-desc.small

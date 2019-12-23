@@ -15,7 +15,14 @@
 	line-height: 1.9rem;
 	position: relative;
 
-
+	&_orange {
+		height: 6rem;
+		background: #FBBC37;
+		font-size: 1.3rem;
+		&:before {
+			display: none;
+		}
+	}
 
 	&__back{
 		position: absolute;
