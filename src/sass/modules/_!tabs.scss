@@ -90,6 +90,7 @@
 	&__inner{
 		@include max-screen($large_mobile) {
 			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 
