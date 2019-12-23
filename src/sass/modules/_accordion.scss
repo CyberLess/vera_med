@@ -37,12 +37,12 @@
 		}
 	}
 
-	&__content{
+	&__content, .catalog__tree .children{
 		// margin-top: 22px;
 		padding-left: 5px;
 		padding-right: 5px;	
 		padding-bottom: 36px;
-		display: none;
+		// display: none;
 
 		@include max-screen($large_tablet) {
 			padding-bottom: 26px;

@@ -8,7 +8,7 @@
 			+e.item.LI
 				+e.link.A(href="#") Каталог
 			+e.item.LI
-				+e.link._current.A(href="#") Бинты
+				+e.link._current.SPAN Бинты
 		+e.mb.flex._vertical._center.js-open-sidebar
 			+e.mb-box
 				+e.mb-square
@@ -21,7 +21,7 @@
 				include sidebar
 			+e.cell._right
 				+e.content.content
-					h3
+					h1
 						| Бинт медицинский 
 						br
 						span.is-blue от производителя оптом
@@ -36,7 +36,7 @@
 				+e.part._category
 					include category
 				+e.part._links
-					+e.part-title.h3
+					+e.part-title.h1
 						| Все подкатегории медицинских товаров
 					+e.subcats.flex._start._justify.UL
 						+e.subcats-item
@@ -82,15 +82,15 @@
 						+e.subcats-item
 							+e.subcats-link.p.blue-link.A(href="#") Клеенка
 				+e.part._big
-					+e.part-title._small.h3
+					+e.part-title._small.h1
 						| Виды медицинских бинтов
 					+e.select.select__
 						+e.bg
 						+e.INPUT.input(type="hidden" name="cat" value="is 7")
 						+e.inner.flex._vertical
-							+e.text.p17 Категория:
+							+e.text.h6 Категория:
 							+e.wrapper
-								+e.label.p17.b 
+								+e.label.h6.b 
 									span Бинт гипсовый
 								+e.list
 									+e.list-item.verysmall 1
@@ -104,7 +104,7 @@
 				+e.part._big
 					include tabs
 				+e.part._steps
-					+e.part-title._tocenter.h3
+					+e.part-title._tocenter.h1
 						| Как купить медицинский бинт
 					include steps
 				+e.part

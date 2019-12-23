@@ -8,6 +8,7 @@ import './modules/_submenu';
 import './modules/_menu';
 import './modules/_button';
 import './modules/_accordion';
+import './modules/_tree';
 import './modules/_tables';
 import './modules/_tabs';
 import './modules/_select';

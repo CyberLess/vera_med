@@ -54,7 +54,7 @@ html(class=html.classList)&attributes(html.attrs)
 				link(rel="icon" href=link.icon)
 			if link.icon16x16
 				link(rel="icon" href=link.icon16x16 sizes="16x16")
-			link(rel="stylesheet" href="/css/app.css?v=" + Date.now())
+			link(rel="preload stylesheet" href="/css/app.css?v=" + Date.now())
 			script.
 				function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
 		block head-end
