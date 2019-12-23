@@ -214,6 +214,25 @@ import Swiper from 'swiper';
 	};
 })($);
 
+(() => {
+	if ( $(window).outerWidth() < 580 ) {
+		var teamslider = new Swiper('.js-slider-news', {
+			 loop: true,
+			 slidesPerView: 1,
+			 keyboardControl: true,
+			 grabCursor: true,
+			 navigation: {
+				nextEl: '.js-slider-news .btn-nav_right',
+				prevEl: '.js-slider-news .btn-nav_left',
+			 },
+			 pagination: {
+				el: '.search-result__counter',
+				type: 'fraction',
+			 },
+		});
+	};
+})($);
+
 (()=>{
 	var company_bg = new Swiper('.company__bg', {
 		  slidesPerView: 1,

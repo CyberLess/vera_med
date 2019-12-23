@@ -1,0 +1,25 @@
++b.callbox.form.FORM#comments(action="/app/mail/")
+	+e.title.h3 Оставить комментарий
+	+e.row.flex_justify
+		+e.textarea._static.textarea__
+				+e.placeholder
+					+icon('message', '0 0 28 28')
+					| Введите текст
+				+e.item.TEXTAREA(name="message")
+		+e.input-list.flex
+			+e.input._column.input__
+				+e.item.INPUT(name="name" placeholder="Евгений")
+			+e.input._column.input__
+				+e.item.INPUT(name="email" placeholder="Ваш e-mail")
+			+e.input._column.input__
+				+e.item.INPUT(name="url" placeholder="Веб сайт")
+		+e.cell._check.flex._vertical
+			+e.LABEL.checkbox.checkbox__
+				+e.input.INPUT(type="checkbox",checked="checked")
+				+e.icon.SPAN
+					+icon('check','0 0 15 11')
+				+e.SPAN.text.verysmall Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+		+e.cell._button
+			+e.button.btn__.BUTTON
+				+e.back.js-circles.SPAN
+				+e.text.SPAN Отправить

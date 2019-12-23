@@ -16,3 +16,5 @@ import './modules/_toswiper';
 import './modules/_moving.js';
 import './modules/_loadsvg';
 import './modules/_map';
+import './modules/_thousandSeparator';
+import './modules/_sizes';

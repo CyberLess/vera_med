@@ -126,4 +126,17 @@ $(() => {
 			return false;
 		});
   	}
+	
+	$('.js-img-modal').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: false,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
 })

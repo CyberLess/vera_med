@@ -15,5 +15,5 @@ $(() =>{
 			$('#sidebar').removeClass('is-visible')
 			$('.js-open-sidebar').removeClass('is-hidden')
 		}
-	})
+	});
 })

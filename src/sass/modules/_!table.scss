@@ -395,4 +395,18 @@
 		}
 	}
 	
+	&_white {
+		.table__container {
+			background: none;
+		}
+		thead {
+			td {
+				background: none;
+			}
+		}
+		.dataTables_wrapper {
+			border: 0;
+		}
+	}
+	
 }

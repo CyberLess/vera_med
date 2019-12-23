@@ -158,4 +158,26 @@
 			}
 		}
 	}
+	
+	&__pickup {
+		&-left {
+			width: 300/817*100%;
+		}
+		&-right {
+			width: 460/817*100%;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.tabs {
+		&__pickup {
+			&-left, &-right {
+				width: 100%;
+			}
+			&-right {
+				margin-top: 3rem;
+			}
+		}
+	}
 }

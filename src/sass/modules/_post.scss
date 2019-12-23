@@ -1,0 +1,59 @@
+.post{
+	color: #0A113C;
+	padding-bottom: 8rem;
+	font-size: 1.7rem;
+	&__img {
+		display: block;
+		width: 100%;
+		border-radius: 7px;
+		margin-top: 2rem;
+	}
+	&__content {
+		max-width: 72rem;
+		margin: 4.5rem auto 0 auto;
+		p, li {
+			font-size: 1.7rem;
+			line-height: 2.1rem;
+			letter-spacing: -0.0015em;
+			color: $light;
+			margin-top: 2.1rem;
+		}
+		p, h2, h3, h4, h5, h6 {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		h4 {
+			font-size: 1.9rem;
+			line-height: 2.4rem;
+			margin-top: 4rem;
+		}
+		ul {
+			margin-left: 2rem;
+		}
+	}
+	.callbox {
+		margin-top: 8rem;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.post{
+		padding-bottom: 35px;
+		&__content {
+			margin-top: 20px;
+			p, li {
+				font-size: 13px;
+				line-height: 21px;
+			}
+			h4 {
+				font-size: 15px;
+				line-height: 21px;
+				margin-top: 24px;
+			}
+		}
+		.callbox {
+			margin-top: 4.5rem;
+		}
+	}
+}

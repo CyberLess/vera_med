@@ -163,6 +163,11 @@ a:not([class]),
 .verysmall{
 	font-size: 1.3rem;
 	line-height: 1.9rem;
+	sup {
+		font-size: 0.8rem;
+		line-height: 1;
+		transform: translateY(-0.4rem);
+	}
 }
 
 // .p17{

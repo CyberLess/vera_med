@@ -274,6 +274,11 @@
 			padding: 0 0.8rem 0 0.8rem;
 			width: 33.33%;
 			margin-top: 1.6rem;
+			&:after {
+				width: calc( 100% - 1.6rem );
+				left: 0.8rem;
+				border-radius: 7px;
+			}
 		}
 		&-foto {
 			border-radius: 7px;
@@ -313,6 +318,63 @@
 						line-height: 2.1rem;
 						font-weight: bold;
 						margin-top: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+	&__delivery {
+		padding-top: 8rem;
+		&-title {
+			margin-bottom: 1.5rem;
+		}
+		&-desc {
+			margin-bottom: 2.4rem;
+		}
+		.tabs {
+			&__content {
+				&-item {
+					padding: 5.8rem 3.5rem 5.8rem 5.9rem;
+					h4 {
+						line-height: 4.4rem;
+						&:not(:first-child) {
+							margin-top: 3.4rem;
+						}
+					}
+					p, ol, ul {
+						&:not(:first-child) {
+							margin-top: 1.2rem;
+						}
+					}
+					ol {
+						list-style: decimal inside;
+					}
+					h5 {
+						font-size: 1.5rem;
+						line-height: 2.1rem;
+						font-weight: bold;
+						margin-top: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+	&__news {
+		padding-top: 8rem;
+		&-title {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@include max-screen($large_desktop) {
+	.single {
+		&__delivery {
+			.tabs {
+				&__content {
+					&-item {
+						padding-left: 1.7rem;
+						padding-right: 1.5rem;
 					}
 				}
 			}
@@ -395,6 +457,17 @@
 					}
 				}
 			}
+		}
+		&__news {
+			padding-top: 35px;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.single {
+		&__delivery {
+			padding-top: 35px;
 		}
 	}
 }
