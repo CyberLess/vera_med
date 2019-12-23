@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>Поиск</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1577132152699">
+    <title>Новость</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1577132151773">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -276,218 +276,295 @@
             </header>
         </div>
         <div class="fullpage__part fullpage__part_fluid">
-            <section class="search-result search-result_page">
-                <div class="search-result__wrap wrap">
-                    <form class="search">
-                        <button class="search__button">
-                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect>
-                                <circle cx="13.1993" cy="13.1992" r="8.33333" transform="rotate(-45 13.1993 13.1992)"></circle>
-                            </svg>
-                        </button>
-                        <input class="search__input" type="text" name="s" placeholder="Поиск по&nbsp;сайту" />
-                        <div class="search__close js-search-reset">
-                            <svg class="icon icon-close" viewBox="0 0 30 30">
-                                <use xlink:href="/app/icons/sprite.svg#close"></use>
-                            </svg>
+            <section class="catalog">
+                <div class="catalog__wrap wrap">
+                    <ul class="breadcrumbs flex flex_vertical">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#"><span class="breadcrumbs__home"><svg class="icon icon-home" viewBox="0 0 18 18"><use xlink:href="/app/icons/sprite.svg#home"></use></svg></span></a>
+                        </li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
+                        </li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Новости</a>
+                        </li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_current" href="#">Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?</a>
+                        </li>
+                    </ul>
+                    <div class="catalog__mb flex flex_vertical flex_center js-open-sidebar">
+                        <div class="catalog__mb-box">
+                            <div class="catalog__mb-square"></div>
+                            <div class="catalog__mb-square"></div>
+                            <div class="catalog__mb-square"></div>
+                            <div class="catalog__mb-square"></div>
                         </div>
-                    </form>
-                    <div class="search-result__list search-result__list_scroll">
-                        <div class="search-result__item">
-                            <a class="search-result__preview" href="single.html" title="Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/bint-sterilnyj-10na16sm.webp">
-                                        <img src="/app/img/bint-sterilnyj-10na16sm.jpg" alt="Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2" />
-                                </picture>
-                            </a>
-                            <div class="search-result__info">
-                                <div class="search-result__cat">Продукты</div>
-                                <div class="search-result__top flex flex_justify">
-                                    <div class="search-result__title"><strong>Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2</strong>
+                        <div class="catalog__mb-label verysmall">Показать каталог</div>
+                    </div>
+                    <div class="catalog__container">
+                        <div class="catalog__cell catalog__cell_left" id="sidebar">
+                            <form class="catalog__form form" action="/app/mail/">
+                                <div class="catalog__box">
+                                    <div class="catalog__box-title h5 js-close-sidebar">Каталог товаров
+                                        <svg class="icon icon-delete" viewBox="0 0 13.941355 13.940246">
+                                            <use xlink:href="/app/icons/sprite.svg#delete"></use>
+                                        </svg>
                                     </div>
-                                    <div class="search-result__desc">Данный бинт используют как для&nbsp;взрослых, так и&nbsp;для иммобилизации костей и&nbsp;суставов у&nbsp;детей. Гипсовые бинты могут производиться вручную непосредственно при&nbsp;необходимости применения.</div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Аптечки</div>
+                                        <div class="accordion__content">
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Аптечки</div>
+                                        <div class="accordion__content">
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Аптечки</div>
+                                        <div class="accordion__content">
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Аптечки</div>
+                                        <div class="accordion__content">
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Аптечки</div>
+                                        <div class="accordion__content">
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                            <label class="accordion__radio radio">
+                                                <input class="radio__input" type="checkbox" name="bandage" value="Бинт гипсовый" /><span class="radio__text small">Бинт гипсовый</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="search-result__table table table_white">
-                                    <table class="table__container">
-                                        <thead>
-                                            <tr>
-                                                <td class="min-tablet catalog__td catalog__td_art">
-                                                    <div class="table__text verysmall">Артикул</div>
-                                                </td>
-                                                <td class="all catalog__td catalog__td_name">
-                                                    <div class="table__text verysmall">Наименование</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_size no-sort">
-                                                    <div class="table__text verysmall">Размеры</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_density no-sort">
-                                                    <div class="table__text verysmall">Плотность</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_veiw no-sort">
-                                                    <div class="table__text verysmall">Вид упаковки</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_packing no-sort">
-                                                    <div class="table__text verysmall">Упаковка (шт.)</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_man no-sort">
-                                                    <div class="table__text verysmall">Производитель</div>
-                                                </td>
-                                                <td class="all dont-hide catalog__td catalog__td_price">
-                                                    <div class="table__text verysmall">Цена</div>
-                                                </td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="parent">
-                                                    <div class="table__text verysmall">УТ000000336</div>
-                                                </td>
-                                                <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                    <div class="table__toggle js-mobile-list">Развернуть</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">3х4</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">28</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">п/э пакет</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">1400</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text b verysmall nobr">1872,00 ₽</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            </form>
+                            <div class="catalog__info js-move-item" data-to="#mobile-sidebar" data-from="#sidebar">
+                                <div class="catalog__box catalog__box_mobile catalog__box_news">
+                                    <div class="news-item">
+                                        <div class="news-item__preview">
+                                            <div class="news-item__preview-inner">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/app/img/news-item.webp">
+                                                        <img src="/app/img/news-item.png" class="news-item__preview-img object-fit" alt="" role="presentation" />
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="news-item__date">29.08.2017</div>
+                                        <div class="news-item__text small">Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров</div><a class="news-item__link small link" href="#">Читать новость<span class="link__arrow"><svg class="icon icon-arrow" viewBox="0 0 19 8"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box catalog__box_mobile catalog__box_contact">
+                                    <div class="catalog__box-title h5">Свяжитесь с&nbsp;нами</div>
+                                    <div class="contacts contacts_dark">
+                                        <div class="contacts__list">
+                                            <div class="contacts__string"><a class="contacts__phone" href="tel:+74953696639">+7 (495) 369-66-39</a>
+                                            </div>
+                                            <div class="contacts__string"><a class="contacts__phone" href="tel:+74959718939">+7 (495) 971-89-39</a>
+                                            </div>
+                                            <div class="contacts__string"><a class="contacts__link small" href="mailto:info@вера-мед.рф">info@вера-мед.рф</a>
+                                            </div>
+                                        </div>
+                                        <div class="contacts__line"></div>
+                                        <div class="contacts__row flex flex_justify">
+                                            <div class="contacts__cell contacts__cell_left verysmall">Московская область
+                                                <br>Павлово Посадский район
+                                                <br><span class="is-dark">с. Рахманово, д. 172</span>
+                                            </div>
+                                            <div class="contacts__cell contacts__cell_right">
+                                                <div class="index">
+                                                    <div class="index__text verysmall">Индекс</div>
+                                                    <div class="index__box verysmall">142520</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__box catalog__box_mobile catalog__box_manager">
+                                    <div class="catalog__box-title h5">Вам ответят</div>
+                                    <div class="manager">
+                                        <div class="manager__avatar">
+                                            <div class="manager__avatar-inner">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/app/img/avatar.webp">
+                                                        <img src="/app/img/avatar.jpg" class="manager__avatar-image object-fit" alt="" role="presentation" />
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="manager__name middle">Курило Елена Игоревна</div>
+                                        <div class="manager__text verysmall">Начальник отдела продаж</div><a class="manager__phone middle" href="tel:+74953696639">+7 (495) 369-66-39</a>
+                                        <div class="manager__text verysmall">ДОБ. 1003</div>
+                                        <button class="manager__button border-button"><span class="border-button__back js-circles"></span><span class="border-button__text">Напишите мне</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="search-result__item">
-                            <a class="search-result__preview search-result__preview_news" href="post.html" title="Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/proizvodstvo-vaty_medium.webp">
-                                        <img src="/app/img/proizvodstvo-vaty_medium.jpg" alt="Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?" />
-                                </picture><span class="search-result__number">2</span>
-                            </a>
-                            <div class="search-result__info">
-                                <div class="search-result__cat">Новости</div>
-                                <div class="search-result__top flex flex_justify">
-                                    <div class="search-result__title"><strong>Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?</strong>
+                        <div class="catalog__cell catalog__cell_right">
+                            <div class="catalog__part catalog__part_single">
+                                <div class="post">
+                                    <h1 class="post__title h3">Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?</h1>
+                                    <div class="meta flex">
+                                        <div class="meta__user">Username</div>
+                                        <div class="meta__date">Декабрь 18, 2019</div><a class="meta__comments" href="post.html#comments" title="Комментарий"><span class="meta__comments-icon"><svg class="icon icon-comments" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#comments"></use></svg></span><span class="meta__comments-text">5</span></a>
+                                        <a
+                                        class="meta__likes" href="#" title="Like"><span class="meta__likes-icon"><svg class="icon icon-like" viewBox="0 0 13 12"><use xlink:href="/app/icons/sprite.svg#like"></use></svg></span><span class="meta__likes-text">22</span>
+                                            </a><a class="meta__views" href="post.html" title="Просмотров"><span class="meta__views-icon"><svg class="icon icon-views" viewBox="0 0 19 12"><use xlink:href="/app/icons/sprite.svg#views"></use></svg></span><span class="meta__views-text">756</span></a>
                                     </div>
-                                    <div class="search-result__desc">Денежные средства, которые выделяют по&nbsp;программе «Развитие промышленности и&nbsp;повышение конкурентоспособности», будут перераспределяться в&nbsp;следующих направлениях:</div>
-                                </div>
-                                <div class="meta flex">
-                                    <div class="meta__user">Username</div>
-                                    <div class="meta__date">Декабрь 18, 2019</div><a class="meta__comments" href="post.html#comments" title="Комментарий"><span class="meta__comments-icon"><svg class="icon icon-comments" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#comments"></use></svg></span><span class="meta__comments-text">5</span></a>
-                                    <a
-                                    class="meta__likes" href="#" title="Like"><span class="meta__likes-icon"><svg class="icon icon-like" viewBox="0 0 13 12"><use xlink:href="/app/icons/sprite.svg#like"></use></svg></span><span class="meta__likes-text">22</span>
-                                        </a><a class="meta__views" href="post.html" title="Просмотров"><span class="meta__views-icon"><svg class="icon icon-views" viewBox="0 0 19 12"><use xlink:href="/app/icons/sprite.svg#views"></use></svg></span><span class="meta__views-text">756</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search-result__item">
-                            <a class="search-result__preview" href="single.html" title="Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/bint-sterilnyj-10na16sm.webp">
-                                        <img src="/app/img/bint-sterilnyj-10na16sm.jpg" alt="Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2" />
-                                </picture>
-                            </a>
-                            <div class="search-result__info">
-                                <div class="search-result__cat">Продукты</div>
-                                <div class="search-result__top flex flex_justify">
-                                    <div class="search-result__title"><strong>Бинт марлевый медицинский стерильный 10х16 плотность 32 г/м2</strong>
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/post__img.webp">
+                                            <img src="/app/img/post__img.jpg" class="post__img" alt="" role="presentation" />
+                                    </picture>
+                                    <div class="post__content">
+                                        <p>Министерство по&nbsp;промышленной торговле в&nbsp;Новосибирской области сделало заявление о&nbsp;приеме заявок на&nbsp;субсидии, которые выделяются из&nbsp;областного бюджета. Также была озвучена информация, как
+                                            можно использовать финансовую поддержку со&nbsp;стороны государства.</p>
+                                        <p>Организации медицинской промышленности смогут подать заявки с&nbsp;11 сентября по&nbsp;2 октября этого года. А вот конкурс состоится 17 октября в&nbsp;14.00.</p>
+                                        <h4>Денежные средства, которые выделяют по&nbsp;программе «Развитие промышленности и&nbsp;повышение конкурентоспособности», будут перераспределяться в&nbsp;следующих направлениях:</h4>
+                                        <ul>
+                                            <li>Приобретение новых станков, расширение технической базы.</li>
+                                            <li>Поддержка центров, занимающихся исследованиями и&nbsp;производством.</li>
+                                            <li>Развитие медицинской промышленности.</li>
+                                        </ul>
+                                        <h4>Кроме того, средства могут быть использованы на:</h4>
+                                        <ul>
+                                            <li>Проведение доклинических исследований. Например, новые исследования по&nbsp;созданию лекарств.</li>
+                                            <li>Разработку и&nbsp;производство образцов товаров и&nbsp;расходников, которые будут использоваться в&nbsp;медицинской промышленности;</li>
+                                            <li>На модернизацию или&nbsp;создание лаборатории по&nbsp;исследованию и&nbsp;изучению новых исследований, причем лаборатории все должны быть аккредитованы.</li>
+                                        </ul>
+                                        <h4>Программа должна создать все необходимые условия, чтобы развивался промышленный потенциал региона, повышалась конкурентоспособность, расширялось производство, велись разработки, которые впоследствии смогут принести хорошие результаты.</h4>
+                                        <h4>Все подаваемые заявки должны быть заполнены согласно требованиям. Обязательным условием является подача документов в&nbsp;срок.</h4>
                                     </div>
-                                    <div class="search-result__desc">Данный бинт используют как для&nbsp;взрослых, так и&nbsp;для иммобилизации костей и&nbsp;суставов у&nbsp;детей. Гипсовые бинты могут производиться вручную непосредственно при&nbsp;необходимости применения.</div>
-                                </div>
-                                <div class="search-result__table table table_white">
-                                    <table class="table__container">
-                                        <thead>
-                                            <tr>
-                                                <td class="min-tablet catalog__td catalog__td_art">
-                                                    <div class="table__text verysmall">Артикул</div>
-                                                </td>
-                                                <td class="all catalog__td catalog__td_name">
-                                                    <div class="table__text verysmall">Наименование</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_size no-sort">
-                                                    <div class="table__text verysmall">Размеры</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_density no-sort">
-                                                    <div class="table__text verysmall">Плотность</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_veiw no-sort">
-                                                    <div class="table__text verysmall">Вид упаковки</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_packing no-sort">
-                                                    <div class="table__text verysmall">Упаковка (шт.)</div>
-                                                </td>
-                                                <td class="min-tablet catalog__td catalog__td_man no-sort">
-                                                    <div class="table__text verysmall">Производитель</div>
-                                                </td>
-                                                <td class="all dont-hide catalog__td catalog__td_price">
-                                                    <div class="table__text verysmall">Цена</div>
-                                                </td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="parent">
-                                                    <div class="table__text verysmall">УТ000000336</div>
-                                                </td>
-                                                <td class="name"><a class="table__link verysmall" href="#"> Бинт марлевый медицинский нестерильный</a>
-                                                    <div class="table__toggle js-mobile-list">Развернуть</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">3х4</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">28</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">п/э пакет</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">1400</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text verysmall">Россия ПКФ "ВераМед"</div>
-                                                </td>
-                                                <td>
-                                                    <div class="table__text b verysmall nobr">1872,00 ₽</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search-result__item">
-                            <a class="search-result__preview search-result__preview_news" href="post.html" title="Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/proizvodstvo-vaty_medium.webp">
-                                        <img src="/app/img/proizvodstvo-vaty_medium.jpg" alt="Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?" />
-                                </picture><span class="search-result__number">2</span>
-                            </a>
-                            <div class="search-result__info">
-                                <div class="search-result__cat">Новости</div>
-                                <div class="search-result__top flex flex_justify">
-                                    <div class="search-result__title"><strong>Кто в&nbsp;Новосибирске получит субсидии на&nbsp;производство медицинских товаров?</strong>
-                                    </div>
-                                    <div class="search-result__desc">Денежные средства, которые выделяют по&nbsp;программе «Развитие промышленности и&nbsp;повышение конкурентоспособности», будут перераспределяться в&nbsp;следующих направлениях:</div>
-                                </div>
-                                <div class="meta flex">
-                                    <div class="meta__user">Username</div>
-                                    <div class="meta__date">Декабрь 18, 2019</div><a class="meta__comments" href="post.html#comments" title="Комментарий"><span class="meta__comments-icon"><svg class="icon icon-comments" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#comments"></use></svg></span><span class="meta__comments-text">5</span></a>
-                                    <a
-                                    class="meta__likes" href="#" title="Like"><span class="meta__likes-icon"><svg class="icon icon-like" viewBox="0 0 13 12"><use xlink:href="/app/icons/sprite.svg#like"></use></svg></span><span class="meta__likes-text">22</span>
-                                        </a><a class="meta__views" href="post.html" title="Просмотров"><span class="meta__views-icon"><svg class="icon icon-views" viewBox="0 0 19 12"><use xlink:href="/app/icons/sprite.svg#views"></use></svg></span><span class="meta__views-text">756</span></a>
+                                    <form class="callbox form" id="comments" action="/app/mail/">
+                                        <div class="callbox__title h3">Оставить комментарий</div>
+                                        <div class="callbox__row flex flex_justify">
+                                            <div class="callbox__textarea callbox__textarea_static textarea">
+                                                <div class="textarea__placeholder">
+                                                    <svg class="icon icon-message" viewBox="0 0 28 28">
+                                                        <use xlink:href="/app/icons/sprite.svg#message"></use>
+                                                    </svg>Введите текст</div>
+                                                <textarea class="textarea__item" name="message"></textarea>
+                                            </div>
+                                            <div class="callbox__input-list flex">
+                                                <div class="callbox__input callbox__input_column input">
+                                                    <input class="input__item" name="name" placeholder="Евгений" type="text" />
+                                                </div>
+                                                <div class="callbox__input callbox__input_column input">
+                                                    <input class="input__item" name="email" placeholder="Ваш e-mail" type="text" />
+                                                </div>
+                                                <div class="callbox__input callbox__input_column input">
+                                                    <input class="input__item" name="url" placeholder="Веб сайт" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="callbox__cell callbox__cell_check flex flex_vertical">
+                                                <label class="callbox__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text verysmall">Сохранить моё имя, email и&nbsp;адрес сайта в&nbsp;этом браузере для&nbsp;последующих моих комментариев.</span>
+                                                </label>
+                                            </div>
+                                            <div class="callbox__cell callbox__cell_button">
+                                                <button class="callbox__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Отправить</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -657,7 +734,7 @@
         </div>
     </form>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1577132152737"></script>
+    <script src="/app/js/app.js?v=1577132151827"></script>
 </body>
 
 </html>

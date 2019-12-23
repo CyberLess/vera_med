@@ -265,12 +265,18 @@
 				border-color: #0A113C transparent transparent;
 			}
 		}
+		.select__bg {
+			opacity: 0;
+		}
 	}
 	.select__list {
-		top: 0;
+		top: auto;
+		bottom: 0;
 		padding-bottom: 0;
 		overflow: hidden;
 		border-radius: 7px;
+		border-top-width: 1px;
+		box-shadow: 0px 4px 75px rgba(10, 17, 59, 0.15);
 		&-item {
 			height: 5.2rem;
 			&:first-child {

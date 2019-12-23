@@ -91,6 +91,7 @@
 	}
 	&__list {
 		margin-top: 3rem;
+		flex-wrap: wrap;
 		&_scroll {
 			max-height: 70vh;
 			overflow-x: visible;
@@ -121,6 +122,28 @@
 		
 		&:hover {
 			background: #fff;
+		}
+		
+		&_single {
+			border: 1px solid #DADCE0;
+			background: none;
+			padding: 2.2rem;
+			align-items: center;
+			&:hover {
+				border-color: transparent;
+			}
+			.search-result__preview {
+				width: 263/869*100%;
+				min-width: 263/869*100%;
+				img {
+					width: 100%;
+					margin-left: 0;
+				}
+			}
+			.search-result__title {
+				width: auto;
+				max-width: 40rem;
+			}
 		}
 	}
 	&__preview {
@@ -196,6 +219,9 @@
 	.meta {
 		margin-top: 3rem;
 	}
+	&__nav {
+		display: none;
+	}
 }
 
 @include max-screen($large_tablet) {
@@ -203,6 +229,9 @@
 		&__item {
 			padding: 3rem;
 			background: #fff;
+			&_single {
+				border: 0;
+			}
 		}
 		&__info {
 			margin-left: 3rem;
@@ -221,6 +250,15 @@
 		&__item {
 			padding: 0;
 			flex-wrap: wrap;
+			width: 100%;
+			&_single {
+				.search-result__preview {
+					width: 100%;
+				}
+				.search-result__info {
+					padding-bottom: 3rem;
+				}
+			}
 		}
 		&__preview {
 			width: 100%;
@@ -229,6 +267,12 @@
 			img {
 				margin-left: 0;
 				width: 100%;
+			}
+		}
+		&__list.swiper-wrapper {
+			flex-wrap: nowrap;
+			.search-result__item:not(:last-child) {
+				margin-bottom: 0;
 			}
 		}
 		&__info {
@@ -260,6 +304,11 @@
 		}
 		.meta {
 			margin-top: 2.2rem;
+		}
+		&__nav {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 1.5rem;
 		}
 	}
 }

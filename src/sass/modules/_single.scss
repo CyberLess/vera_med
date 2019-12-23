@@ -359,6 +359,12 @@
 			}
 		}
 	}
+	&__news {
+		padding-top: 8rem;
+		&-title {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @include max-screen($large_desktop) {
@@ -451,6 +457,9 @@
 					}
 				}
 			}
+		}
+		&__news {
+			padding-top: 35px;
 		}
 	}
 }
