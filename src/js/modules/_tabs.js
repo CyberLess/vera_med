@@ -13,6 +13,7 @@ import Swiper from 'swiper';
 		let navSwiper = new Swiper(nav, {
 			slidesPerView: 'auto',
 			loop: false,
+			// resistance: false,
 			spaceBetween: 0,
 			breakpoints: {
 				300: {
@@ -31,9 +32,10 @@ import Swiper from 'swiper';
 				},
 			},
 			// slidesPerView: 6,
-			freeMode: true,
+			// freeMode: true,
 			watchSlidesVisibility: true,
 			watchSlidesProgress: true,
+
 		});
 
 		let contentSwiper = new Swiper(content, {

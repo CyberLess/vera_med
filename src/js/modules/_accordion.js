@@ -1,5 +1,9 @@
 $(() => {
-	
+
+	$('.accordion').each((i, el) => {
+		$(el).find('.accordion__content').hide()
+	})
+	 
 	$('.accordion__top, .category__title').on('click', e => {
 		let $this = $(e.currentTarget);
 

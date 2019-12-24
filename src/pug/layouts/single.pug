@@ -10,7 +10,7 @@
 			+e.item.LI
 				+e.link.A(href="#") Бинты
 			+e.item.LI
-				+e.link._current.A(href="#") Бинт марлевый медицинский нестерильный 5х5
+				+e.link._current.SPAN Бинт марлевый медицинский нестерильный 5х5
 		+e.mb.flex._vertical._center.js-open-sidebar
 			+e.mb-box
 				+e.mb-square
@@ -24,7 +24,7 @@
 			+e.cell._right
 				+e.part._single
 					+e.content._nomargin
-						+e.title.h3.H2
+						+e.title.h1.H1
 							| Бинт марлевый медицинский нестерильный 5х5 
 					+b.single
 						+e.top
@@ -54,7 +54,7 @@
 									+e.item.p.LI Минимальный заказ — 10 тыс. руб.
 									+e.item.p.LI Преференции для клиентов
 									+e.item.p.LI Продукция в наличии
-								+e.price.h3 3,20 ₽
+								+e.price.h1 3,20 ₽
 								+e.order.btn__.A(href='#')
 									+e.back.js-circles.SPAN
 									+e.icon._basket.SPAN
@@ -66,7 +66,7 @@
 									| Актуальные данные можно уточнить 
 									| у менеджеров.
 						+e.bottom
-							+e.title._tosmall.h3 Документация
+							+e.title._tosmall.h1 Документация
 							+e.string.flex._vertical
 								+e.link.icon-link__.A(href='#')
 									+e.SPAN.icon(style="width: 2rem")
@@ -79,34 +79,34 @@
 							+e.dt.dt__.TABLE
 								tr
 									td
-										+e.text.p17.b.is-dark Размеры
+										+e.text.h6.b.is-dark Размеры
 									td
-										+e.text.p17.is-dark 5х5
+										+e.text.h6.is-dark 5х5
 								tr
 									td
-										+e.text.p17.b.is-dark Стерилизация
+										+e.text.h6.b.is-dark Стерилизация
 									td
-										+e.text.p17.is-dark Нестерильный
+										+e.text.h6.is-dark Нестерильный
 								tr
 									td
-										+e.text.p17.b.is-dark Упаковка шт.
+										+e.text.h6.b.is-dark Упаковка шт.
 									td
-										+e.text.p17.is-dark 1400
+										+e.text.h6.is-dark 1400
 								tr
 									td
-										+e.text.p17.b.is-dark Производитель
+										+e.text.h6.b.is-dark Производитель
 									td
-										+e.text.p17.is-dark Россия ПКФ "ВераМед"
+										+e.text.h6.is-dark Россия ПКФ "ВераМед"
 								tr
 									td
-										+e.text.p17.b.is-dark Плотность
+										+e.text.h6.b.is-dark Плотность
 									td
-										+e.text.p17.is-dark 28
+										+e.text.h6.is-dark 28
 								tr
 									td
-										+e.text.p17.b.is-dark Вид упаковки
+										+e.text.h6.b.is-dark Вид упаковки
 									td
-										+e.text.p17.is-dark п/э пакет
+										+e.text.h6.is-dark п/э пакет
 						+e.line.line
 				+e.part
 					include pricelist
@@ -207,7 +207,7 @@
 								+e.arrow
 									+icon('arrow', '0 0 19 8')
 				+e.part._steps
-					+e.part-title._tocenter.h3
+					+e.part-title._tocenter.h1
 						| Как купить медицинский бинт
 					include steps
 				+e.part._big
