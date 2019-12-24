@@ -17,3 +17,4 @@ import './modules/_loadsvg';
 import './modules/_map';
 import './modules/_thousandSeparator';
 import './modules/_sizes';
+import './modules/_slider-ui';

@@ -1,0 +1,170 @@
++e.form.form.FORM(action="/app/mail/")
+	+e.box
+		+e.box-title.h5.js-close-sidebar 
+			| Фильтры
+			+icon('delete', '0 0 13.941355 13.940246')
+		+e.accordion.accordion__
+			+e.top.small Категория1
+			+e.content._pad0
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox",checked="checked")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__._disabled
+					+e.input.INPUT(type="checkbox",checked="checked", disabled="disabled")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+		+e.accordion.accordion__
+			+e.top.small Категория2
+			+e.content._pad0
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox",checked="checked")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__._disabled
+					+e.input.INPUT(type="checkbox",checked="checked", disabled="disabled")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+		+e.accordion.accordion__
+			+e.top.small Категория3
+			+e.content._pad0
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox",checked="checked")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__._disabled
+					+e.input.INPUT(type="checkbox",checked="checked", disabled="disabled")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+				+e.LABEL.checkbox.checkbox__
+					+e.input.INPUT(type="checkbox")
+					+e.icon.SPAN
+						+icon('check','0 0 15 11')
+					+e.SPAN.text.small Бинт гипсовый
+					+e.SPAN.counter.small
+						| (131)
+		+e.accordion.accordion__.is-active
+			+e.top.small Цена
+			+e.content._pad0(style="display:block")
+				+e.price.price__
+					+e.row
+						+e.input.js-thousand.js-price-from.INPUT(value="12 321",data-value="12321")
+						+e.input.js-thousand.js-price-to.INPUT(value="213 321",data-value="213321")
+					+e.slider.js-slider-ui(data-min="0",data-max="50000")
+		+b.select._sidebar
+			+e.bg
+			+e.INPUT.input(type="hidden" name="upakovka1" value="От производителя")
+			+e.inner
+				+e.wrapper
+					+e.label.verysmall 
+						span От производителя
+					+e.list
+						+e.list-item.verysmall.is-selected(data-value='От производителя') От производителя
+						+e.list-item.verysmall Паллетный борд
+						+e.list-item.verysmall Жесткая упаковка
+						+e.list-item.verysmall Мешки
+						+e.list-item.verysmall Дополнительная упаковка
+						+e.list-item.verysmall Воздушно-пузырьковая пленка
++e.info.js-move-item(data-to="#mobile-sidebar" data-from="#sidebar")
+	+e.box._mobile._news
+		+b.news-item
+			+e.preview
+				+e.preview-inner
+					+e.IMG.preview-img.object-fit(src="/img/news-item.png")
+			+e.date 29.08.2017
+			+e.text.small
+				| Кто в Новосибирске получит субсидии на производство медицинских товаров
+			+e.link.small.link__.A(href="#")
+				| Читать новость
+				+e.arrow
+					+icon('arrow', '0 0 19 8')
+	+e.box._mobile._contact
+		+e.box-title.h5
+			| Свяжитесь с нами
+		+b.contacts._dark
+			+e.list
+				+e.string
+					+e.phone.A(href="tel:+74953696639") +7 (495) 369-66-39
+				+e.string
+					+e.phone.A(href="tel:+74959718939") +7 (495) 971-89-39
+				+e.string
+					+e.link.small.A(href="mailto:info@вера-мед.рф") info@вера-мед.рф
+			+e.line
+			+e.row.flex._justify
+				+e.cell._left.verysmall
+					| Московская область
+					br
+					| Павлово Посадский район
+					br
+					span.is-dark с. Рахманово, д. 172
+				+e.cell._right
+					+b.index
+						+e.text.verysmall Индекс
+						+e.box.verysmall 142520
+	+e.box._mobile._manager
+		+e.box-title.h5
+			| Вам ответят
+		+b.manager
+			+e.avatar
+				+e.avatar-inner
+					+e.IMG.avatar-image.object-fit(src="/img/avatar.jpg")
+			+e.name.middle Курило Елена Игоревна
+			+e.text.verysmall Начальник отдела продаж
+			+e.phone.middle.A(href="tel:+74953696639") +7 (495) 369-66-39
+			+e.text.verysmall ДОБ. 1003
+			+e.button.border-button__.BUTTON
+				+e.back.js-circles.SPAN
+				+e.text.SPAN Напишите мне
