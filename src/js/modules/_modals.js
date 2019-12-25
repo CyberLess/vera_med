@@ -47,49 +47,62 @@ $(() => {
 	});
 	
 	if ( $(window).outerWidth() > 580 ) {
-		$('.js-gallery1').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,2],
-				tCounter: '<span>%curr%' + '/</span>%total%'
-			},
-			image: {
-				markup: '<div class="mfp-figure">'+
-							'<div class="mfp-close"></div>'+
-							'<div class="mfp-img"></div>'+
-							'<div class="mfp-bottom-bar">'+
-							  '<div class="mfp-title p17"></div>'+
-							  '<div class="mfp-counter"></div>'+
-							'</div>'+
-						  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+		$('.js-gallery').each(function(){
+			$(this).magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				tLoading: 'Loading image #%curr%...',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					preload: [0,2],
+					tCounter: '<span>%curr%' + '/</span>%total%'
+				},
+				image: {
+					markup: '<div class="mfp-figure">'+
+								'<div class="mfp-close"></div>'+
+								'<div class="mfp-img"></div>'+
+								'<div class="mfp-bottom-bar">'+
+								  '<div class="mfp-title p17"></div>'+
+								  '<div class="mfp-counter"></div>'+
+								'</div>'+
+							  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
 
-				  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+					  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
 
-				  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
-				  // Or the function that should return the title. For example:
-				  // titleSrc: function(item) {
-				  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-				  // }
+					  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
+					  // Or the function that should return the title. For example:
+					  // titleSrc: function(item) {
+					  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+					  // }
 
-				  verticalFit: true, // Fits image in area vertically
+					  verticalFit: true, // Fits image in area vertically
 
-				  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
-			}
+					  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+				}
+			});
 		});
 	} else {
-		$('.js-gallery1 a').click(function(){
+		$('.js-gallery a').click(function(){
 			$(this).attr("href", "#");
 			return false;
 		});
-	}
+	};
+	
 	if ( $(window).outerWidth() > 769 ) {
-		$('.js-gallery2').magnificPopup({
-			delegate: 'a',
-			type: 'image',
+		$('.fotogallery__list').each(function(){
+		  var gallery = $(this);
+		  var galleryImages = $(this).find('.fotogallery__slide').not(".fotogallery__slide.swiper-slide-duplicate");
+		  var items = [];
+		  for(var i=0;i<galleryImages.length; i++){
+			items.push({
+			  src:$(this).find('.fotogallery__slide[data-swiper-slide-index="' + i + '"]').attr('href'),
+			  title:$(this).find('.fotogallery__slide[data-swiper-slide-index="' + i + '"]').attr('title')
+			});
+		  }
+		  gallery.magnificPopup({
+			mainClass: 'mfp-fade',
+			items:items,
 			tLoading: 'Loading image #%curr%...',
 			gallery: {
 				enabled: true,
@@ -97,6 +110,7 @@ $(() => {
 				preload: [0,1],
 				tCounter: '<span>%curr%' + '/</span>%total%'
 			},
+			type: 'image',
 			image: {
 				markup: '<div class="mfp-figure">'+
 							'<div class="mfp-close"></div>'+
@@ -109,23 +123,29 @@ $(() => {
 
 				  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
 
-				  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
-				  // Or the function that should return the title. For example:
-				  // titleSrc: function(item) {
-				  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-				  // }
+				  titleSrc: 'title',
 
 				  verticalFit: true, // Fits image in area vertically
 
 				  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
 			}
+			/*callbacks: {
+			  beforeOpen: function() {
+				alert(index);
+				if (-1 !== index) {
+				  this.goTo(index);
+				}
+			  }
+			}*/
+
+		  });
 		});
 	} else {
-		$('.js-gallery2 a').click(function(){
+		$('.fotogallery__list a').click(function(){
 			$(this).attr("href", "#");
 			return false;
 		});
-  	}
+  	};
 	
 	$('.js-img-modal').magnificPopup({
 		type: 'image',

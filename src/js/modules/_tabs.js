@@ -44,6 +44,7 @@ import Swiper from 'swiper';
 			allowTouchMove: false,
 			onlyExternal: true,
 			loop: true,
+			autoHeight: true,
 			navigation: {
 				nextEl: navNext,
 				prevEl: navPrev,

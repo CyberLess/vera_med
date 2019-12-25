@@ -1,8 +1,3 @@
-$(".ui-slider-handle").draggable({ 
-	axis: "x",
-	containment: "parent"
-});
-
 (()=>{
 
 	$('.js-slider-ui').each(() => {
