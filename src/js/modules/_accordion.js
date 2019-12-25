@@ -1,4 +1,6 @@
 $(() => {
+	if(!$('.accordion, .faq__item, .category__title').length)
+		return false;
 
 	$('.accordion').each((i, el) => {
 		$(el).find('.accordion__content').hide()

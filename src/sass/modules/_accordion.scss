@@ -41,11 +41,16 @@
 		// margin-top: 22px;
 		padding-left: 5px;
 		padding-right: 5px;	
-		padding-bottom: 36px;
+		padding-bottom: 1rem;
+		display: none;
+		
+		&_pad0 {
+			padding-left: 0;
+			padding-right: 0;
+		}
 		// display: none;
 
 		@include max-screen($large_tablet) {
-			padding-bottom: 26px;
 		}
 	}
 
@@ -58,6 +63,14 @@
 		}
 	}
 	
+	&__checkbox{
+		&:first-child{
+			margin-top: 1.8rem;
+		}
+		&:not(:last-child){
+			margin-bottom: 1.7rem;
+		}
+	}
 
 	&.is-active{
 		.accordion{

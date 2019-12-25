@@ -1,10 +1,14 @@
 $(() => {
+	var $menu = $('.header__mobile');
+
+	if(!$menu.length)
+		return false;	
+
 	$('.js-toggle-menu').on('click', e => {
 		e.preventDefault()
 
 		let $this = $(e.currentTarget);
-		let $menu = $('.header__mobile');
-
+		
 		$menu.toggleClass('is-visible')
 		$this.toggleClass('is-active')	
 
@@ -19,7 +23,7 @@ $(() => {
 		let ww = $(window).width();
 		if(ww > 1024){
 			$('.js-toggle-menu').removeClass('is-active')
-			$('.header__mobile').removeClass('is-visible')
+			$menu.removeClass('is-visible')
 		}
 	})	
 })

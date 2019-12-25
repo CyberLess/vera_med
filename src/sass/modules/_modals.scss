@@ -183,6 +183,12 @@
 			}
 		}
 	}
+	.mfp-arrow-right {
+		margin-right: -10px;
+	}
+	.mfp-arrow-left {
+		margin-left: -10px;
+	}
 }
 @include max-screen($small_tablet) {
 	.mfp-figure {

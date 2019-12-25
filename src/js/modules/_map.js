@@ -1,4 +1,7 @@
 $(() => {
+	if(!$('#map').length)
+		return false;	
+			
 	$("#map").each(function(){
 		function initMap() {
 			var locations = [

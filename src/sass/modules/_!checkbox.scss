@@ -52,6 +52,10 @@
 			opacity: 1;
 		}
 	}
+	&__counter {
+		color: $gray;
+		margin-left: 1rem;
+	}
 }
 
 @include max-screen($small_mobile) {

@@ -1,5 +1,6 @@
 (() => {
-
+	if(!$('.js-move-item').length)
+		return false;	
 
 	$(window).on('load resize', () => {
 

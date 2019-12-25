@@ -2,6 +2,9 @@ import {getRandomInt, transitionEnd} from '../functions';
 
 $(() => {
 
+	if(!$('.btn, .border-button, .btn-nav').length)
+		return false;	
+
 	$('.btn, .border-button, .btn-nav').each((i, el) => {
 		for(i = 0; i < getRandomInt(2, 5); i++){
 			

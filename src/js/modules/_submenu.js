@@ -4,6 +4,9 @@ $(()=>{
 	var $submenu = $('.header__panel');
 	var currentOut = false;
 
+	if(!$submenu.length)
+		return false;
+
 	var submenu_close = () => {
 		$('.js-submenu').removeClass('is-hover')
 		$('html, body').removeClass('js-lock')

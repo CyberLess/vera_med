@@ -1,6 +1,8 @@
 import Swiper from 'swiper';
 
 (()=>{
+	if(!$('.tabs').length)
+		return false;
 
 	$('.tabs').each((i,el) => {
 
@@ -44,6 +46,7 @@ import Swiper from 'swiper';
 			allowTouchMove: false,
 			onlyExternal: true,
 			loop: true,
+			autoHeight: true,
 			navigation: {
 				nextEl: navNext,
 				prevEl: navPrev,
@@ -66,7 +69,9 @@ import Swiper from 'swiper';
 })($);
 
 (()=>{
-
+	if(!$('.cat').length)
+		return false;
+	
 	$('.cat').each((i,el) => {
 
 		let nav = $(el).find('.cat__top')[0];

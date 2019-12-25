@@ -1,0 +1,47 @@
+.price{
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__input {
+		width: 125/281*100%;
+		margin-top: 1.6rem;
+		transition: ease 0.2s;
+		height: 5.2rem;
+		border: 1px solid #BCC6DB;
+		border-radius: 7px;
+		padding-left: 2rem;
+		font-family: 'MuseoSansCyrl';
+		font-size: 1.3rem;
+		letter-spacing: -0.0015em;
+		color: $gray;
+		&:focus {
+			border-color: $blue;
+			color: #0A113C;
+		}
+	}
+	&__slider {
+		position: relative;
+		margin-top: 2.7rem;
+		height: 1px;
+		background: #BCC6DB;
+		.ui-slider-range {
+			position: absolute;
+			height: 1px;
+			top: 0;
+			background: $blue;
+		}
+		.ui-slider-handle {
+			display: block;
+			cursor: pointer;
+			position: absolute;
+			top: -1.3rem;
+			margin-left: -1.2rem;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 100%;
+			background: #fff;
+			border: 2px solid $blue;
+		}
+	}
+}
