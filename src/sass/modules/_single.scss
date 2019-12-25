@@ -365,6 +365,29 @@
 			margin-bottom: 0;
 		}
 	}
+	&__template {
+		font-size: 1.7rem;
+		letter-spacing: -0.0015em;
+		line-height: 2.1rem;
+		padding-top: 3.5rem;
+		margin-top: 3.5rem;
+		border-top: 1px solid #DADCE0;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+		ul {
+			margin-left: 2rem;
+			li {
+				margin-bottom: 1.7rem;
+			}
+		}
+	}
+	&__button-download {
+		max-width: 33.7rem;
+		margin: 4.5rem auto 0 auto;
+	}
 }
 
 @include max-screen($large_desktop) {
@@ -460,6 +483,21 @@
 		}
 		&__news {
 			padding-top: 35px;
+		}
+		&__template {
+			font-size: 13px;
+			line-height: 19px;
+			padding-top: 30px;
+			margin-top: 30px;
+			p:not(:last-child), ul li {
+				margin-bottom: 15px;
+			}
+			ul {
+				margin-left: 17px;
+			}
+		}
+		&__button-download {
+			margin-top: 30px;
 		}
 	}
 }
