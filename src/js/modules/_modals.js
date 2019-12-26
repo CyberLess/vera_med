@@ -59,6 +59,13 @@ $(() => {
 					enabled: true,
 					navigateByImgClick: true,
 					preload: [0,2],
+					arrowMarkup: `<div class="btn-wrap btn-wrap_%dir%"><div class="btn-nav btn-nav_%dir% btn-nav_white">
+                                <div class="btn-nav__icon">
+                                    <svg class="icon icon-arrow2" viewBox="0 0 9 17">
+                                        <use xlink:href="/app/icons/sprite.svg#arrow2"></use>
+                                    </svg>
+                                </div>
+                            </div></div>`,
 					tCounter: '<span>%curr%' + '/</span>%total%'
 				},
 				image: {

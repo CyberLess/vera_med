@@ -50,42 +50,6 @@ import Swiper from 'swiper';
 })($);
 
 (() => {
-	if ( $(window).outerWidth() < 580 ) {
-		var keyslider = new Swiper('.keys__slider', {
-			 loop: true,
-			 slidesPerView: 1,
-			 keyboardControl: true,
-			 grabCursor: true,
-			 // pagination
-			 navigation: {
-				nextEl: '.keys__slider .arrow-nav_right',
-				prevEl: '.keys__slider .arrow-nav_left',
-			 },
-			 pagination: {
-				clickable: true,
-				// dynamicBullets: false,
-				el: '.keys__slider .pagination',
-			 },
-		});
-		var sertislider = new Swiper('.sertificate__slider', {
-			 loop: true,
-			 slidesPerView: 3,
-			 keyboardControl: true,
-			 grabCursor: true,
-			 // pagination
-			 navigation: {
-				nextEl: '.sertificate .btn-nav_right',
-				prevEl: '.sertificate .btn-nav_left',
-			 },
-			 pagination: {
-				el: '.sertificate__counter',
-				type: 'fraction',
-			 },
-		});
-	};
-})($);
-
-(() => {
 	var productslider = new Swiper('.products__slider', {
 		 loop: true,
 		 slidesPerView: 6,
@@ -93,8 +57,8 @@ import Swiper from 'swiper';
 		 grabCursor: true,
 		 // pagination
 		 navigation: {
-			nextEl: '.products .btn-nav_right',
-			prevEl: '.products .btn-nav_left',
+			nextEl: '.btn-nav_right',
+			prevEl: '.btn-nav_left',
 		 },
 		 pagination: {
 			el: '.products__counter',
@@ -109,10 +73,7 @@ import Swiper from 'swiper';
 			},
 		  }
 	});
-})($);
-
-(() => {
-	var productslider = new Swiper('.fotogallery__slider', {
+	var fotogallerylider = new Swiper('.fotogallery__slider', {
 		 loop: true,
 		 slidesPerView: 3,
 		 keyboardControl: true,
@@ -178,55 +139,46 @@ import Swiper from 'swiper';
 
 (() => {
 	if ( $(window).outerWidth() < 580 ) {
-		var teamslider = new Swiper('.js-team-page', {
+		var mobileslider = new Swiper('.js-mobile-slider', {
 			 loop: true,
 			 slidesPerView: 1,
 			 keyboardControl: true,
 			 grabCursor: true,
 			 navigation: {
-				nextEl: '.team .btn-nav_right',
-				prevEl: '.team .btn-nav_left',
+				nextEl: '.btn-nav_right',
+				prevEl: '.btn-nav_left',
 			 },
 			 pagination: {
-				el: '.team__counter',
+				el: '.counter',
 				type: 'fraction',
 			 },
 		});
-	};
-})($);
-
-(() => {
-	if ( $(window).outerWidth() < 580 ) {
-		var teamslider = new Swiper('.single__gallery-slider', {
+		var keyslider = new Swiper('.keys__slider', {
 			 loop: true,
 			 slidesPerView: 1,
 			 keyboardControl: true,
 			 grabCursor: true,
 			 navigation: {
-				nextEl: '.single__gallery .btn-nav_right',
-				prevEl: '.single__gallery .btn-nav_left',
+				nextEl: '.arrow-nav_right',
+				prevEl: '.arrow-nav_left',
 			 },
 			 pagination: {
-				el: '.single__gallery-counter',
-				type: 'fraction',
+				clickable: true,
+				el: '.pagination',
 			 },
 		});
-	};
-})($);
-
-(() => {
-	if ( $(window).outerWidth() < 580 ) {
-		var teamslider = new Swiper('.js-slider-news', {
+		var sertislider = new Swiper('.sertificate__slider', {
 			 loop: true,
-			 slidesPerView: 1,
+			 slidesPerView: 3,
 			 keyboardControl: true,
 			 grabCursor: true,
+			 // pagination
 			 navigation: {
-				nextEl: '.js-slider-news .btn-nav_right',
-				prevEl: '.js-slider-news .btn-nav_left',
+				nextEl: '.btn-nav_right',
+				prevEl: '.btn-nav_left',
 			 },
 			 pagination: {
-				el: '.search-result__counter',
+				el: '.sertificate__counter',
 				type: 'fraction',
 			 },
 		});
@@ -265,9 +217,6 @@ import Swiper from 'swiper';
 			swiper: company_bg
 		  }
 	});
-})($);
-
-(()=>{
 	var company_list = new Swiper('.company__list', {
 		  allowTouchMove: false,
 		  slidesPerView: 8,

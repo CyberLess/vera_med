@@ -432,7 +432,7 @@
 							.single__team-title._tosmall.h1 Наша команда
 							.single__team-desc.small
 								| Знакомьтесь с ведущими специалистами ТД «ВераМед».
-							.single__team-slider.swiper-container.js-team-page
+							.single__team-slider.swiper-container.js-mobile-slider
 								+e.list.swiper-wrapper
 									+e.slide.swiper-slide
 										+b.manager.team__item
@@ -524,7 +524,7 @@
 										+icon('arrow2', '0 0 9 17')
 						+e.gallery
 							+e.gallery-title._tosmall.h1 Фотогалерея
-							+e.gallery-slider.swiper-container
+							+e.gallery-slider.swiper-container.js-mobile-slider
 								+e.gallery-list.swiper-wrapper.js-gallery
 									+e.A.gallery-slide.img-preview.swiper-slide(href="app/img/fotogallery1.jpg",title="Работа менеджера по обслуживанию клиентов")
 										+e.IMG.gallery-foto(src="/img/fotogallery1_min.jpg",alt="Работа менеджера по обслуживанию клиентов")
@@ -588,7 +588,7 @@
 										+icon('arrow2', '0 0 9 17')
 						+e.news
 							.single__news-title._tosmall.h3 Новости
-							+b.search-result.swiper-container.js-slider-news
+							+b.search-result.swiper-container.js-mobile-slider
 								+e.list.swiper-wrapper
 									+e.item._single.swiper-slide
 										+e.preview._news.A(href="post.html",title="Кто в Новосибирске получит субсидии на производство медицинских товаров?")
