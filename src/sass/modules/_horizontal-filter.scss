@@ -1,8 +1,31 @@
-.select{
+.horizontal-filter {
+	background: #fff;
+	padding: 5rem 2.5rem 4rem 2.5rem;
+	border-radius: 7px;
+	margin-bottom: 3rem;
+	&__row {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+	}
+	&__column {
+		padding: 0 0.5rem 0 0.5rem;
+		margin-bottom: 1rem;
+		width: 33.33%;
+	}
+	@include max-screen($large_mobile) {
+		padding: 3rem 1.5rem 2.4rem;
+		&__column {
+			width: 100%;
+		}
+	}
+}
+
+.select-cat {
 	display: block;
 	color: $dark;
 	z-index: 700;
 	position: relative;
+	max-width: 100%;
 
 	&__text{
 		margin-right: 1.7rem;
@@ -32,7 +55,6 @@
 
 	&__wrapper{
 		position: relative;
-		width: 300px;
 		max-width: 100%;
 
 		@include max-screen($large_mobile) {
@@ -46,21 +68,28 @@
 	}
 
 	&__label{
+		position: relative;
 		
 		cursor: pointer;
 		display: flex;
 		align-items: center;
-		height: 6rem;
 		transition: color ease .2s;
 		color: inherit;
 		user-select: none;
 		padding-right: 2rem;
+		border: 1px solid #BCC6DB;
+		border-radius: 7px;
+		transition: ease 0.2s;
+		color: $gray;
+		padding-left: 2rem;
+		height: 5.2rem;
 
 
 		span{
-			display: inline-block;
+			display: block;
 			padding-right: 1.4rem;
-			position: relative;		
+			position: relative;
+			width: 100%;
 
 			white-space: nowrap;
 			overflow: hidden;
@@ -72,7 +101,6 @@
 				content: '';
 				display: block;
 				position: absolute;
-				z-index: 100;
 				right: 0;
 				top: 50%;
 				margin-top: -3px;
@@ -95,10 +123,6 @@
 				}
 			}
 		}
-
-		@include max-screen($large_mobile) {
-			height: 7.7rem;
-		}
 	}
 
 	&__list{
@@ -107,7 +131,6 @@
 		left: 0;
 		width: 100%;
 		top: 100%;
-		padding-bottom: 2.7rem;
 		background: #FFFFFF;
 		border: 1px solid #BCC6DB;
 		border-top-width: 0px;
@@ -115,7 +138,7 @@
 		border-bottom-right-radius: 7px;
 		&-item{
 			position: relative;
-			height: 6rem;
+			min-height: 6rem;
 			padding-right: 2.3rem;
 			padding-left: 2.3rem;		
 			display: flex;
@@ -124,24 +147,7 @@
 			cursor: pointer;
 			transition: ease .1s;
 
-			&:hover{
-				background: #F5F7FA;
-				&:before,&:after{
-					opacity: 0;
-				}
-
-				&+.select__list-item{
-					&:before{
-						opacity: 0;
-					}
-				}
-			}
-
-			&.is-selected{
-				color: $blue;
-			}
-
-			&:before{
+			&:not(:first-child):before{
 				content: '';
 				display: block;
 				position: absolute;
@@ -153,44 +159,32 @@
 				transition: ease .2s;
 			}
 
-			&:last-child{
-				&:after{
-					content: '';
-					display: block;
-					position: absolute;
-					left: 15px;
-					right: 15px;
-					height: 1px;
-					bottom: 0;
-					background: #BCC6DB;
-					transition: ease .2s;
-				}
-
-			}
-
 		}
+	}
+	
+	&__price {
+		padding: 1rem 2rem 0rem 2rem;
 	}
 
 	&.is-active{
-		.select{
+		position: relative;
+		z-index: 2250;
+		.select-cat{
 			&__list{
 				display: block;
-			}
-
-			&__wrapper{
-				position: relative;
 			}
 			&__bg{
 				display: block;
 			}
 			&__label{
-				background: #FFFFFF;
-				border: 1px solid #BCC6DB;
+				background: #F5F7FA;
+				border-radius: 7px 7px 0px 0px;
 				border-top-left-radius: 7px;
 				border-top-right-radius: 7px;
 				padding-right: 2.3rem;
 				padding-left: 2.3rem;
 				border-bottom-width: 0px;
+				color: #000;
 
 				span{
 					&:before{
@@ -199,62 +193,6 @@
 				}
 
 
-			}
-		}
-	}
-	
-	&_stroke {
-		width: 100%;
-		.select__wrapper {
-			width: 100%;
-		}
-		&.is-active{
-			position: relative;
-			z-index: 2250;
-		}
-		.select__label {
-			border: 1px solid #BCC6DB;
-			border-radius: 7px;
-			transition: ease 0.2s;
-			color: $gray;
-			padding-left: 2rem;
-			height: 5.2rem;
-			span {
-				display: block;
-				width: 100%;
-			}
-			&:hover {
-				border-color: $blue;
-			}
-		}
-		.select__list {
-			top: 0;
-			padding-bottom: 0;
-			overflow: hidden;
-			border-radius: 7px;
-			border-top-width: 1px;
-			&-item {
-				height: 5.2rem;
-				&:first-child {
-					&:before {
-						display: none;
-					}
-				}
-				&.is-selected {
-					background: #F5F7FA;
-					&:before,&:after{
-						opacity: 0;
-					}
-
-					&+.select__list-item{
-						&:before{
-							opacity: 0;
-						}
-					}
-				}
-			}
-			&-item:last-child:after {
-				display: none;
 			}
 		}
 	}

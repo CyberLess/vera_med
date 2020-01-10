@@ -236,7 +236,7 @@
 		}
 	}
 	.faq {
-		padding: 8rem 0 8rem 0;
+		padding: 0 0 8rem 0;
 		&__inside-wrap {
 			padding: 3rem 8.5rem 7rem 6rem;
 		}
@@ -260,6 +260,7 @@
 	}
 	&__gallery {
 		font-size: 1.5rem;
+		padding-bottom: 8rem;
 		&-title {
 			margin-bottom: 0;
 		}
@@ -289,7 +290,7 @@
 		}
 	}
 	&__vacancy {
-		padding-top: 8rem;
+		padding-bottom: 8rem;
 		&-title {
 			margin-bottom: 1.2rem;
 		}
@@ -323,8 +324,11 @@
 			}
 		}
 	}
+	&__requisites {
+		padding-bottom: 8rem;
+	}
 	&__delivery {
-		padding-top: 8rem;
+		padding-bottom: 8rem;
 		&-title {
 			margin-bottom: 1.5rem;
 		}
@@ -360,7 +364,7 @@
 		}
 	}
 	&__news {
-		padding-top: 8rem;
+		padding: 0 0 8rem 0;
 		&-title {
 			margin-bottom: 0;
 		}
@@ -413,7 +417,7 @@
 			}
 		}
 		.team {
-			padding: 30px 0 50px 0;
+			padding: 0 0 50px 0;
 			&__slide {
 				margin-top: 0;
 				width: 100%;
@@ -433,11 +437,14 @@
 		}
 		.faq {
 			background: none;
-			padding: 5.5rem 0 4.8rem 0;
+			padding: 0 0 4.8rem 0;
 			margin-top: 0;
 			&__inside-wrap {
 				padding: 0;
 			}
+		}
+		&__requisites {
+			padding-bottom: 35px;
 		}
 		.sertificate {
 			padding-bottom: 55px;
@@ -450,7 +457,7 @@
 			}
 		}
 		&__gallery {
-			padding-top: 35px;
+			padding-bottom: 35px;
 			&-title {
 				text-align: center;
 			}
@@ -467,8 +474,11 @@
 				margin-top: 15px;
 			}
 		}
+		&__delivery {
+			padding-bottom: 50px;
+		}
 		&__vacancy {
-			padding-top: 50px;
+			padding-bottom: 35px;
 			.tabs {
 				&__content {
 					&-item {
@@ -482,7 +492,7 @@
 			}
 		}
 		&__news {
-			padding-top: 35px;
+			padding: 0 0 45px 0;
 		}
 		&__template {
 			font-size: 13px;
@@ -498,14 +508,6 @@
 		}
 		&__button-download {
 			margin-top: 30px;
-		}
-	}
-}
-
-@include max-screen($large_mobile) {
-	.single {
-		&__delivery {
-			padding-top: 35px;
 		}
 	}
 }

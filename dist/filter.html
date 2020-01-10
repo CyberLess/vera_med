@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Фильтры</title>
-    <link rel="preload" as="style" href="/app/css/app.css?v=1577358560526">
-    <link rel="stylesheet" href="/app/css/app.css?v=1577358560526">
+    <link rel="preload" as="style" href="/app/css/app.css?v=1578594870089">
+    <link rel="stylesheet" href="/app/css/app.css?v=1578594870089">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -392,8 +392,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="select select_sidebar">
-                                        <div class="select__bg"></div>
+                                    <div class="select select_stroke">
                                         <input class="select__input" type="hidden" name="upakovka1" value="От производителя" />
                                         <div class="select__inner">
                                             <div class="select__wrapper">
@@ -474,6 +473,90 @@
                             </div>
                         </div>
                         <div class="catalog__cell catalog__cell_right">
+                            <div class="horizontal-filter">
+                                <div class="horizontal-filter__row flex">
+                                    <div class="horizontal-filter__column">
+                                        <div class="select select_stroke">
+                                            <input class="select__input" type="hidden" name="upakovka1" value="От производителя" />
+                                            <div class="select__inner">
+                                                <div class="select__wrapper">
+                                                    <div class="select__label verysmall"> <span>От производителя</span>
+                                                    </div>
+                                                    <div class="select__list">
+                                                        <div class="select__list-item verysmall is-selected" data-value="От производителя">От производителя</div>
+                                                        <div class="select__list-item verysmall">Паллетный борд</div>
+                                                        <div class="select__list-item verysmall">Жесткая упаковка</div>
+                                                        <div class="select__list-item verysmall">Мешки</div>
+                                                        <div class="select__list-item verysmall">Дополнительная упаковка</div>
+                                                        <div class="select__list-item verysmall">Воздушно-пузырьковая пленка</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-filter__column">
+                                        <div class="select-cat js-select-cat">
+                                            <input class="select-cat__input" type="hidden" name="cat" value="Категория" />
+                                            <div class="select-cat__inner">
+                                                <div class="select-cat__wrapper">
+                                                    <div class="select-cat__label verysmall"> <span>Категория</span>
+                                                    </div>
+                                                    <div class="select-cat__list">
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox checkbox_disabled">
+                                                                <input class="checkbox__input" type="checkbox" checked="checked" disabled="disabled" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-filter__column">
+                                        <div class="select-cat js-select-cat">
+                                            <input class="select-cat__input" type="hidden" name="cat" value="Категория" />
+                                            <div class="select-cat__inner">
+                                                <div class="select-cat__wrapper">
+                                                    <div class="select-cat__label verysmall"> <span>Цена</span>
+                                                    </div>
+                                                    <div class="select-cat__list">
+                                                        <div class="select-cat__price price">
+                                                            <div class="price__row">
+                                                                <input class="price__input js-thousand js-price-from" value="12 321" data-value="12321" type="text" />
+                                                                <input class="price__input js-thousand js-price-to" value="213 321" data-value="213321" type="text" />
+                                                            </div>
+                                                            <div class="price__slider js-slider-ui" data-min="0" data-max="50000"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="catalog__content content">
                                 <h3>Бинт медицинский <br><span class="is-blue">от&nbsp;производителя оптом</span></h3>
                                 <p>На сайте компании ТД «ВераМед» Вы можете купить бинт медицинский оптом в&nbsp;Москве по&nbsp;цене за&nbsp;штуку (стоимость снижается, если сумма заказа превышает 50 тыс. рублей). Предлагаем доставку по&nbsp;городу и&nbsp;Московской
@@ -2093,7 +2176,7 @@
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1577358560645"></script>
+    <script src="/app/js/app.js?v=1578594870216"></script>
 </body>
 
 </html>

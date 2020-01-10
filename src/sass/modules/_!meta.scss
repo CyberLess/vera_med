@@ -32,7 +32,7 @@
 			fill: #737891;
 			transition: ease 0.2s;
 		}
-		&:hover {
+		&:hover, .is-active {
 			.meta__likes-icon {
 				fill: #FF000F;
 			}
