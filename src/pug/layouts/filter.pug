@@ -20,6 +20,75 @@
 			+e.cell._left#sidebar
 				include sidebar-filter
 			+e.cell._right
+				+b.horizontal-filter
+					+e.row.flex
+						+e.column
+							+b.select._stroke
+								+e.INPUT.input(type="hidden" name="upakovka1" value="От производителя")
+								+e.inner
+									+e.wrapper
+										+e.label.verysmall 
+											span От производителя
+										+e.list
+											+e.list-item.verysmall.is-selected(data-value='От производителя') От производителя
+											+e.list-item.verysmall Паллетный борд
+											+e.list-item.verysmall Жесткая упаковка
+											+e.list-item.verysmall Мешки
+											+e.list-item.verysmall Дополнительная упаковка
+											+e.list-item.verysmall Воздушно-пузырьковая пленка
+						+e.column
+							+b.select-cat.js-select-cat
+								+e.INPUT.input(type="hidden" name="cat" value="Категория")
+								+e.inner
+									+e.wrapper
+										+e.label.verysmall 
+											span Категория
+										+e.list
+											+e.list-item
+												+e.LABEL.checkbox.checkbox__
+													+e.input.INPUT(type="checkbox",checked="checked")
+													+e.icon.SPAN
+														+icon('check','0 0 15 11')
+													+e.SPAN.text.small Бинт гипсовый
+													+e.SPAN.counter.small
+														| (131)
+											+e.list-item
+												+e.LABEL.checkbox.checkbox__._disabled
+													+e.input.INPUT(type="checkbox",checked="checked", disabled="disabled")
+													+e.icon.SPAN
+														+icon('check','0 0 15 11')
+													+e.SPAN.text.small Бинт гипсовый
+													+e.SPAN.counter.small
+														| (131)
+											+e.list-item
+												+e.LABEL.checkbox.checkbox__
+													+e.input.INPUT(type="checkbox")
+													+e.icon.SPAN
+														+icon('check','0 0 15 11')
+													+e.SPAN.text.small Бинт гипсовый
+													+e.SPAN.counter.small
+														| (131)
+											+e.list-item
+												+e.LABEL.checkbox.checkbox__
+													+e.input.INPUT(type="checkbox")
+													+e.icon.SPAN
+														+icon('check','0 0 15 11')
+													+e.SPAN.text.small Бинт гипсовый
+													+e.SPAN.counter.small
+														| (131)
+						+e.column
+							+b.select-cat.js-select-cat
+								+e.INPUT.input(type="hidden" name="cat" value="Категория")
+								+e.inner
+									+e.wrapper
+										+e.label.verysmall 
+											span Цена
+										+e.list
+											+e.price.price__
+												+e.row
+													+e.input.js-thousand.js-price-from.INPUT(value="12 321",data-value="12321")
+													+e.input.js-thousand.js-price-to.INPUT(value="213 321",data-value="213321")
+												+e.slider.js-slider-ui(data-min="0",data-max="50000")
 				+e.content.content
 					h3
 						| Бинт медицинский 
