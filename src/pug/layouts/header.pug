@@ -77,14 +77,30 @@
 		+e.panel-row
 			+e.panel-item._search#search-panel
 				+e.wrap.wrap
-					+b.FORM.search
+					+b.FORM.search(action="/")
 						+e.BUTTON.button
 							svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
 								rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
 								circle(cx='13.1993', cy='13.1992', r='8.33333', transform='rotate(-45 13.1993 13.1992)')
-						+e.INPUT.input(type="text" name="s" placeholder="Поиск по сайту")
+						+e.INPUT.input(type="text" name="s" placeholder="Поиск по сайту" autocomplete="off")
 						//- +e.close.js-search-reset
 						//- 	+icon('close','0 0 30 30')
+						+e.UL.list
+							+e.LI.item 
+								+e.A.link(href="#")
+									| Поиск
+							+e.LI.item 
+								+e.A.link(href="#")
+									| Поиск по сайту
+							+e.LI.item 
+								+e.A.link(href="#")
+									| Поиск по тарифам
+							+e.LI.item 
+								+e.A.link(href="#")
+									| Поиск по исполнителям
+							+e.LI.item 
+								+e.A.link(href="#")
+									| Поиск по дикторам
 			+e.panel-item._catalog.catalog-nav__#catalog-panel
 				+e.wrap.wrap
 					+e.row.flex
