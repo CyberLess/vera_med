@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>Каталог</title>
-    <link rel="preload" as="style" href="/app/css/app.css?v=1578747963207">
-    <link rel="stylesheet" href="/app/css/app.css?v=1578747963207">
+    <title>Сайдбар v.2</title>
+    <link rel="preload" as="style" href="/app/css/app.css?v=1578747965854">
+    <link rel="stylesheet" href="/app/css/app.css?v=1578747965854">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -284,7 +284,7 @@
                         </li>
                         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
                         </li>
-                        <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_current">Бинты</span>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_current" href="#">Бинты</a>
                         </li>
                     </ul>
                     <div class="catalog__mb flex flex_vertical flex_center js-open-sidebar">
@@ -298,907 +298,126 @@
                     </div>
                     <div class="catalog__container">
                         <div class="catalog__cell catalog__cell_left" id="sidebar">
-                            <form class="catalog__form form" action="/app/mail/">
+                            <div class="catalog__mb is-visible flex flex_vertical flex_center js-open-cat">
+                                <div class="catalog__mb-box">
+                                    <div class="catalog__mb-square"></div>
+                                    <div class="catalog__mb-square"></div>
+                                    <div class="catalog__mb-square"></div>
+                                    <div class="catalog__mb-square"></div>
+                                </div>
+                                <div class="catalog__mb-label verysmall">Показать каталог</div>
+                            </div>
+                            <form class="catalog__form form is-hidden" action="/app/mail/">
                                 <div class="catalog__box">
-                                    <div class="catalog__box-title h4 js-close-sidebar">Каталог товаров
+                                    <div class="catalog__box-title catalog__box-title_close h5 js-close-sidebar">Фильтры
                                         <svg class="icon icon-delete" viewBox="0 0 13.941355 13.940246">
                                             <use xlink:href="/app/icons/sprite.svg#delete"></use>
                                         </svg>
                                     </div>
-                                    <ul class="catalog__tree">
-                                        <li class="cat-item cat-item-296">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/aptechka">Аптечки</a>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Категория1</div>
+                                        <div class="accordion__content accordion__content_pad0">
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox checkbox_disabled">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" disabled="disabled" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Категория2</div>
+                                        <div class="accordion__content accordion__content_pad0">
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox checkbox_disabled">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" disabled="disabled" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Категория3</div>
+                                        <div class="accordion__content accordion__content_pad0">
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox checkbox_disabled">
+                                                <input class="checkbox__input" type="checkbox" checked="checked" disabled="disabled" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                            <label class="accordion__checkbox checkbox">
+                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                <span
+                                                class="checkbox__counter small">(131)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__accordion accordion">
+                                        <div class="accordion__top small">Цена</div>
+                                        <div class="accordion__content accordion__content_pad0">
+                                            <div class="accordion__price price">
+                                                <div class="price__row">
+                                                    <input class="price__input js-thousand js-price-from" value="12 321" data-value="12321" type="text" />
+                                                    <input class="price__input js-thousand js-price-to" value="213 321" data-value="213321" type="text" />
+                                                </div>
+                                                <div class="price__slider js-slider-ui" data-min="0" data-max="50000"></div>
                                             </div>
-                                        </li>
-                                        <li class="cat-item cat-item-319 current-cat">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bahily">Бахилы</a>
+                                        </div>
+                                    </div>
+                                    <div class="select select_stroke">
+                                        <input class="select__input" type="hidden" name="upakovka1" value="От производителя" />
+                                        <div class="select__inner">
+                                            <div class="select__wrapper">
+                                                <div class="select__label verysmall"> <span>От производителя</span>
+                                                </div>
+                                                <div class="select__list">
+                                                    <div class="select__list-item verysmall is-selected" data-value="От производителя">От производителя</div>
+                                                    <div class="select__list-item verysmall">Паллетный борд</div>
+                                                    <div class="select__list-item verysmall">Жесткая упаковка</div>
+                                                    <div class="select__list-item verysmall">Мешки</div>
+                                                    <div class="select__list-item verysmall">Дополнительная упаковка</div>
+                                                    <div class="select__list-item verysmall">Воздушно-пузырьковая пленка</div>
+                                                </div>
                                             </div>
-                                        </li>
-                                        <li class="cat-item cat-item-297 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint-medicinskiy">Бинты</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-298"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/gipsovyy">Бинт гипсовый</a>
-                                                </li>
-                                                <li class="cat-item cat-item-945"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint-medicinskiy/polimernyj">Бинт полимерный</a>
-                                                </li>
-                                                <li class="cat-item cat-item-763"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/poliuretanovyi">Бинт полиуретановый</a>
-                                                </li>
-                                                <li class="cat-item cat-item-947 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint-medicinskiy/samofiksirujuschijsja">Бинт самофиксирующийся</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-948"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint-medicinskiy/samofiksirujuschijsja/kogezivnyj">Бинт когезивный</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-301 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/elastichnyy">Бинт эластичный</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-335"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/elastichnyy/trubchatyj">Бинт трубчатый</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-300 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj">Бинты марлевые</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-710 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/10h16">Бинты 10х16</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-711"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/10h16-pl-28">Бинты 10х16 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-712"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/10h16-pl-32">Бинты 10х16 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-713"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/10h16-pl-36">Бинты 10х16 пл. 36</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-696 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h10">Бинты 5х10</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-688"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h10-pl-28">Бинты 5х10 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-689"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h10-pl-32">Бинты 5х10 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-691"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h10-pl-36">Бинты 5х10 пл. 36</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-690"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h10-pl-36-2">Бинты 5х10 пл. 36±2</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-698 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h5">Бинты 5х5</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-699"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h5-pl-28">Бинты 5х5 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-700"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h5-pl-32">Бинты 5х5 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-701"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h5-pl-36">Бинты 5х5 пл. 36</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-702 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h7">Бинты 5х7</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-703"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h7-pl-28">Бинты 5х7 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-704"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h7-pl-32">Бинты 5х7 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-705"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/5h7-pl-36">Бинты 5х7 пл. 36</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-706 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h10">Бинты 7х10</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-707"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h10-pl-28">Бинты 7х10 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-708"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h10-pl-32">Бинты 7х10 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-709"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h10-pl-36">Бинты 7х10 пл. 36</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-697 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h14">Бинты 7х14</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-692"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h14-pl-28">Бинты 7х14 пл. 28</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-693"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h14-pl-32">Бинты 7х14 пл. 32</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-695"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h14-pl-36">Бинты 7х14 пл. 36</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-694"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/bint/marlevyj/7h14-pl-36-2">Бинты 7х14 пл. 36±2</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-302 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata">Вата медицинская</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-303"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/valiki-vatnye">Валики ватные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-304"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/gigienicheskaya">Вата гигиеническая</a>
-                                                </li>
-                                                <li class="cat-item cat-item-305"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/glaznaya">Вата глазная</a>
-                                                </li>
-                                                <li class="cat-item cat-item-307"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/zig-zag">Вата Зиг-Заг</a>
-                                                </li>
-                                                <li class="cat-item cat-item-306"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/hirurgicheskaya">Вата хирургическая</a>
-                                                </li>
-                                                <li class="cat-item cat-item-308"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/vatnye-diski">Ватные диски</a>
-                                                </li>
-                                                <li class="cat-item cat-item-309"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/vatnye-palochki">Ватные палочки</a>
-                                                </li>
-                                                <li class="cat-item cat-item-313"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/palochka-tampon">Ватные палочки тампоны</a>
-                                                </li>
-                                                <li class="cat-item cat-item-310"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/vata/vatnye-shariki">Ватные шарики</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-344 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/geli-medicinskie">Гели медицинские</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-357"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/geli-medicinskie/dlja-uzi">Гели для&nbsp;УЗИ</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-963 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinfekcija-i-sterilizacija">Дезинфекция и&nbsp;стерилизация</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-339 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva">Дезинфицирующие средства</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-371"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/abakteril">Абактерил</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-771 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/avansept">Авансепт</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-773"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/avansept/salfetki">Авансепт салфетки</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-772"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/avansept/sprej">Авансепт спрей</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-774"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/azopiram-komplekt">Азопирам комплект</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-372"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/alaminol">Аламинол</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-373"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/almadez">Алмадез</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-775"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/amiflain">Амифлайн</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-769 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/antiseptiki">Антисептики медицинские</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-909"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/antiseptiki/tefleks">Тефлекс кожный антисептик</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-777"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/briliant-klassik">Бриллиант классик</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-779"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/dezivaips-salfetki">Дезивайпс салфетки</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-770"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/dezilait">Дезилайт</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-780"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/deziptol">Дезиптол</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-778"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/dezkliner">Дезклинер</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-911"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/maniderm-krem">Манидерм</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-781"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/mistral">Мистраль</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-776"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/oka-dez">ОКА-ДЕЗ</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-374"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/samarovka">Самаровка</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-782 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/sekusept">Секусепт</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-907"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/sekusept/aktiv-sekusept">Секусепт актив</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-908"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/salfetki-septizol">Септизол салфетки</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-910"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinficirujuschie-sredstva/everluks-63">Эверлюкс 63</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-965"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinfekcija-i-sterilizacija/korobki-sterilizacionnye">Коробки стерилизационные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-964"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/dezinfekcija-i-sterilizacija/kraft-pakety">Крафт-пакеты</a>
-                                                </li>
-                                                <li class="cat-item cat-item-361 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/indikatory-sterilizacii/himicheskie">Химические индикаторы</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-366"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/indikatory-sterilizacii/parovoj">Индикаторы паровой стерилизации</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-363"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/indikatory-sterilizacii/himicheskie/sterikont">Индикаторы Стериконт</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-362"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/indikatory-sterilizacii/himicheskie/steritest">Индикаторы СтериТест</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-311 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/kleenka">Клеенка</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-926"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/kleenka/podkladnaja-rezinotkanevaja">Клеенка резинотканевая</a>
-                                                </li>
-                                                <li class="cat-item cat-item-925"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/kleenka/podkladnaja-pvh">Клеенка с&nbsp;ПВХ покрытием</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-957 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/lateksnye-medicinskie-izdelija">Латексные изделия</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-958"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/napalchnik-medicinskij-lateksnyj">Напальчники латексные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-936"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sredstva-individualnoj-zaschity/prezervativy-dlja-uzi">Презерватив для&nbsp;УЗИ</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-312">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/marlya-medicinskaya">Марля</a>
-                                            </div>
-                                        </li>
-                                        <li class="cat-item cat-item-337 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda">Медицинская одежда</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-370 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/beljo-odnorazovoe">Белье одноразовое</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-943"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/beljo-odnorazovoe/trusy-dlja-kolonoskopii">Трусы для&nbsp;колоноскопии</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-960"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/kostjumy-vracha">Костюмы врача</a>
-                                                </li>
-                                                <li class="cat-item cat-item-320"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/maska-medicinskaya">Маски медицинские</a>
-                                                </li>
-                                                <li class="cat-item cat-item-338"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/halaty">Медицинские халаты</a>
-                                                </li>
-                                                <li class="cat-item cat-item-766 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/narukavniki">Нарукавники медицинские</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-919"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/narukavniki/iz-polimerov-pvh-pnd">Нарукавники из&nbsp;полимерных материалов</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-342"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/fartuk">Фартук медицинский</a>
-                                                </li>
-                                                <li class="cat-item cat-item-341"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/shapochki">Шапочки медицинские</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-334 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty">Медицинские инструменты</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-983 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya">Акушерство и&nbsp;гинекология</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-1518"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/zazhimy-ginekologicheskie">Зажимы гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1519 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/zerkala-ginekologicheskie">Зеркала гинекологические</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-1520"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/zerkala-ginekologicheskie/zerkalo-podjemnik">Зеркало подъемник</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1521"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/zond-matochnyj-ginekologicheskij">Зонд маточный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1522"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/kuretki-ginekologicheskie">Кюретки</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1523"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/lozhki-ginekologicheskie">Ложки гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1524"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/nakonechniki-ginekologicheskie">Наконечники гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1525"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/nozhi-ginekologicheskie">Ножи гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1526"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/nozhnicy-ginekologicheskie">Ножницы гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1527"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/pincety-ginekologicheskie">Пинцеты гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1528"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/rasshiriteli-kanala-shejki-matki">Расширители канала шейки матки</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1529"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/tazomery-akusherskie">Тазомеры акушерские</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1530"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/shpateli-ginekologicheskie">Шпатели гинекологические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1531"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/schipcy-akusherskie">Щипцы акушерские</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-1532"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/akusherstvo-i-ginekologiya/ekstraktory-ginekologicheskie">Экстракторы гинекологические</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-984 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/anatomiya">Анатомия</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-2051"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/anatomiya/pintsety-anatomicheskie">Пинцет анатомический</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-2112 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty">Ветеринарные инструменты</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-2116"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/vaktsinatory">Вакцинаторы ветеринарные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2113"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/igly">Иглы ветеринарные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2117"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/inektory-i-ustrojstva">Инъекторы и&nbsp;устройства</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2114"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/katetery-veterinarnye">Катетеры ветеринарные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2118 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/nabory">Наборы ветеринарные</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2121"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/nabory/akusherskie">Акушерские</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2120"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/nabory/anatomicheskie">Анатомические</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2119"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/nabory/hirurgicheskie">Хирургические</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2122 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie">Хирургическо-анатомические</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2124"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/zazhimy">Ветеринарные зажимы</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2125"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/igloderzhateli">Ветеринарные иглодержатели</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2126"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/korntsangi">Ветеринарные корнцанги</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2128"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/nozhi">Ветеринарные ножи</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2129"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/nozhnitsy">Ветеринарные ножницы</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2123"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/pintsety">Ветеринарные пинцеты</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2127"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/hirurgichesko-anatomicheskie/skalpeli">Ветеринарные скальпели</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2115"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/veterinarnye-instrumenty/shpritsy">Шприцы ветеринарные</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-1045"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/gastroenterologija">Гастроэнтерология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-986"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/diagnostika">Диагностика</a>
-                                                </li>
-                                                <li class="cat-item cat-item-966"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zhguty">Жгуты</a>
-                                                </li>
-                                                <li class="cat-item cat-item-967"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zerkalo-rektalnoe">Зеркало ректальное</a>
-                                                </li>
-                                                <li class="cat-item cat-item-912 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zondy">Зонд медицинский</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-913"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zondy/jeludochnye">Зонд желудочный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-922"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zondy/obturator">Зонд обтуратор</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-920"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zondy/pitatelnyj">Зонд питательный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-921"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/zondy/urogenitalnyj">Зонд урогенитальный</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-369 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/igly">Иглы медицинские</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-941"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/igly/dentalnye-karpulnye">Иглы дентальные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-384"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/igly/inekcionnye">Иглы инъекционные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-764"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/igly/hirurgicheskie">Иглы хирургические</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-982"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/k-endoskopam">Инструменты к&nbsp;эндоскопам</a>
-                                                </li>
-                                                <li class="cat-item cat-item-336 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery">Катетеры</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-378"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/aspiracionnyj">Катетер аспирационный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-918"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/vnutrivennye">Катетер внутривенный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-343 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/foleja">Катетер Фолея</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-375"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/foleja/2-h-hodovoj">Катетер Фолея 2-х ходовой</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-377"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/nelatona">Катетеры Нелатона</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-376 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/urologicheskie">Катетеры урологические</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-379"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/katetery/peccera">Катетеры Пеццера</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-985"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/kosmetologiya">Косметология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-940"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/klizmy/kruzhki-esmarha">Кружки Эсмарха</a>
-                                                </li>
-                                                <li class="cat-item cat-item-956 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/nabory">Наборы медицинские</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-765"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/nabory-dlya-kateterizacii">Наборы для&nbsp;катетеризации</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-969"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/nabory/dlya-epiduralnoj-anestezii">Наборы для&nbsp;эпидуральной анестезии</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2100"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/nabory-medicinskie/nabory-hirurgicheskih-instrumentov">Наборы хирургических инструментов</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-979"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/nejrohirurgiya">Нейрохирургия</a>
-                                                </li>
-                                                <li class="cat-item cat-item-975 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya">Оториноларингология</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-2053"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/adenotomy">Аденотом</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2054"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/voronki-ushnye">Воронка ушная</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2064"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/vykusyvateli">Выкусыватель</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2055"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/zerkala-gortannye">Зеркало гортанное</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2056"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/zerkala-nosovye">Зеркало носовое</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2058"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/zondy-ushnye">Зонд ушной</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2059"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/kanyuli-dlya-promyvaniya-attika">Канюля для&nbsp;промывания аттика</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2060"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/katetery-ushnye">Катетер ушной</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2061"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/otorinolaringologiya/nozhi-paratsentoznye">Нож парацентозный</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-978"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/oftalmologiya">Офтальмология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-959"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/pincety">Пинцеты</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1046"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/reanimacija">Реанимация</a>
-                                                </li>
-                                                <li class="cat-item cat-item-368 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/skalpeli">Скальпели</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-928"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/skalpeli/ruchki">Ручка для&nbsp;скальпеля</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-367 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/skarifikator">Скарификаторы</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-929"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/skarifikator/bokovoe-kopje">С боковым копьем</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-930"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/skarifikator/centralnoe-kopje">С центральным копьем</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-987"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/stakany">Стаканы медицинские</a>
-                                                </li>
-                                                <li class="cat-item cat-item-980"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/stomatologiya">Стоматология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-981"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/travmatologiya">Травматология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-931 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/trubki-traheostomicheskie">Трубка трахеостомическая</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-932"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/trubki-traheostomicheskie/bez-manzhety">Без манжеты</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-933"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/trubki-traheostomicheskie/s-manzhetoj">С манжетой</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-934 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/trubki-endotrahealnye">Трубка эндотрахеальная</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-935"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/trubki-endotrahealnye/s-manzhetoj">Трубка эндотрахеальная с&nbsp;манжетой</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-977"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/urologiya">Урология</a>
-                                                </li>
-                                                <li class="cat-item cat-item-976 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya">Хирургия</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-2063"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/venoekstraktory">Веноэкстрактор</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2065"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/derzhateli-meditsinskie">Держатель медицинский</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2066"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/dissektory">Диссектор</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2067"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/dolota-hirurgicheskie">Долото хирургическое</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2068 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie">Зажим хирургический</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2076"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-kishechnye">Зажим кишечный</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2069"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-krovoostanavlivayushchie">Зажим кровоостанавливающий</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2073"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-krovoostanavlivayushchie-moskity">Зажим кровоостанавливающий "Москит"</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2072"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-krovoostanavlivayushchie-zubchatye">Зажим кровоостанавливающий зубчатый</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2071"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-krovoostanavlivayushchie-izognutye">Зажим кровоостанавливающий изогнутый</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2070"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-krovoostanavlivayushchie-pryamye">Зажим кровоостанавливающий прямой</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2075"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-soedinitelnye">Зажим соединительный</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2074"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-fiksiruyushchie">Зажим фиксирующий</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2077"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zazhimy-hirurgicheskie/zazhimy-dlya-sosudov">Зажимы для&nbsp;сосудов</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2078 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zerkala-hirurgicheskie">Зеркала хирургические</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2079"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zerkala-hirurgicheskie/zerkala-pechenochnye">Зеркало печеночное</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2080"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zerkala-hirurgicheskie/zerkala-rektalnye">Зеркало ректальное</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2081"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zerkala-hirurgicheskie/zerkala-rektalnye-dvustvorchatye">Зеркало ректальное двустворчатое</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2082"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zerkala-hirurgicheskie/rektalnye-zerkala-detskie">Ректальное зеркало детское</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2057"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zondy-s-navivkoj">Зонд с&nbsp;навивкой</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2083 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zondy-hirurgicheskie">Зонд хирургический</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2085"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zondy-hirurgicheskie/zondy-pugovchatye-hirurgicheskie">Зонд пуговчатый хирургический</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2084"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/zondy-hirurgicheskie/zondy-hirurgicheskie-zhelobovatye">Зонд хирургический желобоватый</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2086"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/igloderzhateli-hirurgicheskie">Иглодержатель хирургический</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2087 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/korntsangi-hirurgichekie">Корнцанги хирургичекие</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2089"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/korntsangi-hirurgichekie/korntsangi-izognutye">Корнцанги изогнутые</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2088"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/korntsangi-hirurgichekie/korntsangi-pryamye">Корнцанги прямые</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2090 cat-parent mtree-node mtree-closed">
-                                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie">Крючки хирургические</a>
-                                                            </div>
-                                                            <ul class="children mtree-level-3">
-                                                                <li class="cat-item cat-item-2091"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie/kryuchki-hirurgicheskie-zubchatye">Крючки хирургические зубчатые</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2094"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie/kryuchki-hirurgicheskie-ostrye">Крючки хирургические острые</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2092"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie/kryuchki-hirurgicheskie-trehzubye">Крючки хирургические трехзубые</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2095"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie/kryuchki-hirurgicheskie-tupye">Крючки хирургические тупые</a>
-                                                                </li>
-                                                                <li class="cat-item cat-item-2093"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kryuchki-hirurgicheskie/kryuchki-hirurgicheskie-chetyrehzubye">Крючки хирургические четырехзубые</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2096"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kusachki-hirurgicheskie">Кусачки хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2097"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/kyuretki-hirurgicheskie">Кюретки хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2098"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/lozhki-hirurgicheskie">Ложки хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2099"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/molotki-hirurgicheskie">Молотки хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2102"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/nozhi-amputatsionnye">Ножи ампутационные</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2101"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/nozhi-hirurgicheskie">Ножи хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2103"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/nozhnitsy-hirurgicheskie">Ножницы хирургические</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-2052"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/hirurgiya/ugrevydavlivateli">Угревыдавливатель</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-324 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpatel">Шпатель медицинский</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-358"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpatel/derevjannye">Шпатели деревянные</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-950 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-pribory">Медицинские приборы</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-938"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-pribory/gigrometry-psihrometricheskie">Гигрометры психрометрические</a>
-                                                </li>
-                                                <li class="cat-item cat-item-914 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/termometry-medicinskie">Термометры</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-924"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/termometry-medicinskie/elektronnye-termometry">Термометр электронный</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-955"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-instrumenty/termometry-medicinskie/rtutnye">Термометры ртутные</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-953 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-pribory/tonometry-medicinskie">Тонометры</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-952"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-pribory/tonometry-medicinskie/mehanicheskie">Тонометры механические</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-951"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskie-pribory/filtry-vozdushnye-fvs">Фильтр сменный воздушный</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-340 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery">Медицинский контейнер</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-2062"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/baki-dlya-sbora-othodov">Баки для&nbsp;сбора отходов</a>
-                                                </li>
-                                                <li class="cat-item cat-item-954"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/emkost-dlja-hranenija-termometrov">Емкость для&nbsp;хранения термометров</a>
-                                                </li>
-                                                <li class="cat-item cat-item-927"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/dlja-igl">Контейнер для&nbsp;игл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-360"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/dlja-sbora-mochi">Контейнер для&nbsp;сбора мочи</a>
-                                                </li>
-                                                <li class="cat-item cat-item-364"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/dlja-biomateriala">Контейнеры для&nbsp;биоматериалов</a>
-                                                </li>
-                                                <li class="cat-item cat-item-939"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/kds">Контейнеры КДС</a>
-                                                </li>
-                                                <li class="cat-item cat-item-365"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/lotki">Лотки медицинские</a>
-                                                </li>
-                                                <li class="cat-item cat-item-383"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/pakety-dlja-utilizacii">Пакеты для&nbsp;утилизации</a>
-                                                </li>
-                                                <li class="cat-item cat-item-359"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/konteinery/sudno-ladja">Судно Ладья</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-381 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perevjazochnye-materialy">Перевязочные материалы</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-946"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perevjazochnye-materialy/gips-plastikovye">Гипс пластиковый</a>
-                                                </li>
-                                                <li class="cat-item cat-item-382"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perevjazochnye-materialy/paket-perevjazochnyi">Пакет перевязочный</a>
-                                                </li>
-                                                <li class="cat-item cat-item-944"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perevjazochnye-materialy/podshinovyj-chulok">Подшиновые чулки</a>
-                                                </li>
-                                                <li class="cat-item cat-item-962"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perevjazochnye-materialy/ranevye-povjazki">Раневые повязки</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-321 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki">Перчатки медицинские</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-350"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/latekshye">Перчатки латексные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-353"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/nesterilnye">Перчатки нестерильные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-349"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/nitrilovye">Перчатки нитриловые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-351"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/odnorazovye">Перчатки одноразовые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-345"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/polietilenovye">Перчатки полиэтиленовые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-356"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/rezinovye">Перчатки резиновые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-352"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/perchatki/sterilnye">Перчатки стерильные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-326"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/smotrovye-perchatki">Смотровые перчатки</a>
-                                                </li>
-                                                <li class="cat-item cat-item-327"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/hirurgicheskie-perchatki">Хирургические перчатки</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-322 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr">Пластырь и&nbsp;лейкопластырь</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-299"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/bint-lipkiy">Бинт липкий</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1587"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/nabory-lejkoplastyrej">Наборы лейкопластырей</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1065"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/baktericydnyj">Пластыри бактерицидные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1223"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/mozolnyj">Пластыри мозольные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1589"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/plastyri-netkanye">Пластыри нетканые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1591"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/plastyri-polimernye">Пластыри полимерные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1590"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/plastyri-tkanevye">Пластыри тканевые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1592"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/plastyri-shelkovye">Пластыри шелковые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1588"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/plastyri-povjazki">Пластыри-повязки</a>
-                                                </li>
-                                                <li class="cat-item cat-item-942"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/dlja-fiksacii-kateterov">Пластырь для&nbsp;фиксации катетеров</a>
-                                                </li>
-                                                <li class="cat-item cat-item-354"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/leykoplastyr/percovyj">Пластырь перцовый</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-767 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi">Предметы ухода за&nbsp;больными</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-768"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi/vlajnaya-tualetnaya-bumaga">Бумага туалетная влажная</a>
-                                                </li>
-                                                <li class="cat-item cat-item-949"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi/mochepriemniki">Мочеприемники</a>
-                                                </li>
-                                                <li class="cat-item cat-item-325"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/podguzniki-dlya-vzroslyh">Подгузники</a>
-                                                </li>
-                                                <li class="cat-item cat-item-937"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sredstva-individualnoj-zaschity/pokryvalo-spasatelnoe-izotermicheskoe">Покрывало спасательное</a>
-                                                </li>
-                                                <li class="cat-item cat-item-968"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi/bumazhnye-polotenca">Полотенца бумажные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-380 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/medicinskaja-odezhda/beljo-odnorazovoe/prostyni">Простыни медицинские</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-887"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi/prostyni/netkanye-medicinskie">Простыни нетканые</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-923"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/predmety-uhoda-za-bolnymi/sredstva-gigieny">Средства гигиены</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-314 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/salfetki-medicinskie">Салфетки медицинские</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-355"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/salfetki/vlazhnye-detskie">Салфетки влажные детские</a>
-                                                </li>
-                                                <li class="cat-item cat-item-315"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/salfetki-marlevye">Салфетки марлевые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-346"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/salfetki/spirtovye">Салфетки спиртовые</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-323 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sistemy-perelivaniya">Системы переливания</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-961"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sistemy-perelivaniya/podushki-dlja-zabora-krovi">Подушки для&nbsp;забора крови</a>
-                                                </li>
-                                                <li class="cat-item cat-item-347"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sistemy-perelivaniya/infuzionnye">Системы инфузионные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-348"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/sistemy-perelivaniya/transfuzionnye">Системы трансфузионные</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="cat-item cat-item-316 cat-parent mtree-node mtree-closed">
-                                            <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy">Шприцы медицинские</a>
-                                            </div>
-                                            <ul class="children mtree-level-1">
-                                                <li class="cat-item cat-item-974"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/sterin-medical-group">Шприцы "Стерин"</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1050"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/1-ml">Шприцы 1 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1054"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/10-ml">Шприцы 10 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1057"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/100-ml">Шприцы 100 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1058"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/150-ml">Шприцы 150 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1051"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/2-ml">Шприцы 2 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-317"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/2-komponentnye">Шприцы 2-х компонентные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1055"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/20-ml">Шприцы 20 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1052"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/3-ml">Шприцы 3 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-318 cat-parent mtree-node mtree-closed">
-                                                    <div class="cat-top"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy-3-h-komponentnye">Шприцы 3-х компонентные</a>
-                                                    </div>
-                                                    <ul class="children mtree-level-2">
-                                                        <li class="cat-item cat-item-328"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy-china">Шприцы - Китай</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-329"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy-sfmedical">Шприцы SF-Medical (Германия)</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-330"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy-vogt-medical">Шприцы Vogt Medical (Германия)</a>
-                                                        </li>
-                                                        <li class="cat-item cat-item-331"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy-stk-grypp">Шприцы Группа СТК (Россия)</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="cat-item cat-item-1053"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/5-ml">Шприцы 5 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1056"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/50-ml">Шприцы 50 мл</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1060"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/dlja-promavanij">Шприцы для&nbsp;промывания</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1224"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/zhane">Шприцы Жане</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1225"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/insulinovye">Шприцы инсулиновые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1049"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/injekcionnye">Шприцы инъекционные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1226"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/karpulnye">Шприцы карпульные</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1048"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/mnogorazovye">Шприцы многоразовые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1047"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/odnorazovye">Шприцы одноразовые</a>
-                                                </li>
-                                                <li class="cat-item cat-item-1059"><a href="https://xn----7sbfkcc2c3a.xn--p1ai/shpricy/s-dopolnitelnym-objomom">Шприцы с&nbsp;дополнительным объемом</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                             <div class="catalog__info js-move-item" data-to="#mobile-sidebar" data-from="#sidebar">
@@ -1217,7 +436,7 @@
                                     </div>
                                 </div>
                                 <div class="catalog__box catalog__box_mobile catalog__box_contact">
-                                    <div class="catalog__box-title h4">Свяжитесь с&nbsp;нами</div>
+                                    <div class="catalog__box-title h5">Свяжитесь с&nbsp;нами</div>
                                     <div class="contacts contacts_dark">
                                         <div class="contacts__list">
                                             <div class="contacts__string"><a class="contacts__phone" href="tel:+74953696639">+7 (495) 369-66-39</a>
@@ -1243,7 +462,7 @@
                                     </div>
                                 </div>
                                 <div class="catalog__box catalog__box_mobile catalog__box_manager">
-                                    <div class="catalog__box-title h4">Вам ответят</div>
+                                    <div class="catalog__box-title h5">Вам ответят</div>
                                     <div class="manager">
                                         <div class="manager__avatar">
                                             <div class="manager__avatar-inner">
@@ -1263,8 +482,92 @@
                             </div>
                         </div>
                         <div class="catalog__cell catalog__cell_right">
+                            <div class="horizontal-filter">
+                                <div class="horizontal-filter__row flex">
+                                    <div class="horizontal-filter__column">
+                                        <div class="select select_stroke">
+                                            <input class="select__input" type="hidden" name="upakovka1" value="От производителя" />
+                                            <div class="select__inner">
+                                                <div class="select__wrapper">
+                                                    <div class="select__label verysmall"> <span>От производителя</span>
+                                                    </div>
+                                                    <div class="select__list">
+                                                        <div class="select__list-item verysmall is-selected" data-value="От производителя">От производителя</div>
+                                                        <div class="select__list-item verysmall">Паллетный борд</div>
+                                                        <div class="select__list-item verysmall">Жесткая упаковка</div>
+                                                        <div class="select__list-item verysmall">Мешки</div>
+                                                        <div class="select__list-item verysmall">Дополнительная упаковка</div>
+                                                        <div class="select__list-item verysmall">Воздушно-пузырьковая пленка</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-filter__column">
+                                        <div class="select-cat js-select">
+                                            <input class="select-cat__input" type="hidden" name="cat" value="Категория" />
+                                            <div class="select-cat__inner">
+                                                <div class="select-cat__wrapper">
+                                                    <div class="select-cat__label verysmall js-select-item"><span>Категория</span>
+                                                    </div>
+                                                    <div class="select-cat__list">
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" checked="checked" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox checkbox_disabled">
+                                                                <input class="checkbox__input" type="checkbox" checked="checked" disabled="disabled" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-cat__list-item">
+                                                            <label class="select-cat__checkbox checkbox">
+                                                                <input class="checkbox__input" type="checkbox" /><span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 15 11"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="checkbox__text small">Бинт гипсовый</span>
+                                                                <span
+                                                                class="checkbox__counter small">(131)</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-filter__column">
+                                        <div class="select-cat js-select">
+                                            <input class="select-cat__input" type="hidden" name="cat" value="Категория" />
+                                            <div class="select-cat__inner">
+                                                <div class="select-cat__wrapper">
+                                                    <div class="select-cat__label verysmall js-select-item"><span>Цена</span>
+                                                    </div>
+                                                    <div class="select-cat__list">
+                                                        <div class="select-cat__price price">
+                                                            <div class="price__row">
+                                                                <input class="price__input js-thousand js-price-from" value="12 321" data-value="12321" type="text" />
+                                                                <input class="price__input js-thousand js-price-to" value="213 321" data-value="213321" type="text" />
+                                                            </div>
+                                                            <div class="price__slider js-slider-ui" data-min="0" data-max="50000"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="catalog__content content">
-                                <h1>Бинт медицинский <br><span class="is-blue">от&nbsp;производителя оптом</span></h1>
+                                <h3>Бинт медицинский <br><span class="is-blue">от&nbsp;производителя оптом</span></h3>
                                 <p>На сайте компании ТД «ВераМед» Вы можете купить бинт медицинский оптом в&nbsp;Москве по&nbsp;цене за&nbsp;штуку (стоимость снижается, если сумма заказа превышает 50 тыс. рублей). Предлагаем доставку по&nbsp;городу и&nbsp;Московской
                                     области за&nbsp;0 руб.!
                                     <br>
@@ -1363,7 +666,7 @@
                                 </div>
                             </div>
                             <div class="catalog__part catalog__part_links">
-                                <div class="catalog__part-title h1">Все подкатегории медицинских товаров</div>
+                                <div class="catalog__part-title h3">Все подкатегории медицинских товаров</div>
                                 <ul class="catalog__subcats flex flex_start flex_justify">
                                     <li class="catalog__subcats-item"><a class="catalog__subcats-link p blue-link" href="#">Аптечки</a>
                                     </li>
@@ -1410,14 +713,14 @@
                                 </ul>
                             </div>
                             <div class="catalog__part catalog__part_big">
-                                <div class="catalog__part-title catalog__part-title_small h1">Виды медицинских бинтов</div>
+                                <div class="catalog__part-title catalog__part-title_small h3">Виды медицинских бинтов</div>
                                 <div class="catalog__select select">
                                     <div class="select__bg"></div>
                                     <input class="select__input" type="hidden" name="cat" value="is 7" />
                                     <div class="select__inner flex flex_vertical">
-                                        <div class="select__text h6">Категория:</div>
+                                        <div class="select__text p17">Категория:</div>
                                         <div class="select__wrapper">
-                                            <div class="select__label h6 b"> <span>Бинт гипсовый</span>
+                                            <div class="select__label p17 b"> <span>Бинт гипсовый</span>
                                             </div>
                                             <div class="select__list">
                                                 <div class="select__list-item verysmall">1</div>
@@ -2628,7 +1931,7 @@
                                 </div>
                             </div>
                             <div class="catalog__part catalog__part_steps">
-                                <div class="catalog__part-title catalog__part-title_tocenter h1">Как купить медицинский бинт</div>
+                                <div class="catalog__part-title catalog__part-title_tocenter h3">Как купить медицинский бинт</div>
                                 <div class="steps swiper-container js-to-swiper">
                                     <div class="swiper-wrapper">
                                         <div class="steps__item swiper-slide">
@@ -2882,7 +2185,7 @@
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1578747963397"></script>
+    <script src="/app/js/app.js?v=1578747965962"></script>
 </body>
 
 </html>

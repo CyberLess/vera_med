@@ -51,8 +51,8 @@
         }
     });
 	
-	$(".js-select-cat .select-cat__label, .js-select-cat .select-cat__bg").click(function(){
-		$(this).closest(".js-select-cat").toggleClass('is-active');
+	$(".js-select-item").click(function(){
+		$(this).closest(".js-select").toggleClass('is-active');
 	});
 
 })($)
