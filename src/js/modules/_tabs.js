@@ -4,6 +4,10 @@ import Swiper from 'swiper';
 	if(!$('.tabs').length)
 		return false;
 
+	var offset = false;
+
+	let hash = window.location.hash;
+
 	$('.tabs').each((i,el) => {
 
 		let nav = $(el).find('.tabs__list')[0];
@@ -11,6 +15,8 @@ import Swiper from 'swiper';
 
 		let navPrev = $(el).find('.swiper-button-prev')[0];
 		let navNext = $(el).find('.swiper-button-next')[0];
+
+		let current_slide = $(el).find(hash).index() + 1;
 
 		let navSwiper = new Swiper(nav, {
 			slidesPerView: 'auto',
@@ -57,6 +63,10 @@ import Swiper from 'swiper';
 
 		});
 
+		if(hash){
+			contentSwiper.slideTo(current_slide, 0);
+			offset = $(el).offset().top - 40;
+		}
 
 		// navSwiper.controller.control = contentSwiper;
 		// contentSwiper.controller.control = navSwiper;
@@ -65,6 +75,14 @@ import Swiper from 'swiper';
 
 	})
 
+	$(window).on("load", ()=> {
+		if(offset && $(window).width() > 1024){
+	        $('html, body').animate({
+	            scrollTop: offset
+	        }, 300);
+		}
+		
+	})
 
 })($);
 

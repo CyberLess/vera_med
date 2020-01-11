@@ -114,11 +114,9 @@ $(()=>{
 			$this.on(eventOut, e => {
 				currentOut = eventOut;
 
-				if($(e.relatedTarget).attr('class').includes('header__panel'))
+				if($(e.relatedTarget).attr('class').indexOf('header__panel') !== -1)
 					//  && !$(e.relatedTarget).hasClass('header__panel-bg')
 					return false;
-
-				console.log('event out', e)
 
 				submenu_close()
 			})			
@@ -134,7 +132,6 @@ $(()=>{
 	})
 
 	$('.header__panel-bg').on('click', (e)=>{
-		console.log('close')
 		// if(!$(e.target).hasClass('header__panel'))
 		// 	return false;
 
