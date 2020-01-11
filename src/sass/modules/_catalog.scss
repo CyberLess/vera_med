@@ -625,6 +625,7 @@
 			&_close {
 				cursor: pointer;
 				svg {
+					display: block;
 					&.icon-delete{
 						display: block;
 					}
