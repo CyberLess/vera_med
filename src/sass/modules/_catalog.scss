@@ -2,6 +2,21 @@
 	@include max-screen($large_tablet) {
 		padding-top: 13px;
 	}
+	
+	&__form {
+		&.is-hidden {
+			display: none;
+		}
+		&.is-visible {
+			display: block;
+		}
+		
+		@include max-screen($large_tablet) {
+			&.is-hidden {
+				display: block;
+			}
+		}
+	}
 
 	&__tree{
 
@@ -174,6 +189,11 @@
 		border-radius: 7px;
 		margin-bottom: 3.3rem;
 		background-color: #fff;
+		cursor: pointer;
+		
+		&.is-visible {
+			display: flex;
+		}
 
 		&.is-hidden{
 			display: none;
@@ -205,7 +225,10 @@
 
 		@include max-screen($large_tablet) {
 			display: flex;
-
+			
+			&.is-visible {
+				display: none;
+			}
 		}
 	}
 
@@ -585,7 +608,7 @@
 			font-weight: 700;
 			margin-bottom: 23px;
 			position: relative;
-
+			
 			svg{
 				width: 14px;
 				position: absolute;
@@ -596,6 +619,16 @@
 
 				&.icon-delete{
 					display: none;
+				}
+			}
+			
+			&_close {
+				cursor: pointer;
+				svg {
+					display: block;
+					&.icon-delete{
+						display: block;
+					}
 				}
 			}
 		}
