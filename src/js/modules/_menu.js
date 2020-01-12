@@ -12,6 +12,7 @@ $(() => {
 		$menu.toggleClass('is-visible')
 		$this.toggleClass('is-active')	
 
+		$('html, body').toggleClass('js-lock')
 
 		$('.header__panel').removeClass('header__panel_visible')
 		$('.header__panel-item').removeClass('header__panel-item_active')
