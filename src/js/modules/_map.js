@@ -9,6 +9,8 @@ $(() => {
 			let addr = item.data('addr');
 			let lat = Number(item.data('lat'));
 			let lng = Number(item.data('lng'));
+			let iconMark = item.attr('data-mark') ? item.data('mark') : '/app/img/marker.png';
+			let iconSize = item.attr('data-size') ? Number(item.data('size')) : 52;
 
 			var locations = [
 				[addr, lat, lng]
@@ -28,8 +30,8 @@ $(() => {
 					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 					map: map,
 					icon: {
-						url: "/app/img/marker.png",
-						scaledSize: new google.maps.Size(52, 52)
+						url: iconMark,
+						scaledSize: new google.maps.Size(iconSize, iconSize)
 					}
 				});
 			}
