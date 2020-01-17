@@ -1,4 +1,4 @@
-const projectName = __dirname.replace(/.*\\([^\\]+)\\/gm, '').toLowerCase();
+const projectName = 'veramed';//__dirname.replace(/.*\\([^\\]+)\\/gm, '').toLowerCase();
 const path = require('./path.json');
 
 const ftpData = require('./ftp.json');
