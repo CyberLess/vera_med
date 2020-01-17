@@ -9,6 +9,7 @@
     	bInfo : false,
     	searching: false,
     	autoWidth: true,
+    	paging: false,
 	    responsive: {
 	        breakpoints: [
 	            { name: 'desktop', width: Infinity },

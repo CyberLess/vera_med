@@ -6,6 +6,12 @@
 	$var = fgets($change_file);
 	fclose($change_file);
 
+	function declOfNum($num, $titles) {
+	    $cases = array(2, 0, 1, 1, 1, 2);
+
+	    return $titles[($num % 100 > 4 && $num % 100 < 20) ? 2 : $cases[min($num % 10, 5)]];
+	}
+
 	if($var == 0 || $var == ''){
 
 		$txt = "За " . date('d.m.Y') . " новых переходов не обнаружено";
@@ -18,7 +24,7 @@
 
 		$count = substr_count($log_gile, '==========');
 
-		$txt = "За " . date('d.m.Y') . " обнаружено " . $count . " новых перехода на неизвестные домены! %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
+		$txt = "За " . date('d.m.Y') . " " . declOfNum($count, array('обнаружен', 'обнаружено', 'обнаружено')) ." " . $count . " ". declOfNum($count, array('новый', 'новых', 'новых')) . " " . declOfNum($count, array('переход', 'перехода', 'переходов')) . " на " . declOfNum($count, array('неизвестный', 'неизвестные', 'неизвестные')) . " " . declOfNum($count, array('домен', 'домены', 'домены')) . "! %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
 
 	}
 

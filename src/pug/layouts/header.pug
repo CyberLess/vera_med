@@ -38,21 +38,25 @@
 	+e.mobile
 		+e.mobile-box._fluid._menu
 			+e.mobile-line
-				+e.mobile-link.A.js-mobile-submenu(href="#" data-submenu="#catalog-panel")
-					span Каталог
-					+e.DIV.mobile-submenu
-						+e.mobile-inner
+				+e.mobile-parent.js-mobile-group
+					+e.mobile-link.A(href="#cat")
+						span Каталог
+				+e.DIV.mobile-submenu.js-mobile-submenu( data-submenu="#catalog-panel" )
+					+e.mobile-inner
 			+e.mobile-line
-				+e.mobile-link.A.js-mobile-submenu(href="#" data-submenu="#about-panel")
-					span О компании
-					+e.DIV.mobile-submenu
-						+e.mobile-inner
+				+e.mobile-parent.js-mobile-group
+					+e.mobile-link.A(href="#" )
+						span О компании
+				+e.DIV.mobile-submenu.js-mobile-submenu(data-submenu="#about-panel")
+					+e.mobile-inner
 			+e.mobile-line
-				+e.mobile-link.A(href="#")
-					span Контакты
+				+e.mobile-parent.js-mobile-group
+					+e.mobile-link.A(href="#")
+						span Контакты
 			+e.mobile-line
-				+e.mobile-link.A(href="#")
-					span Прайс-лист
+				+e.mobile-parent.js-mobile-group
+					+e.mobile-link.A(href="#")
+						span Прайс-лист
 		+e.mobile-box._fluid._nav
 			+e.mobile-label
 				+e.mobile-contact.h4(href="tel:+74953696639") +7 (495) 369-66-39
@@ -77,7 +81,7 @@
 		+e.panel-row
 			+e.panel-item._search#search-panel
 				+e.wrap.wrap
-					+b.FORM.search(action="/")
+					+b.FORM.search.is-default-form(action="/")
 						+e.BUTTON.button
 							svg(width='33', height='33', viewBox='0 0 33 33', fill='none', xmlns='http://www.w3.org/2000/svg')
 								rect(x='17.5986', y='19.0654', width='2', height='11.4074', transform='rotate(-45 17.5986 19.0654)')
@@ -109,7 +113,7 @@
 								| Инструменты
 							ul.header__panel-list
 								li.header__panel-string
-									a.header__panel-link.small(href="#") Иглы
+									a.header__panel-link.small(href="#test3") Иглы
 								li.header__panel-string
 									a.header__panel-link.small(href="#") Шприцы
 								li.header__panel-string

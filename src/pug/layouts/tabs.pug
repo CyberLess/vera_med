@@ -2,20 +2,20 @@
 	+e.top.flex._vertical
 		+e.list.swiper-container
 			+e.inner.swiper-wrapper
-				.swiper-slide#test-3
-					+e.list-item.p Марлевый
-				.swiper-slide#test-2
-					+e.list-item.p Гипсовый
-				.swiper-slide#test
-					+e.list-item.p Эластичный
-				.swiper-slide#test-1
-					+e.list-item.p Липкий
-				.swiper-slide#test-4
-					+e.list-item.p Трубчатый
-				.swiper-slide#test-5
-					+e.list-item.p ХБ
 				.swiper-slide
-					+e.list-item.p 7
+					+e.list-item.p.A(href='#test-3') Марлевый
+				.swiper-slide
+					+e.list-item.p.A(href='#test-2') Гипсовый
+				.swiper-slide
+					+e.list-item.p.A(href='#test') Эластичный
+				.swiper-slide
+					+e.list-item.p.A(href='#test-1') Липкий
+				.swiper-slide
+					+e.list-item.p.A(href='#test-4') Трубчатый
+				.swiper-slide
+					+e.list-item.p.A(href='#test-5') ХБ
+				.swiper-slide
+					+e.list-item.p.A(href='#test-6') 7
 		+e.nav.flex._vertical._justify
 			+e.nav-button._prev.swiper-button-prev
 				+icon('arrow2', '0 0 9 17')
@@ -23,7 +23,7 @@
 				+icon('arrow2', '0 0 9 17')
 	+e.content.swiper-container
 		.swiper-wrapper
-			.swiper-slide
+			.swiper-slide#test-3
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые
@@ -33,7 +33,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test-2
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 1
@@ -43,7 +43,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 2
@@ -53,7 +53,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test-1
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 3
@@ -63,7 +63,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test-4
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 4
@@ -73,7 +73,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test-5
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 5
@@ -83,7 +83,7 @@
 							br
 							br
 							| Стерилизация выполняется с помощью ионизирующего излучения. Обычно используется в хирургии, хорошо впитывает жидкости, плотно прилегает к коже. Этот вид допускается стирать и отбеливать.
-			.swiper-slide
+			.swiper-slide#test-6
 				+e.content-item.flex._justify
 					+e.content-cell._left
 						+e.title.h1 Бинты марлевые 6

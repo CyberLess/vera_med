@@ -26,7 +26,7 @@ $(()=>{
 	 	})
 
 
-	$("form").each((i, el) => {
+	$("form:not(.is-default-form)").each((i, el) => {
 		var $form = $(el);
 
 		$form.validate({

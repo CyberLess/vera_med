@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Новость</title>
-    <link rel="preload" as="style" href="/app/css/app.css?v=1578752946218">
-    <link rel="stylesheet" href="/app/css/app.css?v=1578752946218">
+    <link rel="preload" as="style" href="/app/css/app.css?v=1579261357641">
+    <link rel="stylesheet" href="/app/css/app.css?v=1579261357641">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -63,13 +63,27 @@
                 </div>
                 <div class="header__mobile">
                     <div class="header__mobile-box header__mobile-box_fluid header__mobile-box_menu">
-                        <div class="header__mobile-line"><a class="header__mobile-link js-mobile-submenu" href="#" data-submenu="#catalog-panel"><span>Каталог</span><div class="header__mobile-submenu"><div class="header__mobile-inner"></div></div></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#cat"><span>Каталог</span></a>
+                            </div>
+                            <div class="header__mobile-submenu js-mobile-submenu" data-submenu="#catalog-panel">
+                                <div class="header__mobile-inner"></div>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link js-mobile-submenu" href="#" data-submenu="#about-panel"><span>О компании</span><div class="header__mobile-submenu"><div class="header__mobile-inner"></div></div></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>О компании</span></a>
+                            </div>
+                            <div class="header__mobile-submenu js-mobile-submenu" data-submenu="#about-panel">
+                                <div class="header__mobile-inner"></div>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link" href="#"><span>Контакты</span></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>Контакты</span></a>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link" href="#"><span>Прайс-лист</span></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>Прайс-лист</span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="header__mobile-box header__mobile-box_fluid header__mobile-box_nav">
@@ -98,7 +112,7 @@
                     <div class="header__panel-row">
                         <div class="header__panel-item header__panel-item_search" id="search-panel">
                             <div class="header__wrap wrap">
-                                <form class="search" action="/">
+                                <form class="search is-default-form" action="/">
                                     <button class="search__button">
                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect>
@@ -127,7 +141,7 @@
                                     <div class="catalog-nav__cell">
                                         <div class="header__panel-label small">Инструменты</div>
                                         <ul class="header__panel-list">
-                                            <li class="header__panel-string"><a class="header__panel-link small" href="#">Иглы</a>
+                                            <li class="header__panel-string"><a class="header__panel-link small" href="#test3">Иглы</a>
                                             </li>
                                             <li class="header__panel-string"><a class="header__panel-link small" href="#">Шприцы</a>
                                             </li>
@@ -1511,7 +1525,7 @@
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1578752946252"></script>
+    <script src="/app/js/app.js?v=1579261357721"></script>
 </body>
 
 </html>

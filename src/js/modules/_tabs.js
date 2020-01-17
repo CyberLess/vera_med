@@ -63,6 +63,28 @@ import Swiper from 'swiper';
 
 		});
 
+		$(el).find('.tabs__list a').on('click', e => {
+			e.preventDefault()
+
+			let href = $(e.currentTarget).attr('href')
+
+			console.log('tab', href)
+
+			if(history.pushState) {
+			    history.pushState(null, null, href);
+			}
+			else {
+			    location.hash = href;
+			}
+
+			offset = $(el).offset().top - 40;
+
+	        $('html, body').animate({
+	            scrollTop: offset
+	        }, 300);
+
+		})
+
 		if(hash){
 			contentSwiper.slideTo(current_slide, 0);
 			offset = $(el).offset().top - 40;

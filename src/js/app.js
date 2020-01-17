@@ -1,5 +1,6 @@
 import './vendors';
 
+import './modules/_security';
 import './modules/_default';
 import './modules/_pageLoadMore';
 import './modules/_form';
@@ -19,6 +20,5 @@ import './modules/_loadsvg';
 import './modules/_map';
 import './modules/_thousandSeparator';
 import './modules/_sizes';
-import './modules/_security';
 
 import './modules/_slider-ui';

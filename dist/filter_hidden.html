@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Сайдбар v.2</title>
-    <link rel="preload" as="style" href="/app/css/app.css?v=1578752940674">
-    <link rel="stylesheet" href="/app/css/app.css?v=1578752940674">
+    <link rel="preload" as="style" href="/app/css/app.css?v=1579261352846">
+    <link rel="stylesheet" href="/app/css/app.css?v=1579261352846">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -63,13 +63,27 @@
                 </div>
                 <div class="header__mobile">
                     <div class="header__mobile-box header__mobile-box_fluid header__mobile-box_menu">
-                        <div class="header__mobile-line"><a class="header__mobile-link js-mobile-submenu" href="#" data-submenu="#catalog-panel"><span>Каталог</span><div class="header__mobile-submenu"><div class="header__mobile-inner"></div></div></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#cat"><span>Каталог</span></a>
+                            </div>
+                            <div class="header__mobile-submenu js-mobile-submenu" data-submenu="#catalog-panel">
+                                <div class="header__mobile-inner"></div>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link js-mobile-submenu" href="#" data-submenu="#about-panel"><span>О компании</span><div class="header__mobile-submenu"><div class="header__mobile-inner"></div></div></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>О компании</span></a>
+                            </div>
+                            <div class="header__mobile-submenu js-mobile-submenu" data-submenu="#about-panel">
+                                <div class="header__mobile-inner"></div>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link" href="#"><span>Контакты</span></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>Контакты</span></a>
+                            </div>
                         </div>
-                        <div class="header__mobile-line"><a class="header__mobile-link" href="#"><span>Прайс-лист</span></a>
+                        <div class="header__mobile-line">
+                            <div class="header__mobile-parent js-mobile-group"><a class="header__mobile-link" href="#"><span>Прайс-лист</span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="header__mobile-box header__mobile-box_fluid header__mobile-box_nav">
@@ -98,7 +112,7 @@
                     <div class="header__panel-row">
                         <div class="header__panel-item header__panel-item_search" id="search-panel">
                             <div class="header__wrap wrap">
-                                <form class="search" action="/">
+                                <form class="search is-default-form" action="/">
                                     <button class="search__button">
                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="17.5986" y="19.0654" width="2" height="11.4074" transform="rotate(-45 17.5986 19.0654)"></rect>
@@ -127,7 +141,7 @@
                                     <div class="catalog-nav__cell">
                                         <div class="header__panel-label small">Инструменты</div>
                                         <ul class="header__panel-list">
-                                            <li class="header__panel-string"><a class="header__panel-link small" href="#">Иглы</a>
+                                            <li class="header__panel-string"><a class="header__panel-link small" href="#test3">Иглы</a>
                                             </li>
                                             <li class="header__panel-string"><a class="header__panel-link small" href="#">Шприцы</a>
                                             </li>
@@ -1807,7 +1821,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="table__button btn js-table-more"><span class="btn__back js-circles"></span><span class="btn__text">Показать еще</span>
+                                    <button class="table__button btn"><span class="btn__back js-circles"></span><span class="btn__text">Показать еще</span>
                                     </button>
                                 </div>
                             </div>
@@ -1816,26 +1830,19 @@
                                     <div class="tabs__top flex flex_vertical">
                                         <div class="tabs__list swiper-container">
                                             <div class="tabs__inner swiper-wrapper">
-                                                <div class="swiper-slide" id="test-3">
-                                                    <div class="tabs__list-item p">Марлевый</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-3">Марлевый</a>
                                                 </div>
-                                                <div class="swiper-slide" id="test-2">
-                                                    <div class="tabs__list-item p">Гипсовый</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-2">Гипсовый</a>
                                                 </div>
-                                                <div class="swiper-slide" id="test">
-                                                    <div class="tabs__list-item p">Эластичный</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test">Эластичный</a>
                                                 </div>
-                                                <div class="swiper-slide" id="test-1">
-                                                    <div class="tabs__list-item p">Липкий</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-1">Липкий</a>
                                                 </div>
-                                                <div class="swiper-slide" id="test-4">
-                                                    <div class="tabs__list-item p">Трубчатый</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-4">Трубчатый</a>
                                                 </div>
-                                                <div class="swiper-slide" id="test-5">
-                                                    <div class="tabs__list-item p">ХБ</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-5">ХБ</a>
                                                 </div>
-                                                <div class="swiper-slide">
-                                                    <div class="tabs__list-item p">7</div>
+                                                <div class="swiper-slide"><a class="tabs__list-item p" href="#test-6">7</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1854,7 +1861,7 @@
                                     </div>
                                     <div class="tabs__content swiper-container">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-3">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые</div>
@@ -1866,7 +1873,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-2">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 1</div>
@@ -1878,7 +1885,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 2</div>
@@ -1890,7 +1897,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-1">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 3</div>
@@ -1902,7 +1909,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-4">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 4</div>
@@ -1914,7 +1921,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-5">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 5</div>
@@ -1926,7 +1933,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <div class="swiper-slide" id="test-6">
                                                 <div class="tabs__content-item flex flex_justify">
                                                     <div class="tabs__content-cell tabs__content-cell_left">
                                                         <div class="tabs__title h1">Бинты марлевые 6</div>
@@ -2197,7 +2204,7 @@
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1578752940814"></script>
+    <script src="/app/js/app.js?v=1579261352984"></script>
 </body>
 
 </html>

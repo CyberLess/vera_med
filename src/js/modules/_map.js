@@ -3,13 +3,20 @@ $(() => {
 		return false;	
 			
 	$("#map").each(function(){
+		var item = $(this);
 		function initMap() {
+
+			let addr = item.data('addr');
+			let lat = Number(item.data('lat'));
+			let lng = Number(item.data('lng'));
+
 			var locations = [
-				["с. Рахманово, <strong>д. 172</strong>", 55.74230826, 38.6134243]
+				[addr, lat, lng]
 			];
+
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 17,
-				center: new google.maps.LatLng(55.74230826, 38.6134243),
+				center: new google.maps.LatLng(lat, lng),
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			});
 

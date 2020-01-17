@@ -53,14 +53,16 @@ $(()=>{
 		}
 	})
 
-	$('.js-mobile-submenu').on('click', (e) => {
-		e.preventDefault()
+	$('.js-mobile-group').on('click', (e) => {
+		// e.preventDefault()
 
-		let $this = $(e.currentTarget)
+		if(e.target == e.currentTarget){
+			let $this = $(e.currentTarget)
 
-		$this.toggleClass('is-active').find('.header__mobile-submenu').toggle();
-
-
+			if($this.find('+.header__mobile-submenu').length)
+				$this.toggleClass('is-active').find('+.header__mobile-submenu').toggle();			
+		}
+		
 	})
 
 	$('.js-submenu').each((i,el) => {
