@@ -116,6 +116,7 @@
 			transition: ease .15s;
 			cursor: pointer;
 			padding: 0 3rem 0 3rem;
+			user-select: none;
 
 			&:before{
 				content: '';

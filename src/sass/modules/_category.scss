@@ -252,6 +252,7 @@
 			align-items: center;
 			position: relative;
 			padding: 0 10px 0 10px;
+			user-select: none;
 			&:after {
 				content: '';
 				display: block;
