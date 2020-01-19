@@ -2,7 +2,7 @@
 	if(
 		$_POST['svkey'] !== 'b37954d59afe71d195f621e59f8c6be0' || 
 		strpos($_POST['svDm'], 'xn----7sbfkcc2c3a.xn--p1ai') !== false || 
-		strpos($_POST['svDm'], 'cc97617-wordpress-18.tw1.ru') !== false || 
+		strpos($_POST['svDm'], 'cc97617-wordpress-18.tw1.ru') !== false
 	)
 		die;
 
