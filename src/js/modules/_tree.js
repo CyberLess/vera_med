@@ -11,14 +11,14 @@
 		click: (e) => {
 			let $this = $(e.currentTarget);
 
-			if(!$this.parent().hasClass('cat-parent'))
-				return false;
-			
-			$this
-				.toggleClass('is-active')
-				.parent()
-				.find('> .children')
-				.slideToggle(300);			
+			if($this.parent().hasClass('cat-parent') && e.target.tagName !== 'A'){
+				$this
+					.toggleClass('is-active')
+					.parent()
+					.find('> .children')
+					.slideToggle(300);					
+			}
+		
 		}
 	})
 })($)

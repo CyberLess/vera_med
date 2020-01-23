@@ -24,8 +24,7 @@
 
 		$count = substr_count($log_gile, '==========');
 
-		$txt = "За " . date('d.m.Y') . " " . declOfNum($count, array('обнаружен', 'обнаружено', 'обнаружено')) ." " . $count . " ". declOfNum($count, array('новый', 'новых', 'новых')) . " " . declOfNum($count, array('переход', 'перехода', 'переходов')) . " на " . declOfNum($count, array('неизвестный', 'неизвестные', 'неизвестные')) . " " . declOfNum($count, array('домен', 'домены', 'домены')) . "! %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
-
+		$txt = "За " . date('d.m.Y') . " " . declOfNum($count, array('обнаружен', 'обнаружено', 'обнаружено')) ." " . $count . " ". declOfNum($count, array('новый', 'новых', 'новых')) . " " . declOfNum($count, array('переход', 'перехода', 'переходов')) . " на неизвестные домены!" . " %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
 	}
 
 
