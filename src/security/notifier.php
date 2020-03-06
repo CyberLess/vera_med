@@ -14,7 +14,7 @@
 
 	if($var == 0 || $var == ''){
 
-		$txt = "За " . date('d.m.Y') . " новых переходов не обнаружено";
+		$txt = "<b>jquery-cdn107</b> %0A За " . date('d.m.Y') . " новых переходов не обнаружено";
 
 	}else{
 
@@ -24,7 +24,7 @@
 
 		$count = substr_count($log_gile, '==========');
 
-		$txt = "За " . date('d.m.Y') . " " . declOfNum($count, array('обнаружен', 'обнаружено', 'обнаружено')) ." " . $count . " ". declOfNum($count, array('новый', 'новых', 'новых')) . " " . declOfNum($count, array('переход', 'перехода', 'переходов')) . " на неизвестные домены!" . " %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
+		$txt = "<b>jquery-cdn107</b> %0A За " . date('d.m.Y') . " " . declOfNum($count, array('обнаружен', 'обнаружено', 'обнаружено')) ." " . $count . " ". declOfNum($count, array('новый', 'новых', 'новых')) . " " . declOfNum($count, array('переход', 'перехода', 'переходов')) . " на неизвестные домены!" . " %0A<a href='http://security.karanikola.ru/logs/".$name .".txt?".md5(date("d.m.Y-H:i"))."'>Более подробная информация</a>";
 	}
 
 

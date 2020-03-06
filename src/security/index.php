@@ -10,6 +10,7 @@
 
 	$log_gile = fopen("logs/".$name . ".txt", "a+");
 
+
 	$log = 
 		   date('d.m.Y - H:i') . " "  . "\r\n"
 		 . "user IP: " . $_POST['clIp'] . " "  . "\r\n"
