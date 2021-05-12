@@ -47,7 +47,7 @@
     "jquery-datatables-pageloadmore": "^1.0.0",
     "map-stream": "0.0.7",
     "path": "^0.12.7",
-    "swiper": "^5.2.1",
+    "swiper": "^6.5.1",
     "vinyl-ftp": "^0.6.1",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"
